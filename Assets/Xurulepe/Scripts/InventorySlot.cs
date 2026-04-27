@@ -1,17 +1,24 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class InventorySlot : MonoBehaviour, IDropHandler
 {
+    [Header("Inventory Slots Settings")]
+    [SerializeField] private bool requiresItem;
     [SerializeField] private ItemType requiredItem;
+
+    public event Action OnWrongItemPlaced;
 
     public void OnDrop(PointerEventData eventData)
     {
         GameObject dropped = eventData.pointerDrag;
         DraggableItem draggableItem = dropped.GetComponent<DraggableItem>();
 
-        if (draggableItem.ItemType != requiredItem)
+        if (requiresItem && draggableItem.ItemType != requiredItem)
         {
+            OnWrongItemPlaced?.Invoke();
+
             return;
         }
 

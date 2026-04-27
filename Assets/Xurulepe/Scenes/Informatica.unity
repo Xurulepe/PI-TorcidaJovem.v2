@@ -388,6 +388,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1076901436}
     m_Modifications:
+    - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: requiresItem
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2665629603766972830, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Name
       value: InventorySlot (4)
@@ -530,6 +534,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1076901436}
     m_Modifications:
+    - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: requiresItem
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 483691483532800463, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: itemType
       value: 2
@@ -1320,6 +1328,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1076901436}
     m_Modifications:
+    - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: requiresItem
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2665629603766972830, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Name
       value: InventorySlot (3)
@@ -1662,6 +1674,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1076901436}
     m_Modifications:
+    - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: requiresItem
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2665629603766972830, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Name
       value: InventorySlot (2)
@@ -1960,6 +1976,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1076901436}
     m_Modifications:
+    - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: requiresItem
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 483691483532800463, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: itemType
       value: 6
@@ -2460,6 +2480,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1076901436}
     m_Modifications:
+    - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: requiresItem
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2665629603766972830, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Name
       value: InventorySlot (5)
