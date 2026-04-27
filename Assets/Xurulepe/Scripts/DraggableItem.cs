@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -6,8 +7,12 @@ public class DraggableItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
 {
     [Header("Draggable Item Settings")]
     [SerializeField] private Image image;
+    [SerializeField] private float onDragScaleMultiplier = 1.25f;
+    [SerializeField] private float moveDuration = 0.05f;
 
+    private Vector3 originalScale;
     private Transform parentAfterDrag;
+    private Tween moveTween;
 
     public Transform ParentAfterDrag
     {
@@ -19,9 +24,20 @@ public class DraggableItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
         }
     }
 
+    private void Awake()
+    {
+        originalScale = transform.localScale;
+    }
+
+    private void KillMoveTween()
+    {
+        moveTween.Kill();
+    }
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         parentAfterDrag = transform.parent;
+        transform.localScale *= onDragScaleMultiplier;
 
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
@@ -31,13 +47,17 @@ public class DraggableItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
 
     public void OnDrag(PointerEventData eventData)
     {
-        transform.position = eventData.position;
+        moveTween = transform.DOMove(eventData.position, moveDuration).SetEase(Ease.OutBounce);
     }
 
     public void OnEndDrag(PointerEventData eventData)
-    {
-        transform.SetParent(parentAfterDrag);
+    {        
+        moveTween = transform.DOMove(parentAfterDrag.position, moveDuration).OnComplete(KillMoveTween);
 
-        image.raycastTarget = true;
+        transform.position = eventData.position;
+        transform.SetParent(parentAfterDrag);
+        transform.localScale = originalScale;
+
+        image.raycastTarget = true;        
     }
 }
