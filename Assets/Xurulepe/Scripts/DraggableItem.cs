@@ -9,11 +9,13 @@ public class DraggableItem : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
     [SerializeField] private Image image;
     [SerializeField] private float onDragScaleMultiplier = 1.25f;
     [SerializeField] private float moveDuration = 0.05f;
+    [SerializeField] private ItemType itemType;
 
     private Vector3 originalScale;
     private Transform parentAfterDrag;
     private Tween moveTween;
 
+    public ItemType ItemType => itemType;
     public Transform ParentAfterDrag
     {
         get { return parentAfterDrag; }
