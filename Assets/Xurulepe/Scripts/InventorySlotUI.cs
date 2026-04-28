@@ -3,48 +3,51 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventorySlotUI : MonoBehaviour
+namespace MiniGame.TecInformatica
 {
-    [Header("Inventory Slot UI Settings")]
-    [SerializeField] private Image image;
-    [SerializeField] private float flashDuration;
-
-    private float originalAlphaValue;
-
-    private InventorySlot inventorySlot;
-
-    private void Start()
+    public class InventorySlotUI : MonoBehaviour
     {
-        inventorySlot = GetComponent<InventorySlot>();
+        [Header("Inventory Slot UI Settings")]
+        [SerializeField] private Image image;
+        [SerializeField] private float flashDuration;
 
-        originalAlphaValue = image.color.a;
+        private float originalAlphaValue;
 
-        inventorySlot.OnWrongItemPlaced += BlinkImage;
-    }
+        private InventorySlot inventorySlot;
 
-    private void BlinkImage()
-    {
-        StartCoroutine(FlashColor());
-    }
-
-    private IEnumerator FlashColor()
-    {
-        int flashQuantity = 3;
-
-        for (int i = 0; i < flashQuantity; i++)
+        private void Start()
         {
-            image.DOFade(1f, flashDuration);
+            inventorySlot = GetComponent<InventorySlot>();
 
-            yield return new WaitForSeconds(flashDuration);
+            originalAlphaValue = image.color.a;
 
-            image.DOFade(originalAlphaValue, flashDuration);
-
-            yield return new WaitForSeconds(flashDuration); 
+            inventorySlot.OnWrongItemPlaced += BlinkImage;
         }
-    }
 
-    private void OnDisable()
-    {
-        inventorySlot.OnWrongItemPlaced -= BlinkImage;
+        private void BlinkImage()
+        {
+            StartCoroutine(FlashColor());
+        }
+
+        private IEnumerator FlashColor()
+        {
+            int flashQuantity = 3;
+
+            for (int i = 0; i < flashQuantity; i++)
+            {
+                image.DOFade(1f, flashDuration);
+
+                yield return new WaitForSeconds(flashDuration);
+
+                image.DOFade(originalAlphaValue, flashDuration);
+
+                yield return new WaitForSeconds(flashDuration);
+            }
+        }
+
+        private void OnDisable()
+        {
+            inventorySlot.OnWrongItemPlaced -= BlinkImage;
+        }
     }
 }

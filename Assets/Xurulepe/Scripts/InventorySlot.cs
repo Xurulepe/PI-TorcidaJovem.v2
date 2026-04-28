@@ -2,44 +2,47 @@ using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class InventorySlot : MonoBehaviour, IDropHandler
+namespace MiniGame.TecInformatica
 {
-    [Header("Inventory Slots Settings")]
-    [SerializeField] private bool requiresItem;
-    [SerializeField] private ItemType requiredItem;
-
-    public event Action OnWrongItemPlaced;
-
-    public void OnDrop(PointerEventData eventData)
+    public class InventorySlot : MonoBehaviour, IDropHandler
     {
-        GameObject dropped = eventData.pointerDrag;
-        DraggableItem draggableItem = dropped.GetComponent<DraggableItem>();
+        [Header("Inventory Slots Settings")]
+        [SerializeField] private bool requiresItem;
+        [SerializeField] private ItemType requiredItem;
 
-        if (requiresItem && draggableItem.ItemType != requiredItem)
+        public event Action OnWrongItemPlaced;
+
+        public void OnDrop(PointerEventData eventData)
         {
-            OnWrongItemPlaced?.Invoke();
+            GameObject dropped = eventData.pointerDrag;
+            DraggableItem draggableItem = dropped.GetComponent<DraggableItem>();
 
-            return;
+            if (requiresItem && draggableItem.ItemType != requiredItem)
+            {
+                OnWrongItemPlaced?.Invoke();
+
+                return;
+            }
+
+            if (transform.childCount != 0)
+            {
+                Transform currentObjectInSlot = transform.GetChild(0);
+
+                currentObjectInSlot.SetParent(draggableItem.ParentAfterDrag);
+            }
+
+            draggableItem.ParentAfterDrag = transform;
         }
-
-        if (transform.childCount != 0)
-        {
-            Transform currentObjectInSlot = transform.GetChild(0);
-                        
-            currentObjectInSlot.SetParent(draggableItem.ParentAfterDrag);
-        }
-
-        draggableItem.ParentAfterDrag = transform;
     }
-}
 
-public enum ItemType
-{
-    None,
-    Motherboard,
-    CPU,
-    RAM,
-    GPU,
-    HD,
-    PSU
+    public enum ItemType
+    {
+        None,
+        Motherboard,
+        CPU,
+        RAM,
+        GPU,
+        HD,
+        PSU
+    }
 }
