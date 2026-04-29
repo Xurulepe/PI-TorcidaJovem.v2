@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -12,6 +13,9 @@ namespace MiniGame.TecInformatica
         [SerializeField] private float onDragScaleMultiplier = 1.25f;
         [SerializeField] private float moveDuration = 0.05f;
         [SerializeField] private ItemType itemType;
+
+        [SerializeField] private bool hasSlots = false;
+        [SerializeField] private List<GameObject> slotList = new List<GameObject>();
 
         private Vector3 originalScale;
         private Transform parentAfterDrag;
@@ -40,6 +44,8 @@ namespace MiniGame.TecInformatica
 
         public void OnBeginDrag(PointerEventData eventData)
         {
+            DeactiveSlots();
+
             parentAfterDrag = transform.parent;
             transform.localScale *= onDragScaleMultiplier;
 
@@ -63,6 +69,27 @@ namespace MiniGame.TecInformatica
             transform.localScale = originalScale;
 
             image.raycastTarget = true;
+
+            if (hasSlots)
+            {
+                UnlockNewSlots();
+            }
+        }
+
+        private void UnlockNewSlots()
+        {
+            foreach (GameObject slot in slotList)
+            {
+                slot.gameObject.SetActive(true);
+            }
+        }
+
+        private void DeactiveSlots()
+        {
+            foreach (GameObject slot in slotList)
+            {
+                slot.gameObject.SetActive(false);
+            }
         }
     }
 }
