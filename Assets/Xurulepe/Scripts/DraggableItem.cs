@@ -80,7 +80,7 @@ namespace MiniGame.TecInformatica
         {
             foreach (GameObject slot in slotList)
             {
-                slot.gameObject.SetActive(true);
+                slot.SetActive(true);
             }
         }
 
@@ -88,7 +88,7 @@ namespace MiniGame.TecInformatica
         {
             foreach (GameObject slot in slotList)
             {
-                slot.gameObject.SetActive(false);
+                slot.SetActive(false);
             }
         }
     }

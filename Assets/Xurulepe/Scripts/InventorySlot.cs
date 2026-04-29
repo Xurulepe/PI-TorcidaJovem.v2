@@ -10,6 +10,8 @@ namespace MiniGame.TecInformatica
         [SerializeField] private bool requiresItem;
         [SerializeField] private ItemType requiredItem;
 
+        private bool canDropItem = true;
+
         public event Action OnWrongItemPlaced;
 
         public void OnDrop(PointerEventData eventData)
@@ -28,10 +30,36 @@ namespace MiniGame.TecInformatica
             {
                 Transform currentObjectInSlot = transform.GetChild(0);
 
+                //TryReplace(currentObjectInSlot, draggableItem);
+
                 currentObjectInSlot.SetParent(draggableItem.ParentAfterDrag);
             }
 
+            if (!canDropItem)
+            {
+                return;
+            }
+
             draggableItem.ParentAfterDrag = transform;
+        }
+
+        private void TryReplace(Transform currentObjectInSlot, DraggableItem draggableItem)
+        {
+            if (currentObjectInSlot.TryGetComponent(out DraggableItem currentItemInSlot))
+            {
+                InventorySlot draggableItemSlot = draggableItem.ParentAfterDrag.GetComponent<InventorySlot>();
+
+                if (draggableItemSlot.requiredItem != ItemType.None || currentItemInSlot.ItemType == draggableItemSlot.requiredItem)
+                {
+                    currentObjectInSlot.SetParent(draggableItem.ParentAfterDrag);
+
+                    canDropItem = true;
+                }
+                else
+                {
+                    canDropItem = false;
+                }
+            }
         }
     }
 
