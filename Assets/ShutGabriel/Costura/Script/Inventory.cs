@@ -15,6 +15,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] Item[] items;
     [SerializeField] Button giveItemBtn;
 
+    
     private void Awake()
     {
         singleton = this;
@@ -47,7 +48,7 @@ public class Inventory : MonoBehaviour
             item.transform.SetParent(draggablesTransform);
         }
     }
-    void EquipEquipment(SlotTag tag, InventoryItem item = null)
+    public void EquipEquipment(SlotTag tag, InventoryItem item = null)
     {
         switch (tag) 
         {
