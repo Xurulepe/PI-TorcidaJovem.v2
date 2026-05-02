@@ -30,9 +30,7 @@ namespace MiniGame.TecInformatica
             {
                 Transform currentObjectInSlot = transform.GetChild(0);
 
-                //TryReplace(currentObjectInSlot, draggableItem);
-
-                currentObjectInSlot.SetParent(draggableItem.ParentAfterDrag);
+                TryReplace(currentObjectInSlot, draggableItem);
             }
 
             if (!canDropItem)
@@ -49,7 +47,7 @@ namespace MiniGame.TecInformatica
             {
                 InventorySlot draggableItemSlot = draggableItem.ParentAfterDrag.GetComponent<InventorySlot>();
 
-                if (draggableItemSlot.requiredItem != ItemType.None || currentItemInSlot.ItemType == draggableItemSlot.requiredItem)
+                if (draggableItemSlot.requiredItem == ItemType.None || draggableItemSlot.requiredItem == currentItemInSlot.ItemType)
                 {
                     currentObjectInSlot.SetParent(draggableItem.ParentAfterDrag);
 
