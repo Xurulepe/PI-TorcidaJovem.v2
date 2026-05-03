@@ -69,6 +69,7 @@ namespace MiniGame.TecInformatica
         RAM,
         GPU,
         HD,
-        PSU
+        PSU,
+        Cooler
     }
 }
