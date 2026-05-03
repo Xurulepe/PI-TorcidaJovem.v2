@@ -12,6 +12,8 @@ namespace MiniGame.TecInformatica
 
         private bool canDropItem = true;
 
+        public ItemType RequiredItem => requiredItem;
+
         public event Action OnWrongItemPlaced;
 
         public void OnDrop(PointerEventData eventData)

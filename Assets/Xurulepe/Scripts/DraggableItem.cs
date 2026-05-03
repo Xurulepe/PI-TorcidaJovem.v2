@@ -72,7 +72,22 @@ namespace MiniGame.TecInformatica
 
             if (hasSlots)
             {
+                ManageSlots();
+            }
+        }
+
+        private void ManageSlots()
+        {
+            InventorySlot inventorySlot = parentAfterDrag.GetComponent<InventorySlot>();
+            bool itemTypeMatchesRequiredItem = inventorySlot.RequiredItem != ItemType.None && inventorySlot.RequiredItem == itemType;
+
+            if (itemTypeMatchesRequiredItem || HasAnyItemInAnySlot())
+            {
                 UnlockNewSlots();
+            }
+            else
+            {
+                DeactiveSlots();
             }
         }
 
@@ -90,6 +105,21 @@ namespace MiniGame.TecInformatica
             {
                 slot.SetActive(false);
             }
+        }
+
+        private bool HasAnyItemInAnySlot()
+        {
+            bool hasItemInAnySlot = false;
+
+            foreach (GameObject slot in slotList)
+            {
+                if (slot.transform.childCount > 0)
+                {
+                    hasItemInAnySlot = true;
+                }
+            }
+
+            return hasItemInAnySlot;
         }
     }
 }
