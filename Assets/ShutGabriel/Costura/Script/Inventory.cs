@@ -19,7 +19,12 @@ public class Inventory : MonoBehaviour
     private void Awake()
     {
         singleton = this;
-        giveItemBtn.onClick.AddListener(delegate { SpawnInventoryItem(); });
+       
+    }
+    public void ButtonOnS()
+    {
+        int random = Random.Range(0, items.Length);
+        SpawnInventoryItem(items[random]);
     }
 
     private void Update()
@@ -70,25 +75,20 @@ public class Inventory : MonoBehaviour
                 break;
         }
     }
-    public void SpawnInventoryItem(Item item = null)
+    public void SpawnInventoryItem(Item item)
     {
+       
         Item _item = item;
-        if (_item == null)
-        {
-            item = PickRandomItem();
-        }
+     
         for (int i = 0; i < inventorySlots.Length; i++) 
         {
             if (inventorySlots[i].myItem == null)
             {
+                 Debug.Log("PassouSpawn");
                 Instantiate(itemprefab, inventorySlots[i]. transform).Initialize(_item, inventorySlots[i]);
                 break;
             }
         }
     }
-    Item PickRandomItem()
-    {
-        int random = Random.Range(0, items.Length);
-        return items[random];
-    }
+   
 }

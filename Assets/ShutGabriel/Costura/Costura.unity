@@ -420,8 +420,9 @@ GameObject:
   - component: {fileID: 95160486}
   - component: {fileID: 95160488}
   - component: {fileID: 95160487}
+  - component: {fileID: 95160489}
   m_Layer: 5
-  m_Name: SlotEquip
+  m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -484,6 +485,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95160485}
   m_CullTransparentMesh: 1
+--- !u!114 &95160489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95160485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8405d49effc5b7a48895aaf4d553e4a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTag: 1
 --- !u!1 &100226891
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,8 +509,9 @@ GameObject:
   - component: {fileID: 100226892}
   - component: {fileID: 100226894}
   - component: {fileID: 100226893}
+  - component: {fileID: 100226895}
   m_Layer: 5
-  m_Name: SlotEquip (3)
+  m_Name: Feet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -559,6 +574,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100226891}
   m_CullTransparentMesh: 1
+--- !u!114 &100226895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100226891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8405d49effc5b7a48895aaf4d553e4a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTag: 4
 --- !u!1 &136914699
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,8 +734,9 @@ GameObject:
   - component: {fileID: 253886855}
   - component: {fileID: 253886857}
   - component: {fileID: 253886856}
+  - component: {fileID: 253886858}
   m_Layer: 5
-  m_Name: SlotEquip (2)
+  m_Name: Legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -770,6 +799,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253886854}
   m_CullTransparentMesh: 1
+--- !u!114 &253886858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253886854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8405d49effc5b7a48895aaf4d553e4a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTag: 3
 --- !u!1001 &289851515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1118,8 +1160,9 @@ GameObject:
   - component: {fileID: 625788804}
   - component: {fileID: 625788806}
   - component: {fileID: 625788805}
+  - component: {fileID: 625788807}
   m_Layer: 5
-  m_Name: SlotEquip (1)
+  m_Name: Chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1182,6 +1225,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 625788803}
   m_CullTransparentMesh: 1
+--- !u!114 &625788807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625788803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8405d49effc5b7a48895aaf4d553e4a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myTag: 2
 --- !u!1001 &669783298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2224,8 +2280,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00012207031, y: -40.400024}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 17.2, y: -40.400024}
+  m_SizeDelta: {x: 165.44, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1249599173
 MonoBehaviour:
@@ -2425,8 +2481,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -518.01996, y: 10.980999}
-  m_SizeDelta: {x: -1036, y: -21.963}
+  m_AnchoredPosition: {x: -554.81, y: 10.980999}
+  m_SizeDelta: {x: -1109.58, y: -21.963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1595367672
 MonoBehaviour:
@@ -2737,6 +2793,7 @@ RectTransform:
   - {fileID: 458961841}
   - {fileID: 399003290}
   - {fileID: 1931195977}
+  - {fileID: 1860208831}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2905,8 +2962,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 251.41998, y: 10.980999}
-  m_SizeDelta: {x: -502.93, y: -21.963}
+  m_AnchoredPosition: {x: 227.62, y: 10.980999}
+  m_SizeDelta: {x: -455.32, y: -21.963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1736546444
 MonoBehaviour:
@@ -2971,7 +3028,11 @@ MonoBehaviour:
   - {fileID: 1797293572}
   - {fileID: 1891108519}
   - {fileID: 2058323921}
-  equipmentSlots: []
+  equipmentSlots:
+  - {fileID: 95160489}
+  - {fileID: 625788807}
+  - {fileID: 253886858}
+  - {fileID: 100226895}
   draggablesTransform: {fileID: 1860208831}
   itemprefab: {fileID: -2486319758379205124, guid: 6ad56cdfa56621646bd6d196fcdcaa8f, type: 3}
   items:
@@ -3435,14 +3496,14 @@ RectTransform:
   m_GameObject: {fileID: 1860208830}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 0.14285715, z: 1}
+  m_LocalScale: {x: 1.18, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1931195977}
+  m_Father: {fileID: 1711209858}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1320.0001, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1122.513, y: -777.8435}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1865517842
@@ -3699,7 +3760,6 @@ RectTransform:
   m_LocalScale: {x: 0.59, y: 7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1860208831}
   - {fileID: 1249599172}
   - {fileID: 1736546443}
   - {fileID: 1595367671}
