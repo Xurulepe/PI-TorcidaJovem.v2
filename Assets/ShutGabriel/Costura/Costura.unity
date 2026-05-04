@@ -2326,7 +2326,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1249599174}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1736546446}
+        m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
+        m_MethodName: ButtonOnS
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1249599174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3036,6 +3048,7 @@ MonoBehaviour:
   draggablesTransform: {fileID: 1860208831}
   itemprefab: {fileID: -2486319758379205124, guid: 6ad56cdfa56621646bd6d196fcdcaa8f, type: 3}
   items:
+  - {fileID: 11400000, guid: 8a0bd3ba0b8d88448b8eb5e1a6e90b36, type: 2}
   - {fileID: 11400000, guid: 8a0bd3ba0b8d88448b8eb5e1a6e90b36, type: 2}
   giveItemBtn: {fileID: 1249599173}
 --- !u!114 &1736546447
