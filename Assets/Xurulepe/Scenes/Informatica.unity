@@ -178,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 11920161}
   flashDuration: 0.2
+  shouldBlinkOnStart: 0
 --- !u!114 &11920159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2428,7 +2429,7 @@ PrefabInstance:
       objectReference: {fileID: -2229531975268518074, guid: abe88eb313d96204d873f544d012d408, type: 3}
     - target: {fileID: 6759835138052508666, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Color.a
-      value: 0.19607843
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6759835138052508666, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Color.b
@@ -2457,6 +2458,14 @@ PrefabInstance:
     - target: {fileID: 7125332632446566108, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_CellSize.y
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7190401890394533540, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: blinkOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7190401890394533540, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: shouldBlinkOnStart
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9127202065974480095, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2747,6 +2756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 1572045289}
   flashDuration: 0.2
+  shouldBlinkOnStart: 0
 --- !u!114 &1572045287
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ namespace MiniGame.TecInformatica
         [Header("Inventory Slot UI Settings")]
         [SerializeField] private Image image;
         [SerializeField] private float flashDuration;
+        [SerializeField] private bool shouldBlinkOnStart;
 
         private float originalAlphaValue;
 
@@ -22,6 +23,11 @@ namespace MiniGame.TecInformatica
             originalAlphaValue = image.color.a;
 
             inventorySlot.OnWrongItemPlaced += BlinkImage;
+
+            if (shouldBlinkOnStart)
+            {
+                Invoke(nameof(BlinkImage), 1f); 
+            }
         }
 
         private void BlinkImage()
