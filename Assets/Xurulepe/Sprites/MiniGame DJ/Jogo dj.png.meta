@@ -105,11 +105,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jogo dj_0
+      name: Jogo dj_left
       rect:
         serializedVersion: 2
         x: 429
@@ -117,7 +130,7 @@ TextureImporter:
         width: 122
         height: 134
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -131,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jogo dj_1
+      name: Jogo dj_down
       rect:
         serializedVersion: 2
         x: 560
@@ -139,7 +152,7 @@ TextureImporter:
         width: 130
         height: 130
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,7 +166,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jogo dj_2
+      name: Jogo dj_up
       rect:
         serializedVersion: 2
         x: 695
@@ -161,7 +174,7 @@ TextureImporter:
         width: 126
         height: 125
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,7 +188,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jogo dj_3
+      name: Jogo dj_right
       rect:
         serializedVersion: 2
         x: 821
@@ -183,7 +196,7 @@ TextureImporter:
         width: 139
         height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -200,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e79321e1872b0b34e878a3d80bbb168f
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Jogo dj_0: -8852413677468962356
-      Jogo dj_1: -8267923277547556002
-      Jogo dj_2: 4414239527122334441
-      Jogo dj_3: -6077506357929483215
+      Jogo dj_down: -8267923277547556002
+      Jogo dj_left: -8852413677468962356
+      Jogo dj_right: -6077506357929483215
+      Jogo dj_up: 4414239527122334441
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
