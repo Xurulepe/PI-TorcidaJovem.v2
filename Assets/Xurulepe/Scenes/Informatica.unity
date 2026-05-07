@@ -500,7 +500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6305479862471884160, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6305479862471884160, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_LocalRotation.x
@@ -512,7 +512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6305479862471884160, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6305479862471884160, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -532,7 +532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6305479862471884160, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 6759835138052508666, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Sprite
@@ -560,11 +560,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7125332632446566108, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_CellSize.x
-      value: 100
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7125332632446566108, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_CellSize.y
-      value: 100
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 9127202065974480095, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2545,7 +2545,7 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 130, y: 130}
+  m_CellSize: {x: 90, y: 90}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 1
   m_ConstraintCount: 1
