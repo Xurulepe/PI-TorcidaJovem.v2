@@ -10,8 +10,10 @@ public class MusicalNoteSlot : MonoBehaviour
 
         if (colliderObject != null)
         {
+            MusicalNote musicalNote = colliderObject.GetComponent<MusicalNote>();
             MusicalNoteUI musicalNoteUI = colliderObject.GetComponent<MusicalNoteUI>();
 
+            musicalNote.SetHit();
             musicalNoteUI.Blink();
 
             float distanceToNote = Vector2.Distance(transform.position, colliderObject.transform.position);
