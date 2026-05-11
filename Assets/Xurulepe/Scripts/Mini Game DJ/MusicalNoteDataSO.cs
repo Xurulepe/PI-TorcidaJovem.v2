@@ -10,4 +10,5 @@ public class MusicalNoteDataSO : ScriptableObject
     public VertexGradient noteGradient;
     public float targetScale = 1.2f;
     public float pulseDuration = 0.08f;
+    public Color noteSpriteColor;
 }

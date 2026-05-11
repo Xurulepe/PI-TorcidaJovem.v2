@@ -20,3 +20,6 @@ MonoBehaviour:
     topRight: {r: 1, g: 0.96470594, b: 0.56078434, a: 1}
     bottomLeft: {r: 1, g: 0.8431373, b: 0, a: 1}
     bottomRight: {r: 1, g: 0.8431373, b: 0, a: 1}
+  targetScale: 1.2
+  pulseDuration: 0.08
+  noteSpriteColor: {r: 1, g: 0.8431373, b: 0, a: 1}

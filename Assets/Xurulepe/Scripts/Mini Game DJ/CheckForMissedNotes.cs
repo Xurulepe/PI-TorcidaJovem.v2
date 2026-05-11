@@ -13,6 +13,9 @@ public class CheckForMissedNotes : MonoBehaviour
             if (!musicalNote.WasHit)
             {
                 GameManager.Instance.ReduceScore();
+
+                MusicalNoteUI musicalNoteUI = collision.gameObject.GetComponent<MusicalNoteUI>();
+                musicalNoteUI.Blink();
             }
         }
     }

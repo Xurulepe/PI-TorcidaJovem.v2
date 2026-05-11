@@ -19,7 +19,7 @@ public class MusicalNoteUI : MonoBehaviour
 
     private IEnumerator FlashColor()
     {
-        spriteRenderer.color = Color.green;
+        spriteRenderer.color = GameManager.Instance.CurrentMusicalNoteData.noteSpriteColor;
 
         yield return new WaitForSeconds(1);
 

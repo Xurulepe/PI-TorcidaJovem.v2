@@ -22,3 +22,4 @@ MonoBehaviour:
     bottomRight: {r: 0.25882354, g: 1, b: 0.9333334, a: 1}
   targetScale: 1.7
   pulseDuration: 0.15
+  noteSpriteColor: {r: 0.25882354, g: 1, b: 0.9333334, a: 1}
