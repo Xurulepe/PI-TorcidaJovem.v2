@@ -19,14 +19,15 @@ public class GameInfoUI : MonoBehaviour
 
     private void UpdateUI()
     {
-        accuracyInfoText.text = GameManager.Instance.AccuracyInfo;
-        Pulse(accuracyInfoRectTransform);
+        accuracyInfoText.text = GameManager.Instance.CurrentMusicalNoteData.accuracyInfo;
+        accuracyInfoText.colorGradient = GameManager.Instance.CurrentMusicalNoteData.noteGradient;
+        Pulse(accuracyInfoRectTransform, GameManager.Instance.CurrentMusicalNoteData);
 
         scoreInfoText.text = GameManager.Instance.Score.ToString();
-        Pulse(scoreInfoRectTransform);
+        Pulse(scoreInfoRectTransform, GameManager.Instance.CurrentMusicalNoteData);
 
         comboCountInfoText.text = GameManager.Instance.ComboCount.ToString() + " x";
-        Pulse(comboInfoRectTransform);
+        Pulse(comboInfoRectTransform, GameManager.Instance.CurrentMusicalNoteData);
     }
 
     private void OnDisable()
@@ -34,12 +35,15 @@ public class GameInfoUI : MonoBehaviour
         GameManager.Instance.OnScoreChanged -= UpdateUI;        
     }
 
-    private void Pulse(RectTransform target)
+    private void Pulse(RectTransform target, MusicalNoteDataSO musicalNoteData)
     {
         target.DOKill();
 
+        float targetScale = musicalNoteData.targetScale;
+        float duration = musicalNoteData.pulseDuration;
+
         target.localScale = Vector3.one;
 
-        target.DOScale(1.2f, 0.08f).SetLoops(2, LoopType.Yoyo);
+        target.DOScale(targetScale, duration).SetLoops(2, LoopType.Yoyo);
     }
 }

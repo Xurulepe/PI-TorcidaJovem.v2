@@ -4,33 +4,18 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private int score = 0;
-    private string accuracyInfo = "";
     private int comboCount = 0;
+    private MusicalNoteDataSO currentMusicalNoteData;
 
-    [Header("Score Settings")]
-    [SerializeField] private int scorePerNote = 10;
-    [SerializeField] private int scorePerPerfectNote = 20;
-    [SerializeField] private float perfectNoteTimingWindow = 0.2f;
-    [SerializeField] private float goodNoteTimingWindow = 0.5f;
+    [Header("Musical Notes Settings")]
+    [SerializeField] private MusicalNoteDataSO perfectMusicalNoteData;
+    [SerializeField] private MusicalNoteDataSO goodMusicalNoteData;
+    [SerializeField] private MusicalNoteDataSO coolMusicalNoteData;
+    [SerializeField] private MusicalNoteDataSO missMusicalNoteData;
 
-    public int Score
-    {
-        get { return score; }
-        set
-        {
-            if (value < 0)
-            {
-                score = 0;
-            }
-            else
-            {
-                score = value;
-            }
-        }
-    }
-
-    public string AccuracyInfo => accuracyInfo;
+    public int Score => score;
     public int ComboCount => comboCount;
+    public MusicalNoteDataSO CurrentMusicalNoteData => currentMusicalNoteData;
 
     public event Action OnScoreChanged;
 
@@ -43,31 +28,41 @@ public class GameManager : MonoBehaviour
 
     public void CalculateScore(float distanceToNote)
     {
-        if (distanceToNote <= perfectNoteTimingWindow)
+        if (distanceToNote <= perfectMusicalNoteData.timingWindow)
         {
-            Score += scorePerPerfectNote;
-            accuracyInfo = "Perfect!";
+            currentMusicalNoteData = perfectMusicalNoteData;
         }
-        else if (distanceToNote <= goodNoteTimingWindow)
+        else if (distanceToNote <= goodMusicalNoteData.timingWindow)
         {
-            Score += scorePerNote;
-            accuracyInfo = "Good!";
+            currentMusicalNoteData = goodMusicalNoteData;
         }
         else
         {
-            accuracyInfo = "Hit!";
+            currentMusicalNoteData = coolMusicalNoteData;
         }
 
-        comboCount++;
+        SetScore(score + currentMusicalNoteData.scoreValue);
 
-        OnScoreChanged?.Invoke();
+        comboCount++;
     }
 
     public void ReduceScore()
     {
-        Score -= scorePerNote;
-        accuracyInfo = "Miss!";
+        currentMusicalNoteData = missMusicalNoteData;
+
+        SetScore(score + currentMusicalNoteData.scoreValue);
+
         comboCount = 0;
+    }
+
+    private void SetScore(int newScore)
+    {
+        score = newScore;
+
+        if (score < 0)
+        {
+            score = 0;
+        }
 
         OnScoreChanged?.Invoke();
     }

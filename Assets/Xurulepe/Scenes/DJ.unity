@@ -1155,10 +1155,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  scorePerNote: 10
-  scorePerPerfectNote: 20
-  perfectNoteTimingWindow: 0.2
-  goodNoteTimingWindow: 0.5
+  perfectMusicalNoteData: {fileID: 11400000, guid: 161b90e9c6bb38445aaf970f80d36555, type: 2}
+  goodMusicalNoteData: {fileID: 11400000, guid: f98efc27ebdcab7468a0f99ef2abb993, type: 2}
+  coolMusicalNoteData: {fileID: 11400000, guid: 61bd0d268a9738447a2f71be23e1df11, type: 2}
+  missMusicalNoteData: {fileID: 11400000, guid: f773626d90e2c924e90a7337aef95a8c, type: 2}
 --- !u!4 &1377810149
 Transform:
   m_ObjectHideFlags: 0
@@ -1457,7 +1457,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
+  m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -1806,7 +1806,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
+  m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
@@ -1942,7 +1942,7 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
+  m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
