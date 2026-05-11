@@ -636,8 +636,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   accuracyInfoText: {fileID: 1506554431}
+  accuracyInfoRectTransform: {fileID: 1506554430}
   scoreInfoText: {fileID: 1824222883}
+  scoreInfoRectTransform: {fileID: 1824222882}
   comboCountInfoText: {fileID: 1726628833}
+  comboInfoRectTransform: {fileID: 1726628832}
 --- !u!1 &551629388
 GameObject:
   m_ObjectHideFlags: 0
