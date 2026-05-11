@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int score = 0;
     private int comboCount = 0;
     private MusicalNoteDataSO currentMusicalNoteData;
+    [SerializeField] private int maxNotesToSpawn;
 
     [Header("Musical Notes Settings")]
     [SerializeField] private MusicalNoteDataSO perfectMusicalNoteData;
@@ -16,6 +17,7 @@ public class GameManager : MonoBehaviour
     public int Score => score;
     public int ComboCount => comboCount;
     public MusicalNoteDataSO CurrentMusicalNoteData => currentMusicalNoteData;
+    public int MaxNotesToSpawn => maxNotesToSpawn;
 
     public event Action OnScoreChanged;
 
@@ -41,9 +43,9 @@ public class GameManager : MonoBehaviour
             currentMusicalNoteData = coolMusicalNoteData;
         }
 
-        SetScore(score + currentMusicalNoteData.scoreValue);
-
         comboCount++;
+
+        SetScore(score + currentMusicalNoteData.scoreValue);
     }
 
     public void ReduceScore()

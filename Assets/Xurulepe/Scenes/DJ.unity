@@ -1155,6 +1155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  maxNotesToSpawn: 15
   perfectMusicalNoteData: {fileID: 11400000, guid: 161b90e9c6bb38445aaf970f80d36555, type: 2}
   goodMusicalNoteData: {fileID: 11400000, guid: f98efc27ebdcab7468a0f99ef2abb993, type: 2}
   coolMusicalNoteData: {fileID: 11400000, guid: 61bd0d268a9738447a2f71be23e1df11, type: 2}

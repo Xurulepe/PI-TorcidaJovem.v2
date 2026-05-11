@@ -8,9 +8,17 @@ public class MusicalNoteSpawner : MonoBehaviour
 
     private float spawnTimer;
 
+    private int maxNotesCount;
+    private int spawnedNotesCount;
+
     private void Awake()
     {
         spawnTimer = Random.Range(minimumSpawnTime, maximumSpawnTime);
+    }
+
+    private void Start()
+    {
+        maxNotesCount = GameManager.Instance.MaxNotesToSpawn;
     }
 
     void Update()
@@ -25,9 +33,16 @@ public class MusicalNoteSpawner : MonoBehaviour
             {
                 musicalNote.transform.position = transform.position;
                 musicalNote.SetActive(true);
+
+                spawnedNotesCount++;
             }
 
             spawnTimer = Random.Range(minimumSpawnTime, maximumSpawnTime);
+        }
+
+        if (spawnedNotesCount >= maxNotesCount)
+        {
+            gameObject.SetActive(false);
         }
     }
 }
