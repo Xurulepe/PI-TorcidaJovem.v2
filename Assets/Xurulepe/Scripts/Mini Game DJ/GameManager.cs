@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     private MusicalNoteDataSO currentMusicalNoteData;
     [SerializeField] private int maxNotesToSpawn;
     private int deactivatedNotesCount;
+    private bool isGameRunning = false;
 
     private int maxScore;
 
@@ -22,14 +23,21 @@ public class GameManager : MonoBehaviour
     public MusicalNoteDataSO CurrentMusicalNoteData => currentMusicalNoteData;
     public int MaxNotesToSpawn => maxNotesToSpawn;
     public int DeactivatedNotesCount => deactivatedNotesCount;
+    public bool IsGameRunning => isGameRunning;
 
     public event Action OnScoreChanged;
+    public event Action OnGameComplete;
 
     public static GameManager Instance { get; private set; }
 
     private void Awake()
     {
         Instance = this;
+    }
+
+    public void StartGame()
+    {
+        isGameRunning = true;
     }
 
     public void CalculateScore(float distanceToNote)
@@ -91,6 +99,8 @@ public class GameManager : MonoBehaviour
             Debug.Log("Max score: " + PlayerPrefs.GetInt("Max Score"));
 
             SaveScore();
+
+            OnGameComplete?.Invoke();
         }
     }
 

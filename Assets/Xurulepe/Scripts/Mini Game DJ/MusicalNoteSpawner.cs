@@ -23,6 +23,11 @@ public class MusicalNoteSpawner : MonoBehaviour
 
     void Update()
     {
+        if (!GameManager.Instance.IsGameRunning)
+        {
+            return;
+        }
+
         spawnTimer -= Time.deltaTime;
 
         if (spawnTimer <= 0f)
