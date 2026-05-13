@@ -21,27 +21,31 @@ public class QuizManager : MonoBehaviour
     }
 
     public void CheckAnswer(string selectedAnswer)
-{
-    if (selectedAnswer == correctAnswer)
     {
-        // Substitui o underline
-        questionText.text = incompleteSentence.Replace("____", selectedAnswer);
+        if (selectedAnswer == correctAnswer)
+        {
+            // Substitui o underline
+            questionText.text = incompleteSentence.Replace("____", selectedAnswer);
 
-        // Cor normal
-        questionText.color = Color.white;
+            // Mantém a cor original
+            Color originalColor = questionText.color;
 
-        // Faz piscar por 2 segundos
-        questionText
-            .DOFade(0f, 0.2f)
-            .SetLoops(10, LoopType.Yoyo);
+            // Faz piscar por 2 segundos
+            questionText
+                .DOFade(0f, 0.2f)
+                .SetLoops(10, LoopType.Yoyo)
+                .OnComplete(() =>
+                {
+                    questionText.color = originalColor;
+                });
 
-        feedbackText.text = "Correto!";
-        feedbackText.color = Color.green;
+            feedbackText.text = "Correto!";
+            feedbackText.color = Color.green;
+        }
+        else
+        {
+            feedbackText.text = "Errado!";
+            feedbackText.color = Color.red;
+        }
     }
-    else
-    {
-        feedbackText.text = "Errado!";
-        feedbackText.color = Color.red;
-    }
-}
 }
