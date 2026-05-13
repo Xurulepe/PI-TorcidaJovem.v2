@@ -17,6 +17,8 @@ public class CheckForMissedNotes : MonoBehaviour
                 MusicalNoteUI musicalNoteUI = collision.gameObject.GetComponent<MusicalNoteUI>();
                 musicalNoteUI.Blink();
             }
+
+            GameManager.Instance.IncrementDeactivatedNotesCount();
         }
     }
 }

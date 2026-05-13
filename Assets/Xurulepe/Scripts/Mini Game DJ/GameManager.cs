@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
     private int comboCount = 0;
     private MusicalNoteDataSO currentMusicalNoteData;
     [SerializeField] private int maxNotesToSpawn;
+    private int deactivatedNotesCount;
+
+    private int maxScore;
 
     [Header("Musical Notes Settings")]
     [SerializeField] private MusicalNoteDataSO perfectMusicalNoteData;
@@ -18,6 +21,7 @@ public class GameManager : MonoBehaviour
     public int ComboCount => comboCount;
     public MusicalNoteDataSO CurrentMusicalNoteData => currentMusicalNoteData;
     public int MaxNotesToSpawn => maxNotesToSpawn;
+    public int DeactivatedNotesCount => deactivatedNotesCount;
 
     public event Action OnScoreChanged;
 
@@ -67,5 +71,36 @@ public class GameManager : MonoBehaviour
         }
 
         OnScoreChanged?.Invoke();
+    }
+
+    public void IncrementDeactivatedNotesCount()
+    {
+        deactivatedNotesCount++;
+
+        CheckForLastNote();
+    }
+
+    private void CheckForLastNote()
+    {
+        int spawnersQuantity = 4;
+
+        if (deactivatedNotesCount >= maxNotesToSpawn * spawnersQuantity)
+        {
+            Debug.Log("Fim de game");
+            Debug.Log("Score: " + score);
+            Debug.Log("Max score: " + PlayerPrefs.GetInt("Max Score"));
+
+            SaveScore();
+        }
+    }
+
+    private void SaveScore()
+    {
+        if (score > PlayerPrefs.GetInt("Max Score"))
+        {
+            PlayerPrefs.SetInt("Max Score", score);
+
+            Debug.Log("New score: " + score);
+        }
     }
 }
