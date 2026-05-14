@@ -491,9 +491,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.7022562, g: 1, b: 0.41037738, a: 1}
+    m_PressedColor: {r: 0.16812229, g: 1, b: 0, a: 1}
+    m_SelectedColor: {r: 0.7019608, g: 1, b: 0.41176474, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1102,9 +1102,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.50790304, b: 0.41176474, a: 1}
+    m_PressedColor: {r: 1, g: 0.16862746, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0.50980395, b: 0.41176474, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1811,9 +1811,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.7019608, g: 1, b: 0.4117647, a: 1}
+    m_PressedColor: {r: 0.16862746, g: 1, b: 0, a: 1}
+    m_SelectedColor: {r: 0.7019608, g: 1, b: 0.4117647, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2298,6 +2298,7 @@ GameObject:
   - component: {fileID: 1226923336}
   - component: {fileID: 1226923338}
   - component: {fileID: 1226923337}
+  - component: {fileID: 1226923339}
   m_Layer: 5
   m_Name: Start Panel
   m_TagString: Untagged
@@ -2338,7 +2339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.43137255}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2363,6 +2364,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226923335}
   m_CullTransparentMesh: 1
+--- !u!114 &1226923339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226923335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fd8aff24d4c46919d4e50c35d754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoSelectButton: {fileID: 181817263}
 --- !u!1 &1304425029
 GameObject:
   m_ObjectHideFlags: 0
@@ -2505,9 +2519,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 1, g: 0.50980395, b: 0.4117647, a: 1}
+    m_PressedColor: {r: 1, g: 0.16666672, b: 0, a: 1}
+    m_SelectedColor: {r: 1, g: 0.50980395, b: 0.41176474, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3341,7 +3355,7 @@ GameObject:
   - component: {fileID: 1613041713}
   - component: {fileID: 1613041712}
   m_Layer: 5
-  m_Name: Text - Tutorial
+  m_Name: Text - Congratulations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3873,7 +3887,7 @@ GameObject:
   - component: {fileID: 1838282168}
   - component: {fileID: 1838282171}
   - component: {fileID: 1838282170}
-  - component: {fileID: 1838282169}
+  - component: {fileID: 1838282172}
   m_Layer: 5
   m_Name: Final Panel
   m_TagString: Untagged
@@ -3901,24 +3915,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1838282169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838282167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e8c3deae04647f43925a9d844b4217d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startMenu: {fileID: 1838282167}
-  hudGame: {fileID: 0}
-  maxScoreText: {fileID: 1585206238}
-  finalMenu: {fileID: 0}
-  playerScoreText: {fileID: 0}
-  maxScoreFinalText: {fileID: 0}
 --- !u!114 &1838282170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3957,6 +3953,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838282167}
   m_CullTransparentMesh: 1
+--- !u!114 &1838282172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838282167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fd8aff24d4c46919d4e50c35d754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoSelectButton: {fileID: 926342278}
 --- !u!1 &1873430170
 GameObject:
   m_ObjectHideFlags: 0
@@ -4354,7 +4363,7 @@ MonoBehaviour:
   m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_DeselectOnBackgroundClick: 1
+  m_DeselectOnBackgroundClick: 0
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
   m_ScrollDeltaPerTick: 6

@@ -57,9 +57,8 @@ public class GameMenu : MonoBehaviour
     private void UpdateFinalInfo()
     {
         playerScoreText.text += GameManager.Instance.Score;
-        //string maxScore = PlayerPrefs.GetInt("Max Score").ToString();
 
-        ////maxScoreFinalText.text += maxScore;
-        //maxScoreFinalText.text += "maxScore";
+        string maxScore = PlayerPrefs.GetInt("Max Score").ToString();
+        maxScoreFinalText.text += maxScore;
     }
 }
