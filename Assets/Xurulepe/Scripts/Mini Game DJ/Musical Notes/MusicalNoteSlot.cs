@@ -11,15 +11,19 @@ public class MusicalNoteSlot : MonoBehaviour
         if (colliderObject != null)
         {
             MusicalNote musicalNote = colliderObject.GetComponent<MusicalNote>();
-            MusicalNoteUI musicalNoteUI = colliderObject.GetComponent<MusicalNoteUI>();
+
+            if (musicalNote.WasHit)
+            {
+                return;
+            }
 
             musicalNote.SetHit();
 
             float distanceToNote = Vector2.Distance(transform.position, colliderObject.transform.position);
-
             GameManager.Instance.CalculateScore(distanceToNote);
 
-            musicalNoteUI.Blink();
+            MusicalNoteUI musicalNoteUI = colliderObject.GetComponent<MusicalNoteUI>();
+            musicalNoteUI.Blink();            
         }
         else
         {
