@@ -53,6 +53,13 @@ namespace MiniGame.TecInformatica
 
         private void OnDisable()
         {
+            image.DOKill();
+            
+            image.color = new Color(image.color.r, image.color.g, image.color.b, originalAlphaValue);
+        }
+
+        private void OnDestroy()
+        {
             inventorySlot.OnWrongItemPlaced -= BlinkImage;
         }
     }
