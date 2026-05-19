@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace MiniGame.TecInformatica
 {
@@ -16,6 +17,11 @@ namespace MiniGame.TecInformatica
         {
             startMenu.SetActive(false);
             tableObject.SetActive(true);
+        }
+
+        public void PlayAgain()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         public void Quit()
