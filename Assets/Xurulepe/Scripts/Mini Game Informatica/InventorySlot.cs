@@ -41,6 +41,7 @@ namespace MiniGame.TecInformatica
             }
 
             draggableItem.ParentAfterDrag = transform;
+            draggableItem.SetInventorySlot(this);
         }
 
         private void TryReplace(Transform currentObjectInSlot, DraggableItem draggableItem)

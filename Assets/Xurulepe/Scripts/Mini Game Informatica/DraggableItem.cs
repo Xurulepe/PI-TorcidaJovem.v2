@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -20,6 +21,7 @@ namespace MiniGame.TecInformatica
         private Vector3 originalScale;
         private Transform parentAfterDrag;
         private Tween moveTween;
+        private InventorySlot inventorySlot;
 
         public ItemType ItemType => itemType;
         public Transform ParentAfterDrag
@@ -35,6 +37,21 @@ namespace MiniGame.TecInformatica
         private void Awake()
         {
             originalScale = transform.localScale;
+            inventorySlot = transform.parent.GetComponent<InventorySlot>();
+        }
+
+        private void Start()
+        {
+            GameManager.Instance.OnPCChecked += CheckForCorrectSlot;
+            GameManager.Instance.IncreaseIncorrectItemCount();
+        }
+
+        private void CheckForCorrectSlot()
+        {
+            if (inventorySlot.RequiredItem != itemType)
+            {
+                GameManager.Instance.IncreaseIncorrectItemCount();
+            }
         }
 
         private void KillMoveTween()
@@ -120,6 +137,11 @@ namespace MiniGame.TecInformatica
             }
 
             return hasItemInAnySlot;
+        }
+
+        public void SetInventorySlot(InventorySlot inventorySlot)
+        {
+            this.inventorySlot = inventorySlot;
         }
     }
 }
