@@ -8,8 +8,10 @@ namespace MiniGame.TecInformatica
         public static GameManager Instance;
 
         private int incorrectItemCount = 0;
+        private Computer computerStatus;
 
         public int IncorrectItemCount => incorrectItemCount;
+        public Computer ComputerStatus => computerStatus;
 
         public event Action OnCheckPC;
         public event Action OnAfterPCChecked;
@@ -18,6 +20,8 @@ namespace MiniGame.TecInformatica
         private void Awake()
         {
             Instance = this;
+
+            computerStatus = new Computer();
         }
 
         public void CheckPC()
@@ -25,6 +29,14 @@ namespace MiniGame.TecInformatica
             incorrectItemCount = 0;
 
             OnCheckPC?.Invoke();
+
+            computerStatus.SetRequiredComponentText();
+            
+            // debug
+            //foreach (ItemType component in computerStatus.GetEquipedComponents())
+            //{
+            //    Debug.Log("Has " + component);
+            //}
 
             CheckForWin();
         }
@@ -42,6 +54,16 @@ namespace MiniGame.TecInformatica
         public void IncreaseIncorrectItemCount()
         {
             incorrectItemCount++;
+        }
+
+        public void AddComputerComponent(ItemType component)
+        {
+            computerStatus.AddEquipedComponent(component);
+        }
+
+        public void RemoveComputerComponent(ItemType component)
+        {
+            computerStatus.RemoveEquipedComponent(component);
         }
     }
 }

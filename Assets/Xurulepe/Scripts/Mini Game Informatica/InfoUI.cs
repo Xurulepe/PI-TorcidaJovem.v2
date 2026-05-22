@@ -28,6 +28,7 @@ namespace MiniGame.TecInformatica
             {
                 infoText.DOKill();
 
+                infoText.SetText(GameManager.Instance.ComputerStatus.RequiredComponentText);
                 infoText.color = new Color(infoText.color.r, infoText.color.g, infoText.color.b, 1f);
                 infoText.transform.localScale = Vector3.one;
 

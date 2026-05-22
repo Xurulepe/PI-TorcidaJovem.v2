@@ -91,6 +91,11 @@ namespace MiniGame.TecInformatica
             {
                 ManageSlots();
             }
+
+            if (parentAfterDrag.GetComponent<InventorySlot>().RequiredItem != itemType)
+            {
+                GameManager.Instance.RemoveComputerComponent(ItemType);
+            }
         }
 
         private void ManageSlots()
