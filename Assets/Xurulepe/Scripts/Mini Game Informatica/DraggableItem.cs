@@ -42,7 +42,7 @@ namespace MiniGame.TecInformatica
 
         private void Start()
         {
-            GameManager.Instance.OnPCChecked += CheckForCorrectSlot;
+            GameManager.Instance.OnCheckPC += CheckForCorrectSlot;
             GameManager.Instance.IncreaseIncorrectItemCount();
         }
 

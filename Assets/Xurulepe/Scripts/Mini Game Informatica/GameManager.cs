@@ -9,7 +9,10 @@ namespace MiniGame.TecInformatica
 
         private int incorrectItemCount = 0;
 
-        public event Action OnPCChecked;
+        public int IncorrectItemCount => incorrectItemCount;
+
+        public event Action OnCheckPC;
+        public event Action OnAfterPCChecked;
         public event Action OnGameFinished;
 
         private void Awake()
@@ -21,7 +24,7 @@ namespace MiniGame.TecInformatica
         {
             incorrectItemCount = 0;
 
-            OnPCChecked?.Invoke();
+            OnCheckPC?.Invoke();
 
             CheckForWin();
         }
@@ -32,6 +35,8 @@ namespace MiniGame.TecInformatica
             {
                 OnGameFinished?.Invoke();
             }
+
+            OnAfterPCChecked?.Invoke();
         }
 
         public void IncreaseIncorrectItemCount()
