@@ -20,6 +20,7 @@ namespace MiniGame.TecInformatica
 
             infoText.color = Color.red;
             infoText.SetText("Coloque todos os componentes corretamente.");
+            ResetText();
         }
 
         private void UpdateText()

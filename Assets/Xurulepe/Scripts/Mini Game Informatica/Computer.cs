@@ -48,22 +48,18 @@ namespace MiniGame.TecInformatica
             else if (!equipedComponentList.Contains(ItemType.RAM))
             {
                 requiredComponentText = "O computador precisa de memórias RAM.";
-
             }
             else if (!equipedComponentList.Contains(ItemType.GPU))
             {
                 requiredComponentText = "O computador não possui video integrado.";
-
             }
             else if (!equipedComponentList.Contains(ItemType.Cooler))
             {
                 requiredComponentText = "O computador precisa de um resfriamento na sua unidade de processamento.";
-
             }
             else
             {
                 requiredComponentText = "Nenhum problema encontrado.";
-
             }
         }
     }
