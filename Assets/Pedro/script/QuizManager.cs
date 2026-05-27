@@ -1,51 +1,35 @@
 using UnityEngine;
-using TMPro;
-using DG.Tweening;
+using UnityEngine.UI;
+using System.Collections;
+using System.Collections.Generic;
 
 public class QuizManager : MonoBehaviour
 {
-    [Header("UI")]
-    public TMP_Text questionText;
-    public TMP_Text feedbackText;
+    public List<QuestionAndAnswers> QnA;
+    public GameObject[] options;
+    public int currentQuestion;
 
-    [Header("Pergunta")]
-    [TextArea]
-    public string incompleteSentence = "____ is your name?";
+    public Text QuestionTxt;
 
-    public string correctAnswer = "What";
 
-    void Start()
+    private void Start()
     {
-        questionText.text = incompleteSentence;
-        feedbackText.text = "";
+        generateQuestion();
     }
 
-    public void CheckAnswer(string selectedAnswer)
+    void SetAnswers()
     {
-        if (selectedAnswer == correctAnswer)
+        for (int i=0; i < options.Length; i++)
         {
-            // Substitui o underline
-            questionText.text = incompleteSentence.Replace("____", selectedAnswer);
-
-            // Mantém a cor original
-            Color originalColor = questionText.color;
-
-            // Faz piscar por 2 segundos
-            questionText
-                .DOFade(0f, 0.2f)
-                .SetLoops(10, LoopType.Yoyo)
-                .OnComplete(() =>
-                {
-                    questionText.color = originalColor;
-                });
-
-            feedbackText.text = "Correto!";
-            feedbackText.color = Color.green;
+            options[i].transform.GetChild(0).GetComponent<Text>().text = QnA[currentQuestion].Answers[i];
         }
-        else
-        {
-            feedbackText.text = "Errado!";
-            feedbackText.color = Color.red;
-        }
+    }
+
+
+    void generateQuestion()
+    {
+        currentQuestion = Random.Range(0, QnA.Count);
+
+        QuestionTxt.text = QnA[currentQuestion].Question;
     }
 }
