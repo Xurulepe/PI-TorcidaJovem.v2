@@ -9,10 +9,12 @@ namespace MiniGame.TecInformatica
         [Header("Inventory Slots Settings")]
         [SerializeField] private bool requiresItem;
         [SerializeField] private ItemType requiredItem;
+        [SerializeField] private bool isTableSlot;
 
         private bool canDropItem = true;
 
         public ItemType RequiredItem => requiredItem;
+        public bool IsTableSlot => isTableSlot;
 
         public event Action OnWrongItemPlaced;
 

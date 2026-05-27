@@ -193,6 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiresItem: 1
   requiredItem: 4
+  isTableSlot: 0
 --- !u!114 &11920160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,6 +884,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: isTableSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: requiredItem
       value: 3
       objectReference: {fileID: 0}
@@ -892,7 +897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2665629603766972830, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Name
-      value: InventorySlot (4)
+      value: InventorySlot (RAM)
       objectReference: {fileID: 0}
     - target: {fileID: 6305479862471884160, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Pivot.x
@@ -1325,6 +1330,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: isTableSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: requiredItem
       value: 2
       objectReference: {fileID: 0}
@@ -1358,7 +1367,7 @@ PrefabInstance:
       objectReference: {fileID: 252079124}
     - target: {fileID: 2665629603766972830, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Name
-      value: InventorySlot
+      value: InventorySlot (CPU)
       objectReference: {fileID: 0}
     - target: {fileID: 5797593141877383773, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Name
@@ -2678,6 +2687,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: isTableSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: requiredItem
       value: 4
       objectReference: {fileID: 0}
@@ -2687,7 +2700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2665629603766972830, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Name
-      value: InventorySlot (3)
+      value: InventorySlot (GPU)
       objectReference: {fileID: 0}
     - target: {fileID: 6305479862471884160, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Pivot.x
@@ -3659,6 +3672,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: isTableSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: requiredItem
       value: 7
       objectReference: {fileID: 0}
@@ -3668,7 +3685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2665629603766972830, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Name
-      value: InventorySlot (2)
+      value: InventorySlot (Cooler)
       objectReference: {fileID: 0}
     - target: {fileID: 6305479862471884160, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Pivot.x
@@ -4216,6 +4233,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: isTableSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: requiredItem
       value: 5
       objectReference: {fileID: 0}
@@ -4225,7 +4246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2665629603766972830, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Name
-      value: InventorySlot (6)
+      value: InventorySlot (HD)
       objectReference: {fileID: 0}
     - target: {fileID: 2665629603766972830, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_IsActive
@@ -4438,6 +4459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiresItem: 1
   requiredItem: 3
+  isTableSlot: 0
 --- !u!114 &1572045288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4665,6 +4687,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: isTableSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: requiredItem
       value: 6
       objectReference: {fileID: 0}
@@ -4686,7 +4712,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2665629603766972830, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Name
-      value: InventorySlot (1)
+      value: InventorySlot (PSU)
       objectReference: {fileID: 0}
     - target: {fileID: 5797593141877383773, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Name
@@ -5800,6 +5826,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
+      propertyPath: isTableSlot
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65869470666949168, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: requiredItem
       value: 1
       objectReference: {fileID: 0}
@@ -5809,7 +5839,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2665629603766972830, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Name
-      value: InventorySlot (5)
+      value: InventorySlot (Motherboard)
       objectReference: {fileID: 0}
     - target: {fileID: 6305479862471884160, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Pivot.x

@@ -48,7 +48,7 @@ namespace MiniGame.TecInformatica
 
         private void CheckForCorrectSlot()
         {
-            if (inventorySlot.RequiredItem != itemType)
+            if (inventorySlot.IsTableSlot)
             {
                 GameManager.Instance.IncreaseIncorrectItemCount();
             }
