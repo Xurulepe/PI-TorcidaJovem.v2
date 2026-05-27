@@ -13,8 +13,8 @@ namespace MiniGame.TecInformatica
         [SerializeField] private bool shouldBlinkOnStart;
 
         private float originalAlphaValue;
-
         private InventorySlot inventorySlot;
+
 
         private void Start()
         {

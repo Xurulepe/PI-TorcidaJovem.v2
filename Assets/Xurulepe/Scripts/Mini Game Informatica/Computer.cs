@@ -10,6 +10,7 @@ namespace MiniGame.TecInformatica
 
         public string RequiredComponentText => requiredComponentText;
 
+
         public void AddEquipedComponent(ItemType component)
         {
             if (!equipedComponentList.Contains(component))

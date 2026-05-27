@@ -15,6 +15,7 @@ namespace MiniGame.TecInformatica
         [SerializeField] private float moveDuration = 0.05f;
         [SerializeField] private ItemType itemType;
 
+        [Header("Slots Settings")]
         [SerializeField] private bool hasSlots = false;
         [SerializeField] private List<GameObject> slotList = new List<GameObject>();
 
@@ -33,6 +34,7 @@ namespace MiniGame.TecInformatica
                     parentAfterDrag = value;
             }
         }
+
 
         private void Awake()
         {
@@ -92,7 +94,7 @@ namespace MiniGame.TecInformatica
                 ManageSlots();
             }
 
-            if (parentAfterDrag.GetComponent<InventorySlot>().RequiredItem != itemType)
+            if (inventorySlot.IsTableSlot)
             {
                 GameManager.Instance.RemoveComputerComponent(ItemType);
             }

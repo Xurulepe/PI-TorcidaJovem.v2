@@ -14,6 +14,7 @@ namespace MiniGame.TecInformatica
         [SerializeField] private float changeScaleDuration;
         [SerializeField] private float fadeToTransparentDuration;
 
+
         private void Start()
         {
             GameManager.Instance.OnAfterPCChecked += UpdateText;

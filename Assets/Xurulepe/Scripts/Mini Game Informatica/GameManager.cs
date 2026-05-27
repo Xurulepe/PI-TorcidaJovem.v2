@@ -5,7 +5,7 @@ namespace MiniGame.TecInformatica
 {
     public class GameManager : MonoBehaviour
     {
-        public static GameManager Instance;
+        public static GameManager Instance {  get; private set; }
 
         private int incorrectItemCount = 0;
         private Computer computerStatus;
@@ -31,7 +31,7 @@ namespace MiniGame.TecInformatica
             OnCheckPC?.Invoke();
 
             computerStatus.SetRequiredComponentText();
-            
+
             // debug
             //foreach (ItemType component in computerStatus.GetEquipedComponents())
             //{

@@ -18,6 +18,7 @@ namespace MiniGame.TecInformatica
 
         public event Action OnWrongItemPlaced;
 
+
         public void OnDrop(PointerEventData eventData)
         {
             GameObject dropped = eventData.pointerDrag;
