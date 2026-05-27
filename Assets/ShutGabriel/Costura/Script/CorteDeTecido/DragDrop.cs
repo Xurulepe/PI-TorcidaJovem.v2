@@ -19,16 +19,21 @@ public class DragDrop : MonoBehaviour,
 
     public static List<DragDrop> allItems =
         new List<DragDrop>();
+    CosturaController costuraController;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
-
+        costuraController = Camera.main.GetComponent<CosturaController>();
+        costuraController.OBJFora.Add(this);
+        costuraController.objFisicos.Add(this);
         startPosition = rectTransform.anchoredPosition;
 
         allItems.Add(this);
+
     }
+
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -61,12 +66,19 @@ public class DragDrop : MonoBehaviour,
 
             ResetAllItems();
         }
+        else
+        {
+            Debug.Log("Na area");
+            costuraController.OBJDentro.Add(this);
+            costuraController.OBJFora.Remove(this);
+        }
     }
 
     bool IsInsideArea()
     {
         Vector3[] areaCorners = new Vector3[4];
         dropArea.GetWorldCorners(areaCorners);
+       
 
         Vector3[] itemCorners = new Vector3[4];
         rectTransform.GetWorldCorners(itemCorners);
@@ -83,6 +95,7 @@ public class DragDrop : MonoBehaviour,
         }
 
         return true;
+        
     }
 
     bool HasCollision()
@@ -121,10 +134,18 @@ public class DragDrop : MonoBehaviour,
 
     void ResetAllItems()
     {
+        costuraController.OBJDentro.Clear();
+        costuraController.OBJFora.Clear();
+
+        for (int i = 0; i < costuraController.objFisicos.Count; i++)
+        {
+            costuraController.OBJFora.Add(costuraController.objFisicos[i]);
+        }
         foreach (DragDrop item in allItems)
         {
             item.rectTransform.anchoredPosition =
                 item.startPosition;
+            //item.costuraController.OBJFora.Add(this);
         }
     }
 }
