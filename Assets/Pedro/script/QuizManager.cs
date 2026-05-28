@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
 public class QuizManager : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class QuizManager : MonoBehaviour
     public GameObject[] options;
     public int currentQuestion;
 
-    public Text QuestionTxt;
+    public TMP_Text QuestionTxt;
 
 
     private void Start()
@@ -17,11 +18,23 @@ public class QuizManager : MonoBehaviour
         generateQuestion();
     }
 
+    public void correct()
+    {
+        QnA.RemoveAt(currentQuestion);
+        generateQuestion();
+    }
+
     void SetAnswers()
     {
         for (int i=0; i < options.Length; i++)
         {
+            options[i].GetComponent<AnswerScript>().isCorrect = false;
             options[i].transform.GetChild(0).GetComponent<Text>().text = QnA[currentQuestion].Answers[i];
+
+            if (QnA[currentQuestion].CorrectAnswer == i+1)
+            {
+                options[i].GetComponent<AnswerScript>().isCorrect = true;
+            }
         }
     }
 
@@ -31,5 +44,8 @@ public class QuizManager : MonoBehaviour
         currentQuestion = Random.Range(0, QnA.Count);
 
         QuestionTxt.text = QnA[currentQuestion].Question;
+        SetAnswers();
+
+        
     }
 }
