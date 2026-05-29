@@ -17,7 +17,7 @@ namespace MiniGame.TecInformatica
 
         private void Start()
         {
-            GameManager.Instance.OnAfterPCChecked += UpdateText;
+            GameManager.Instance.OnPCChecked += UpdateText;
 
             infoText.color = Color.red;
             infoText.SetText("Coloque todos os componentes corretamente.");
@@ -26,7 +26,7 @@ namespace MiniGame.TecInformatica
 
         private void UpdateText()
         {
-            if (GameManager.Instance.IncorrectItemCount != 0)
+            if (!GameManager.Instance.HasGameFinished)
             {
                 infoText.DOKill();
 
@@ -46,7 +46,7 @@ namespace MiniGame.TecInformatica
 
         private void OnDestroy()
         {
-            GameManager.Instance.OnAfterPCChecked -= UpdateText;            
+            GameManager.Instance.OnPCChecked -= UpdateText;            
         }
     }
 }

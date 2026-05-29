@@ -7,14 +7,16 @@ namespace MiniGame.TecInformatica
     {
         public static GameManager Instance {  get; private set; }
 
-        private int incorrectItemCount = 0;
-        private Computer computerStatus;
+        [Header("Computer Settings")]
+        [SerializeField] private int componentsCount = 6;
 
-        public int IncorrectItemCount => incorrectItemCount;
+        private Computer computerStatus;
+        private bool hasGameFinished;
+
+        public bool HasGameFinished => hasGameFinished;
         public Computer ComputerStatus => computerStatus;
 
-        public event Action OnCheckPC;
-        public event Action OnAfterPCChecked;
+        public event Action OnPCChecked;
         public event Action OnGameFinished;
 
         private void Awake()
@@ -26,10 +28,6 @@ namespace MiniGame.TecInformatica
 
         public void CheckPC()
         {
-            incorrectItemCount = 0;
-
-            OnCheckPC?.Invoke();
-
             computerStatus.SetRequiredComponentText();
 
             // debug
@@ -43,19 +41,17 @@ namespace MiniGame.TecInformatica
 
         private void CheckForWin()
         {
-            if (incorrectItemCount == 0)
+            int equipedComponents = computerStatus.GetEquipedComponentListCount();
+            if (equipedComponents == componentsCount)
             {
+                hasGameFinished = true;
+
                 OnGameFinished?.Invoke();
             }
 
-            OnAfterPCChecked?.Invoke();
+            OnPCChecked?.Invoke();
         }
-
-        public void IncreaseIncorrectItemCount()
-        {
-            incorrectItemCount++;
-        }
-
+                
         public void AddComputerComponent(ItemType component)
         {
             computerStatus.AddEquipedComponent(component);

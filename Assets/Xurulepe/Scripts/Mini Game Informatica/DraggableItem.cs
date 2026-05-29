@@ -42,20 +42,6 @@ namespace MiniGame.TecInformatica
             inventorySlot = transform.parent.GetComponent<InventorySlot>();
         }
 
-        private void Start()
-        {
-            GameManager.Instance.OnCheckPC += CheckForCorrectSlot;
-            GameManager.Instance.IncreaseIncorrectItemCount();
-        }
-
-        private void CheckForCorrectSlot()
-        {
-            if (inventorySlot.IsTableSlot)
-            {
-                GameManager.Instance.IncreaseIncorrectItemCount();
-            }
-        }
-
         private void KillMoveTween()
         {
             moveTween.Kill();

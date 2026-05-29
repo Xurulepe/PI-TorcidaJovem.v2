@@ -32,6 +32,11 @@ namespace MiniGame.TecInformatica
             return equipedComponentList;
         }
 
+        public int GetEquipedComponentListCount()
+        {
+            return equipedComponentList.Count;
+        }
+
         public void SetRequiredComponentText()
         {
             if (!equipedComponentList.Contains(ItemType.Motherboard))
