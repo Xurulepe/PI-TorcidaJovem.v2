@@ -32,7 +32,7 @@ namespace MiniGame.TecInformatica
 
             inventorySlotDict.TryGetValue(draggableItem.ItemType, out InventorySlot inventorySlotItem);
 
-            draggableItem.ParentAfterDrag = inventorySlotItem.transform;
+            draggableItem.SetParentAfterDrag(inventorySlotItem.transform);
             draggableItem.SetInventorySlot(inventorySlotItem);
         }
     }

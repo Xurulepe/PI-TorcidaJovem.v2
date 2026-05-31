@@ -43,17 +43,17 @@ namespace MiniGame.TecInformatica
                 return;
             }
 
-            draggableItem.ParentAfterDrag = transform;
+            draggableItem.SetParentAfterDrag(transform);
             draggableItem.SetInventorySlot(this);
 
-            GameManager.Instance.AddComputerComponent(requiredItem);
+            GameManager.Instance.EquipComputerComponent(requiredItem);
         }
 
         private void TryReplace(Transform currentObjectInSlot, DraggableItem draggableItem)
         {
             if (currentObjectInSlot.TryGetComponent(out DraggableItem currentItemInSlot))
             {
-                InventorySlot draggableItemSlot = draggableItem.ParentAfterDrag.GetComponent<InventorySlot>();
+                InventorySlot draggableItemSlot = draggableItem.InventorySlot;
 
                 if (draggableItemSlot.requiredItem == ItemType.None || draggableItemSlot.requiredItem == currentItemInSlot.ItemType)
                 {

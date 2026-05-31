@@ -25,21 +25,19 @@ namespace MiniGame.TecInformatica
         private InventorySlot inventorySlot;
 
         public ItemType ItemType => itemType;
-        public Transform ParentAfterDrag
-        {
-            get { return parentAfterDrag; }
-            set
-            {
-                if (value != null)
-                    parentAfterDrag = value;
-            }
-        }
+        public Transform ParentAfterDrag => parentAfterDrag;
+        public InventorySlot InventorySlot => inventorySlot;
 
 
         private void Awake()
         {
             originalScale = transform.localScale;
             inventorySlot = transform.parent.GetComponent<InventorySlot>();
+        }
+
+        private void Start()
+        {
+            GameManager.Instance.AddComputerComponent(this);
         }
 
         private void KillMoveTween()
@@ -88,7 +86,6 @@ namespace MiniGame.TecInformatica
 
         private void ManageSlots()
         {
-            InventorySlot inventorySlot = parentAfterDrag.GetComponent<InventorySlot>();
             bool itemTypeMatchesRequiredItem = inventorySlot.RequiredItem != ItemType.None && inventorySlot.RequiredItem == itemType;
 
             if (itemTypeMatchesRequiredItem || HasAnyItemInAnySlot())
@@ -130,6 +127,11 @@ namespace MiniGame.TecInformatica
             }
 
             return hasItemInAnySlot;
+        }
+
+        public void SetParentAfterDrag(Transform newParent)
+        {
+            parentAfterDrag = newParent;
         }
 
         public void SetInventorySlot(InventorySlot inventorySlot)

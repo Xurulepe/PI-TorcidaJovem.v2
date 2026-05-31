@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace MiniGame.TecInformatica
@@ -8,7 +9,7 @@ namespace MiniGame.TecInformatica
         public static GameManager Instance {  get; private set; }
 
         [Header("Computer Settings")]
-        [SerializeField] private int componentsCount = 6;
+        [SerializeField] private List<DraggableItem> computerCompenentList = new List<DraggableItem>();
 
         private Computer computerStatus;
         private bool hasGameFinished;
@@ -41,8 +42,8 @@ namespace MiniGame.TecInformatica
 
         private void CheckForWin()
         {
-            int equipedComponents = computerStatus.GetEquipedComponentListCount();
-            if (equipedComponents == componentsCount)
+            int equipedComponentCount = computerStatus.GetEquipedComponentListCount();
+            if (equipedComponentCount == computerCompenentList.Count)
             {
                 hasGameFinished = true;
 
@@ -51,8 +52,13 @@ namespace MiniGame.TecInformatica
 
             OnPCChecked?.Invoke();
         }
-                
-        public void AddComputerComponent(ItemType component)
+
+        public void AddComputerComponent(DraggableItem component)
+        {
+            computerCompenentList.Add(component);
+        }
+
+        public void EquipComputerComponent(ItemType component)
         {
             computerStatus.AddEquipedComponent(component);
         }
