@@ -156,6 +156,78 @@ public partial class @InputPlayer: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Ruan_fotograrfia"",
+            ""id"": ""9da91ec2-bdec-4a9f-be4d-7d362ee022c5"",
+            ""actions"": [
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""Value"",
+                    ""id"": ""a7258a34-d46b-4faa-8b32-953d640c125e"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""Teclado"",
+                    ""id"": ""156d601a-8d37-44ac-b885-fd7463c73ed8"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""ea7d8676-ca25-4599-8a59-0b94010a30c5"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""419385f6-5e2c-4808-9b55-88341d2761a9"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""ca3f888c-c18f-40dc-a249-0464592ae45e"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""85407dd3-bd38-4b34-ba1c-09f34148061f"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -164,11 +236,15 @@ public partial class @InputPlayer: IInputActionCollection2, IDisposable
         m_Ruan = asset.FindActionMap("Ruan", throwIfNotFound: true);
         m_Ruan_Move = m_Ruan.FindAction("Move", throwIfNotFound: true);
         m_Ruan_Action = m_Ruan.FindAction("Action", throwIfNotFound: true);
+        // Ruan_fotograrfia
+        m_Ruan_fotograrfia = asset.FindActionMap("Ruan_fotograrfia", throwIfNotFound: true);
+        m_Ruan_fotograrfia_Move = m_Ruan_fotograrfia.FindAction("Move", throwIfNotFound: true);
     }
 
     ~@InputPlayer()
     {
         UnityEngine.Debug.Assert(!m_Ruan.enabled, "This will cause a leak and performance issues, InputPlayer.Ruan.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_Ruan_fotograrfia.enabled, "This will cause a leak and performance issues, InputPlayer.Ruan_fotograrfia.Disable() has not been called.");
     }
 
     /// <summary>
@@ -347,6 +423,102 @@ public partial class @InputPlayer: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="RuanActions" /> instance referencing this action map.
     /// </summary>
     public RuanActions @Ruan => new RuanActions(this);
+
+    // Ruan_fotograrfia
+    private readonly InputActionMap m_Ruan_fotograrfia;
+    private List<IRuan_fotograrfiaActions> m_Ruan_fotograrfiaActionsCallbackInterfaces = new List<IRuan_fotograrfiaActions>();
+    private readonly InputAction m_Ruan_fotograrfia_Move;
+    /// <summary>
+    /// Provides access to input actions defined in input action map "Ruan_fotograrfia".
+    /// </summary>
+    public struct Ruan_fotograrfiaActions
+    {
+        private @InputPlayer m_Wrapper;
+
+        /// <summary>
+        /// Construct a new instance of the input action map wrapper class.
+        /// </summary>
+        public Ruan_fotograrfiaActions(@InputPlayer wrapper) { m_Wrapper = wrapper; }
+        /// <summary>
+        /// Provides access to the underlying input action "Ruan_fotograrfia/Move".
+        /// </summary>
+        public InputAction @Move => m_Wrapper.m_Ruan_fotograrfia_Move;
+        /// <summary>
+        /// Provides access to the underlying input action map instance.
+        /// </summary>
+        public InputActionMap Get() { return m_Wrapper.m_Ruan_fotograrfia; }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Enable()" />
+        public void Enable() { Get().Enable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.Disable()" />
+        public void Disable() { Get().Disable(); }
+        /// <inheritdoc cref="UnityEngine.InputSystem.InputActionMap.enabled" />
+        public bool enabled => Get().enabled;
+        /// <summary>
+        /// Implicitly converts an <see ref="Ruan_fotograrfiaActions" /> to an <see ref="InputActionMap" /> instance.
+        /// </summary>
+        public static implicit operator InputActionMap(Ruan_fotograrfiaActions set) { return set.Get(); }
+        /// <summary>
+        /// Adds <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <param name="instance">Callback instance.</param>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c> or <paramref name="instance"/> have already been added this method does nothing.
+        /// </remarks>
+        /// <seealso cref="Ruan_fotograrfiaActions" />
+        public void AddCallbacks(IRuan_fotograrfiaActions instance)
+        {
+            if (instance == null || m_Wrapper.m_Ruan_fotograrfiaActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_Ruan_fotograrfiaActionsCallbackInterfaces.Add(instance);
+            @Move.started += instance.OnMove;
+            @Move.performed += instance.OnMove;
+            @Move.canceled += instance.OnMove;
+        }
+
+        /// <summary>
+        /// Removes <see cref="InputAction.started"/>, <see cref="InputAction.performed"/> and <see cref="InputAction.canceled"/> callbacks provided via <param cref="instance" /> on all input actions contained in this map.
+        /// </summary>
+        /// <remarks>
+        /// Calling this method when <paramref name="instance" /> have not previously been registered has no side-effects.
+        /// </remarks>
+        /// <seealso cref="Ruan_fotograrfiaActions" />
+        private void UnregisterCallbacks(IRuan_fotograrfiaActions instance)
+        {
+            @Move.started -= instance.OnMove;
+            @Move.performed -= instance.OnMove;
+            @Move.canceled -= instance.OnMove;
+        }
+
+        /// <summary>
+        /// Unregisters <param cref="instance" /> and unregisters all input action callbacks via <see cref="Ruan_fotograrfiaActions.UnregisterCallbacks(IRuan_fotograrfiaActions)" />.
+        /// </summary>
+        /// <seealso cref="Ruan_fotograrfiaActions.UnregisterCallbacks(IRuan_fotograrfiaActions)" />
+        public void RemoveCallbacks(IRuan_fotograrfiaActions instance)
+        {
+            if (m_Wrapper.m_Ruan_fotograrfiaActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        /// <summary>
+        /// Replaces all existing callback instances and previously registered input action callbacks associated with them with callbacks provided via <param cref="instance" />.
+        /// </summary>
+        /// <remarks>
+        /// If <paramref name="instance" /> is <c>null</c>, calling this method will only unregister all existing callbacks but not register any new callbacks.
+        /// </remarks>
+        /// <seealso cref="Ruan_fotograrfiaActions.AddCallbacks(IRuan_fotograrfiaActions)" />
+        /// <seealso cref="Ruan_fotograrfiaActions.RemoveCallbacks(IRuan_fotograrfiaActions)" />
+        /// <seealso cref="Ruan_fotograrfiaActions.UnregisterCallbacks(IRuan_fotograrfiaActions)" />
+        public void SetCallbacks(IRuan_fotograrfiaActions instance)
+        {
+            foreach (var item in m_Wrapper.m_Ruan_fotograrfiaActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_Ruan_fotograrfiaActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    /// <summary>
+    /// Provides a new <see cref="Ruan_fotograrfiaActions" /> instance referencing this action map.
+    /// </summary>
+    public Ruan_fotograrfiaActions @Ruan_fotograrfia => new Ruan_fotograrfiaActions(this);
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Ruan" which allows adding and removing callbacks.
     /// </summary>
@@ -368,5 +540,20 @@ public partial class @InputPlayer: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnAction(InputAction.CallbackContext context);
+    }
+    /// <summary>
+    /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Ruan_fotograrfia" which allows adding and removing callbacks.
+    /// </summary>
+    /// <seealso cref="Ruan_fotograrfiaActions.AddCallbacks(IRuan_fotograrfiaActions)" />
+    /// <seealso cref="Ruan_fotograrfiaActions.RemoveCallbacks(IRuan_fotograrfiaActions)" />
+    public interface IRuan_fotograrfiaActions
+    {
+        /// <summary>
+        /// Method invoked when associated input action "Move" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnMove(InputAction.CallbackContext context);
     }
 }

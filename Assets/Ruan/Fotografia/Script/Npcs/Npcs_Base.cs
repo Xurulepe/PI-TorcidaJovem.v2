@@ -29,6 +29,7 @@ public class Npcs_Base : MonoBehaviour
     public SpriteRenderer sp_rendere;
     public Sprite Frente;
     public Sprite Costa;
+   
 
     [Header("Parede")]
     public LayerMask paredeLayer;
@@ -148,6 +149,8 @@ public class Npcs_Base : MonoBehaviour
 
     public void controleDirecaoSprite()
     {
+        sp_rendere.sortingOrder = Mathf.RoundToInt(-transform.position.y * 100);
+
         if (direcaoAtual.x < 0 && direcaoAtual.y < 0)
         {
             go_sprite.transform.localScale = new Vector2(-1, 1);

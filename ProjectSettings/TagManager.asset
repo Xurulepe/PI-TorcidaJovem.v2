@@ -44,5 +44,11 @@ TagManager:
   - name: Test
     uniqueID: 344198055
     locked: 0
+  - name: Tras
+    uniqueID: 212313797
+    locked: 0
+  - name: Frente
+    uniqueID: 3025655013
+    locked: 0
   m_RenderingLayers:
   - Default
