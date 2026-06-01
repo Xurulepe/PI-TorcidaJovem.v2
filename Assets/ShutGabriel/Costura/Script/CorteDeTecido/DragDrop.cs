@@ -11,15 +11,15 @@ public class DragDrop : MonoBehaviour,
     [Header("References")]
     [SerializeField] private Canvas canvas;
     [SerializeField] private RectTransform dropArea;
-
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
-
     private Vector2 startPosition;
-
     public static List<DragDrop> allItems =
         new List<DragDrop>();
     CosturaController costuraController;
+
+
+    public bool bloqueado = false;
 
     private void Awake()
     {
@@ -42,12 +42,19 @@ public class DragDrop : MonoBehaviour,
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (bloqueado)
+            return;
+
         canvasGroup.alpha = .6f;
         canvasGroup.blocksRaycasts = false;
+
     }
 
     public void OnDrag(PointerEventData eventData)
     {
+        if (bloqueado)
+            return;
+
         rectTransform.anchoredPosition +=
             eventData.delta / canvas.scaleFactor;
     }
@@ -66,11 +73,16 @@ public class DragDrop : MonoBehaviour,
 
             ResetAllItems();
         }
+
         else
         {
             Debug.Log("Na area");
-            costuraController.OBJDentro.Add(this);
+
+            if (!costuraController.OBJDentro.Contains(this))
+                costuraController.OBJDentro.Add(this);
+
             costuraController.OBJFora.Remove(this);
+            bloqueado = true;
         }
     }
 
@@ -145,7 +157,7 @@ public class DragDrop : MonoBehaviour,
         {
             item.rectTransform.anchoredPosition =
                 item.startPosition;
-            //item.costuraController.OBJFora.Add(this);
+            item.bloqueado = false;
         }
     }
 }
