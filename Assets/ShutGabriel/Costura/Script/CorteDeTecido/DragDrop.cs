@@ -21,6 +21,7 @@ public class DragDrop : MonoBehaviour,
 
     public bool bloqueado = false;
 
+    
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -82,6 +83,10 @@ public class DragDrop : MonoBehaviour,
                 costuraController.OBJDentro.Add(this);
 
             costuraController.OBJFora.Remove(this);
+            if (costuraController.OBJFora.Count == 0)
+            {
+                costuraController.botaoFinal.SetActive(true);
+            }
             bloqueado = true;
         }
     }
