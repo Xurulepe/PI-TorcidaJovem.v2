@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: 2ad7b4864cac59348852382733d6c2aa
+guid: c0a8ea32cc05cb5439a250a207d9a29c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4903383499706589352
-    second: Moldes_0
+      213: -7983000419840855204
+    second: moldesMOldososs_0
   - first:
-      213: -409168952573160199
-    second: Moldes_1
+      213: 596824129127749476
+    second: moldesMOldososs_1
   - first:
-      213: 6216320983298380039
-    second: Moldes_2
+      213: 3996136769027280574
+    second: moldesMOldososs_2
   - first:
-      213: -6784582056520502836
-    second: Moldes_3
+      213: 8199971703721028748
+    second: moldesMOldososs_3
+  - first:
+      213: -1776389979798356366
+    second: moldesMOldososs_4
+  - first:
+      213: 399962325637619706
+    second: moldesMOldososs_5
+  - first:
+      213: -1491425072347383540
+    second: moldesMOldososs_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,13 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Moldes_0
+      name: moldesMOldososs_0
       rect:
         serializedVersion: 2
-        x: 1004
-        y: 274
-        width: 241
-        height: 285
+        x: 1937
+        y: 4378
+        width: 19
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 85f1a7eafaea3fbb0800000000000000
-      internalID: -4903383499706589352
+      spriteID: c537795f96fa63190800000000000000
+      internalID: -7983000419840855204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moldes_1
+      name: moldesMOldososs_1
       rect:
         serializedVersion: 2
-        x: 1016
-        y: 559
-        width: 175
-        height: 178
+        x: 2432
+        y: 4378
+        width: 13
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f412c86107525af0800000000000000
-      internalID: -409168952573160199
+      spriteID: 4679a022268584800800000000000000
+      internalID: 596824129127749476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moldes_2
+      name: moldesMOldososs_2
       rect:
         serializedVersion: 2
-        x: 972
-        y: 156
-        width: 276
-        height: 216
+        x: 1830
+        y: 3650
+        width: 726
+        height: 554
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7019e43bffec44650800000000000000
-      internalID: 6216320983298380039
+      spriteID: ebe8fbf0831257730800000000000000
+      internalID: 3996136769027280574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Moldes_3
+      name: moldesMOldososs_3
       rect:
         serializedVersion: 2
-        x: 1055
-        y: 59
-        width: 145
-        height: 103
+        x: 6165
+        y: 3609
+        width: 483
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +212,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc13b9bd09258d1a0800000000000000
-      internalID: -6784582056520502836
+      spriteID: c8ceb88b1d62cc170800000000000000
+      internalID: 8199971703721028748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moldesMOldososs_4
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1355
+        width: 798
+        height: 896
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e3e8f99bef857e0800000000000000
+      internalID: -1776389979798356366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moldesMOldososs_5
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 2249
+        width: 999
+        height: 1186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff5b27bd93fc8500800000000000000
+      internalID: 399962325637619706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moldesMOldososs_6
+      rect:
+        serializedVersion: 2
+        x: 6271
+        y: 1355
+        width: 600
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c097f917cc46d4be0800000000000000
+      internalID: -1491425072347383540
       vertices: []
       indices: 
       edges: []
@@ -223,10 +298,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Moldes_0: -4903383499706589352
-      Moldes_1: -409168952573160199
-      Moldes_2: 6216320983298380039
-      Moldes_3: -6784582056520502836
+      moldesMOldososs_0: -7983000419840855204
+      moldesMOldososs_1: 596824129127749476
+      moldesMOldososs_2: 3996136769027280574
+      moldesMOldososs_3: 8199971703721028748
+      moldesMOldososs_4: -1776389979798356366
+      moldesMOldososs_5: 399962325637619706
+      moldesMOldososs_6: -1491425072347383540
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
