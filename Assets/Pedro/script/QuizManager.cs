@@ -27,6 +27,8 @@ public class QuizManager : MonoBehaviour
         if(_quest>=_perg.Count-1)
         {
             _quest = 0;
+
+              
         }
         else
         {
