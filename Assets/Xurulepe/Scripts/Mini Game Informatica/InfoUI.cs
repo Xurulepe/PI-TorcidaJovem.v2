@@ -19,13 +19,15 @@ namespace MiniGame.TecInformatica
         {
             GameManager.Instance.OnPCChecked += UpdateText;
 
-            infoText.color = Color.red;
+            infoText.color = Color.green;
             infoText.SetText("Coloque todos os componentes corretamente.");
-            ResetText();
+            infoText.DOFade(0f, fadeToTransparentDuration * 2);
         }
 
         private void UpdateText()
         {
+            infoText.color = Color.red;
+
             if (!GameManager.Instance.HasGameFinished)
             {
                 infoText.DOKill();

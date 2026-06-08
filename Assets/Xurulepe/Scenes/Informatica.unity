@@ -1660,7 +1660,7 @@ MonoBehaviour:
   infoText: {fileID: 1778918311}
   targetScale: 1.2
   changeScaleDuration: 0.25
-  fadeToTransparentDuration: 2.5
+  fadeToTransparentDuration: 5
 --- !u!224 &774190860 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6305479862471884160, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
@@ -5551,7 +5551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f85fdb57992f2e40aa92d69a796bcce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  componentsCount: 6
+  computerCompenentList: []
 --- !u!4 &2001740245
 Transform:
   m_ObjectHideFlags: 0
@@ -6585,7 +6585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8426903170615506301, guid: d98aa4c98e9249047896891a5092cee9, type: 3}
       propertyPath: onDragScaleMultiplier
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8426903170615506301, guid: d98aa4c98e9249047896891a5092cee9, type: 3}
       propertyPath: 'slotList.Array.data[1]'
