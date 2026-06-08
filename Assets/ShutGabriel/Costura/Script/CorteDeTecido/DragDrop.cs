@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class DragDrop : MonoBehaviour,
     IPointerDownHandler,
@@ -17,6 +18,11 @@ public class DragDrop : MonoBehaviour,
     public static List<DragDrop> allItems =
         new List<DragDrop>();
     CosturaController costuraController;
+    [SerializeField] Color corRecorte;
+    Image _image;
+    [SerializeField] Sprite _sprite;
+
+   
 
 
     public bool bloqueado = false;
@@ -24,6 +30,7 @@ public class DragDrop : MonoBehaviour,
     
     private void Awake()
     {
+        _image= GetComponent<Image>();
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         costuraController = Camera.main.GetComponent<CosturaController>();
@@ -32,8 +39,16 @@ public class DragDrop : MonoBehaviour,
         startPosition = rectTransform.anchoredPosition;
 
         allItems.Add(this);
+       // MudarImgff();
 
     }
+
+    public void MudarImgff()
+    {
+        _image.color = corRecorte;
+        _image.sprite = _sprite;
+    }
+
 
 
     public void OnPointerDown(PointerEventData eventData)

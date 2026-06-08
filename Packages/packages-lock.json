@@ -14,7 +14,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.aseprite": {
-      "version": "1.1.9",
+      "version": "1.1.11",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -149,7 +149,7 @@
         "com.unity.2d.spriteshape": "10.0.7",
         "com.unity.2d.tilemap": "1.0.0",
         "com.unity.2d.tilemap.extras": "4.1.0",
-        "com.unity.2d.aseprite": "1.1.9"
+        "com.unity.2d.aseprite": "1.1.11"
       }
     },
     "com.unity.ide.rider": {
@@ -193,6 +193,27 @@
       "dependencies": {
         "com.unity.modules.uielements": "1.0.0"
       }
+    },
+    "com.unity.muse.common": {
+      "version": "2.0.3",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.uielements": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0",
+        "com.unity.modules.unitywebrequesttexture": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.muse.sprite": {
+      "version": "1.1.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.muse.common": "2.0.3",
+        "com.unity.modules.uielements": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.nuget.mono-cecil": {
       "version": "1.11.4",

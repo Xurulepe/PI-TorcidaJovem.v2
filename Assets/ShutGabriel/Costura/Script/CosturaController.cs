@@ -18,4 +18,12 @@ public class CosturaController : MonoBehaviour
     {
         
     }
+
+    public void Recortes()
+    {
+        for (int i = 0; i < objFisicos.Count; i++)
+        {
+            objFisicos[i].MudarImgff();
+        }
+    }
 }

@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: c0a8ea32cc05cb5439a250a207d9a29c
+guid: bb49c0e96e79f0c47b55f82e612f47fb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7983000419840855204
-    second: moldesMOldososs_0
+      213: -3496126605455127091
+    second: moldes2_0
   - first:
-      213: 596824129127749476
-    second: moldesMOldososs_1
+      213: 9018228499873672058
+    second: moldes2_1
   - first:
-      213: 3996136769027280574
-    second: moldesMOldososs_2
+      213: 4431889746783461027
+    second: moldes2_2
   - first:
-      213: 8199971703721028748
-    second: moldesMOldososs_3
+      213: -7115137515934630219
+    second: moldes2_3
   - first:
-      213: -1776389979798356366
-    second: moldesMOldososs_4
+      213: 7318522350968980566
+    second: moldes2_4
   - first:
-      213: 399962325637619706
-    second: moldesMOldososs_5
+      213: 347648613519960200
+    second: moldes2_5
   - first:
-      213: -1491425072347383540
-    second: moldesMOldososs_6
+      213: 3507730138827993273
+    second: moldes2_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -93,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -131,7 +131,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: moldesMOldososs_0
+      name: moldes2_0
       rect:
         serializedVersion: 2
         x: 1937
@@ -146,14 +146,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c537795f96fa63190800000000000000
-      internalID: -7983000419840855204
+      spriteID: dcd0e0820634b7fc0800000000000000
+      internalID: -3496126605455127091
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moldesMOldososs_1
+      name: moldes2_1
       rect:
         serializedVersion: 2
         x: 2432
@@ -168,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4679a022268584800800000000000000
-      internalID: 596824129127749476
+      spriteID: a7b264e3a0f272d70800000000000000
+      internalID: 9018228499873672058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moldesMOldososs_2
+      name: moldes2_2
       rect:
         serializedVersion: 2
         x: 1830
@@ -190,14 +190,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ebe8fbf0831257730800000000000000
-      internalID: 3996136769027280574
+      spriteID: 3ae59b85e3c318d30800000000000000
+      internalID: 4431889746783461027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moldesMOldososs_3
+      name: moldes2_3
       rect:
         serializedVersion: 2
         x: 6165
@@ -212,14 +212,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8ceb88b1d62cc170800000000000000
-      internalID: 8199971703721028748
+      spriteID: 5be39aa7024f14d90800000000000000
+      internalID: -7115137515934630219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moldesMOldososs_4
+      name: moldes2_4
       rect:
         serializedVersion: 2
         x: 1638
@@ -234,14 +234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27e3e8f99bef857e0800000000000000
-      internalID: -1776389979798356366
+      spriteID: 65443429d4d909560800000000000000
+      internalID: 7318522350968980566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moldesMOldososs_5
+      name: moldes2_5
       rect:
         serializedVersion: 2
         x: 3780
@@ -256,14 +256,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aff5b27bd93fc8500800000000000000
-      internalID: 399962325637619706
+      spriteID: 888a383729813d400800000000000000
+      internalID: 347648613519960200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: moldesMOldososs_6
+      name: moldes2_6
       rect:
         serializedVersion: 2
         x: 6271
@@ -278,8 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c097f917cc46d4be0800000000000000
-      internalID: -1491425072347383540
+      spriteID: 9b036ccf9f5fda030800000000000000
+      internalID: 3507730138827993273
       vertices: []
       indices: 
       edges: []
@@ -298,13 +298,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      moldesMOldososs_0: -7983000419840855204
-      moldesMOldososs_1: 596824129127749476
-      moldesMOldososs_2: 3996136769027280574
-      moldesMOldososs_3: 8199971703721028748
-      moldesMOldososs_4: -1776389979798356366
-      moldesMOldososs_5: 399962325637619706
-      moldesMOldososs_6: -1491425072347383540
+      moldes2_0: -3496126605455127091
+      moldes2_1: 9018228499873672058
+      moldes2_2: 4431889746783461027
+      moldes2_3: -7115137515934630219
+      moldes2_4: 7318522350968980566
+      moldes2_5: 347648613519960200
+      moldes2_6: 3507730138827993273
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

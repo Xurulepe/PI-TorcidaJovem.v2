@@ -1149,7 +1149,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 518377463}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1084330160}
+        m_TargetAssemblyTypeName: CosturaController, Assembly-CSharp
+        m_MethodName: Recortes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &518377463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2712,6 +2724,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1711209857}
   dropArea: {fileID: 1775914938}
+  corRecorte: {r: 0.7764706, g: 0.78039217, b: 0.7764706, a: 1}
+  _sprite: {fileID: 7318522350968980566, guid: bb49c0e96e79f0c47b55f82e612f47fb, type: 3}
   bloqueado: 0
 --- !u!114 &1281578708
 MonoBehaviour:
@@ -2816,6 +2830,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1711209857}
   dropArea: {fileID: 1775914938}
+  corRecorte: {r: 0.7764706, g: 0.78039217, b: 0.7764706, a: 1}
+  _sprite: {fileID: 347648613519960200, guid: bb49c0e96e79f0c47b55f82e612f47fb, type: 3}
   bloqueado: 0
 --- !u!114 &1325478558
 MonoBehaviour:
@@ -2908,6 +2924,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1711209857}
   dropArea: {fileID: 1775914938}
+  corRecorte: {r: 0.7764706, g: 0.78039217, b: 0.7764706, a: 1}
+  _sprite: {fileID: 4431889746783461027, guid: bb49c0e96e79f0c47b55f82e612f47fb, type: 3}
   bloqueado: 0
 --- !u!114 &1364724056
 MonoBehaviour:
@@ -4502,6 +4520,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1711209857}
   dropArea: {fileID: 1775914938}
+  corRecorte: {r: 0.7764706, g: 0.78039217, b: 0.7764706, a: 1}
+  _sprite: {fileID: 3507730138827993273, guid: bb49c0e96e79f0c47b55f82e612f47fb, type: 3}
   bloqueado: 0
 --- !u!114 &1939442093
 MonoBehaviour:
@@ -4832,6 +4852,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1711209857}
   dropArea: {fileID: 1775914938}
+  corRecorte: {r: 0.7764706, g: 0.78039217, b: 0.7764706, a: 1}
+  _sprite: {fileID: -7115137515934630219, guid: bb49c0e96e79f0c47b55f82e612f47fb, type: 3}
   bloqueado: 0
 --- !u!114 &2089073570
 MonoBehaviour:
