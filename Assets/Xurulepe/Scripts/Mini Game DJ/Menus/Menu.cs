@@ -12,4 +12,14 @@ public class Menu : MonoBehaviour
             autoSelectButton.Select(); 
         }
     }
+
+    public void Open()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public void Close()
+    {
+        gameObject.SetActive(false);
+    }
 }
