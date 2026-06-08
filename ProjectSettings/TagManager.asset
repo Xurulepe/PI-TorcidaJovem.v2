@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Pequenino
   layers:
   - Default
   - TransparentFX
@@ -49,6 +50,9 @@ TagManager:
     locked: 0
   - name: Frente
     uniqueID: 3025655013
+    locked: 0
+  - name: Ui
+    uniqueID: 2084660681
     locked: 0
   m_RenderingLayers:
   - Default

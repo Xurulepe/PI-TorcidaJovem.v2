@@ -55,4 +55,12 @@ public class ControleCameraFoto : MonoBehaviour
             );
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Pequenino"))
+        {
+            print(collision.gameObject.name); 
+        }
+    }
 }
