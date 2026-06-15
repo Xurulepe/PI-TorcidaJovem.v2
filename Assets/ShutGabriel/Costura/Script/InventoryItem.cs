@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -7,6 +8,9 @@ public class InventoryItem : MonoBehaviour, IPointerClickHandler
     public CanvasGroup canvasGroup  { get; private set; }
     public Item myItem { get; set; }
     public InventorySlot activeSlot { get; set; }
+
+    public static Inventory singleton;
+    [SerializeField] InventorySlot[] slots;
 
     void Awake()
     {

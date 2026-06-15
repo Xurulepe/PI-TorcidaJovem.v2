@@ -21,11 +21,10 @@ public class DragDrop : MonoBehaviour,
     [SerializeField] Color corRecorte;
     Image _image;
     [SerializeField] Sprite _sprite;
-
-   
-
-
     public bool bloqueado = false;
+
+    [Header("Inventário config")]
+    [SerializeField] private Item itemInventario;
 
     
     private void Awake()
@@ -47,6 +46,12 @@ public class DragDrop : MonoBehaviour,
     {
         _image.color = corRecorte;
         _image.sprite = _sprite;
+
+        AdicionaeInventario();
+    }
+    void AdicionaeInventario()
+    {
+        Inventory.singleton.AddItem(itemInventario);
     }
 
 
