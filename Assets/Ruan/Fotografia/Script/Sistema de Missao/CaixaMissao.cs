@@ -15,5 +15,6 @@ public class CaixaMissao : MonoBehaviour
     public void DesativarCaixa()
     {
         transform.gameObject.SetActive(false);
+        GerenciadorFotografia.instance.inFoto = false;
     }
 }

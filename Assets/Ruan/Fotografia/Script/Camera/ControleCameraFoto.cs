@@ -22,7 +22,24 @@ public class ControleCameraFoto : MonoBehaviour
             usandoControle = true;
     }
 
+    public void OnFoto(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            GerenciadorFotografia.instance.ExecutarFoto();        
+        }
+    }
+
     void Update()
+    {
+        if (GerenciadorFotografia.instance.inFoto == false)
+        {
+            ControleCamera();
+        }
+        
+    }
+
+    public void ControleCamera()
     {
         // Detecta movimento do mouse
         if (Mouse.current != null &&
@@ -60,7 +77,15 @@ public class ControleCameraFoto : MonoBehaviour
     {
         if (collision.CompareTag("Pequenino"))
         {
-            print(collision.gameObject.name); 
+            GerenciadorFotografia.instance.npcSelecionado = collision.gameObject;
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Pequenino"))
+        {
+            GerenciadorFotografia.instance.npcSelecionado = null;
         }
     }
 }

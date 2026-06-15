@@ -35,6 +35,10 @@ public class Npcs_Base : MonoBehaviour
     public LayerMask paredeLayer;
     public float distanciaParede = 0.5f;
 
+    [Header("controleMissao")]
+    public bool ObjMissao;
+    public int QualMissao;
+
     void Start()
     {
         EscolherNovaDirecao();
