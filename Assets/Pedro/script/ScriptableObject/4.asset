@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3030d7d76a199f94393ea4671b819f36, type: 3}
-  m_Name: Pergunta1 3
+  m_Name: 4
   m_EditorClassIdentifier: 
-  _pergunta: pergunta4
+  _pergunta: They ___ at school yesterday
   _respostas:
-  - 3234
-  - 343432
-  - 89
-  - 324
-  _correct: 5
+  - was
+  - were
+  - are
+  - is
+  _correct: 1

@@ -549,7 +549,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 598191688}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851633095}
+        m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
+        m_MethodName: correct
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &598191688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -984,27 +996,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2f3e5477e60ce42a462c63c63ae7a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  QnA:
-  - Question: ___ IS YOUR NAME ?
-    Answers:
-    - WHAT
-    - WHO
-    - WHERE
-    - WHICH
-    CorrectAnswer: 0
-  - Question: 
-    Answers: []
-    CorrectAnswer: 0
-  - Question: 
-    Answers: []
-    CorrectAnswer: 0
   _perg:
   - {fileID: 11400000, guid: 43e68bf844996114fa010a2b7b8d0f3a, type: 2}
+  - {fileID: 11400000, guid: adc2616a3b8f4654aac086f5da7362fb, type: 2}
+  - {fileID: 11400000, guid: 012099082fe27fa438844002f6b22119, type: 2}
+  - {fileID: 11400000, guid: b41626c8e1629f14aa80d639bd503dfa, type: 2}
   options:
   - {fileID: 814724119}
   - {fileID: 163432115}
   - {fileID: 318608057}
   - {fileID: 968947961}
+  _quest: 0
   currentQuestion: 0
   QuestionTxt: {fileID: 1576853803}
 --- !u!1 &923047910
@@ -1089,7 +1091,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 923047913}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851633095}
+        m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
+        m_MethodName: correct
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &923047913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1346,7 +1360,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1010789257}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851633095}
+        m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
+        m_MethodName: correct
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1010789257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1648,7 +1674,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1318715230}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 851633095}
+        m_TargetAssemblyTypeName: QuizManager, Assembly-CSharp
+        m_MethodName: correct
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1318715230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1744,7 +1782,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ____ IS YOUR NAME ?
+  m_text: .
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

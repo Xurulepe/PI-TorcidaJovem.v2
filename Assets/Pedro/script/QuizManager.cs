@@ -6,7 +6,6 @@ using TMPro;
 
 public class QuizManager : MonoBehaviour
 {
-    public List<QuestionAndAnswers> QnA;
     public List<perguntas> _perg = new List<perguntas>();
     public TextMeshProUGUI[] options;
     public int _quest;
@@ -33,8 +32,9 @@ public class QuizManager : MonoBehaviour
         else
         {
             _quest++;
-            generateQuestion();
+           
         }
+        generateQuestion();
 
     }
 
