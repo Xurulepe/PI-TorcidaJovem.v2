@@ -26,6 +26,8 @@ public class ControleCameraFoto : MonoBehaviour
     {
         if (context.started)
         {
+            if (GerenciadorFotografia.instance.inFoto == true) return;
+
             GerenciadorFotografia.instance.ExecutarFoto();        
         }
     }
@@ -34,7 +36,7 @@ public class ControleCameraFoto : MonoBehaviour
     {
         if (GerenciadorFotografia.instance.inFoto == false)
         {
-            ControleCamera();
+            ControleCamera();      
         }
         
     }

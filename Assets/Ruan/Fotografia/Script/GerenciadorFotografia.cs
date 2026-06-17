@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class GerenciadorFotografia : MonoBehaviour
@@ -20,8 +21,7 @@ public class GerenciadorFotografia : MonoBehaviour
         {
             instance = this;
         }
-    }    
-
+    }   
 
     public void ExecutarFoto()
     {
@@ -34,7 +34,8 @@ public class GerenciadorFotografia : MonoBehaviour
                 {
                     if (missao[npcSelecionado.GetComponent<Npcs_Base>().QualMissao].activeInHierarchy == true)
                     {
-                        //missao.[npcSelecionado.GetComponent<Npcs_Base>().QualMissao].SetActive(true);
+                        StartCoroutine(AbrirFoto());
+                        //missao[npcSelecionado.GetComponent<Npcs_Base>().QualMissao].GetComponent<Animator>().SetTrigger("Sair");
 
                         inFoto = true;
                     }
@@ -42,4 +43,18 @@ public class GerenciadorFotografia : MonoBehaviour
             }
         }        
     }
+
+    public void ExecutarSaidaFoto()
+    {
+        animaDiafragma.SetTrigger("Foto");
+
+    }
+
+    public IEnumerator AbrirFoto()
+    {
+        yield return new WaitForSeconds(0.28f);
+        Fotos[npcSelecionado.GetComponent<Npcs_Base>().QualMissao].SetActive(true);
+
+    }
 }
+

@@ -46,28 +46,32 @@ public class Npcs_Base : MonoBehaviour
 
     void Update()
     {
-        timer -= Time.deltaTime;
-
-        DetectarParede();
-
-        if (timer <= 0)
+        if (GerenciadorFotografia.instance.inFoto == false)
         {
-            if (parado)
-            {
-                EscolherNovaDirecao();
-            }
-            else
-            {
-                FicarParado();
-            }
-        }
+            timer -= Time.deltaTime;
 
-        if (!parado)
-        {
-            Mover();
-        }
+            DetectarParede();
 
-        ControleSprite();
+            if (timer <= 0)
+            {
+                if (parado)
+                {
+                    EscolherNovaDirecao();
+                }
+                else
+                {
+                    FicarParado();
+                }
+            }
+
+            if (!parado)
+            {
+                Mover();
+            }
+
+            ControleSprite();
+        }
+        
     }
 
     #region Controle Movimento
