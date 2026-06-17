@@ -23,10 +23,8 @@ public class DragDrop : MonoBehaviour,
     [SerializeField] Sprite _sprite;
     public bool bloqueado = false;
 
-    
-    
 
-    
+
     private void Awake()
     {
         _image= GetComponent<Image>();
