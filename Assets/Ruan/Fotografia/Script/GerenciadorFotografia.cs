@@ -47,7 +47,6 @@ public class GerenciadorFotografia : MonoBehaviour
     public void ExecutarSaidaFoto()
     {
         animaDiafragma.SetTrigger("Foto");
-
     }
 
     public IEnumerator AbrirFoto()

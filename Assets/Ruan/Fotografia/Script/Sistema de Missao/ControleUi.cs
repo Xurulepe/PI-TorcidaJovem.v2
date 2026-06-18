@@ -22,6 +22,10 @@ public class ControleUi : MonoBehaviour
         yield return new WaitForSeconds(0.28f);
 
         GerenciadorFotografia.instance.Fotos[GerenciadorFotografia.instance.npcSelecionado.GetComponent<Npcs_Base>().QualMissao].SetActive(false);
+        
+        yield return new WaitForSeconds(0.28f);
+        GerenciadorFotografia.instance.missao[GerenciadorFotografia.instance.npcSelecionado.GetComponent<Npcs_Base>().QualMissao].GetComponent<Animator>().SetTrigger("Sair");
+
         GerenciadorFotografia.instance.inFoto = false;
     }
 }
