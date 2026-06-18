@@ -1302,8 +1302,8 @@ MonoBehaviour:
   inFoto: 0
   missao:
   - {fileID: 1768948622}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1481240762}
+  - {fileID: 1012274314}
   Fotos:
   - {fileID: 132680242}
   - {fileID: 132680242}
