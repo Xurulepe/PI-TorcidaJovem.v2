@@ -22,4 +22,9 @@ public class Menu : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+
+    public void SetNewAutoSelectButton(Button newAutoSelectButton)
+    {
+        autoSelectButton = newAutoSelectButton;
+    }
 }

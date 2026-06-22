@@ -394,6 +394,7 @@ GameObject:
   - component: {fileID: 170308996}
   - component: {fileID: 170308995}
   - component: {fileID: 170308994}
+  - component: {fileID: 170308997}
   m_Layer: 5
   m_Name: BT - Back
   m_TagString: Untagged
@@ -516,6 +517,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170308992}
   m_CullTransparentMesh: 1
+--- !u!114 &170308997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170308992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &170592896
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +574,7 @@ MonoBehaviour:
   m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_DeselectOnBackgroundClick: 1
+  m_DeselectOnBackgroundClick: 0
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
   m_ScrollDeltaPerTick: 6
@@ -872,6 +885,7 @@ GameObject:
   - component: {fileID: 245415222}
   - component: {fileID: 245415221}
   - component: {fileID: 245415220}
+  - component: {fileID: 245415223}
   m_Layer: 5
   m_Name: BT - Quit
   m_TagString: Untagged
@@ -994,6 +1008,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245415218}
   m_CullTransparentMesh: 1
+--- !u!114 &245415223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245415218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &245731490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,6 +1182,7 @@ GameObject:
   - component: {fileID: 355692900}
   - component: {fileID: 355692899}
   - component: {fileID: 355692898}
+  - component: {fileID: 355692901}
   m_Layer: 5
   m_Name: BT - Back
   m_TagString: Untagged
@@ -1278,6 +1305,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355692896}
   m_CullTransparentMesh: 1
+--- !u!114 &355692901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355692896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &381054431
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,6 +2182,7 @@ GameObject:
   - component: {fileID: 761130331}
   - component: {fileID: 761130330}
   - component: {fileID: 761130329}
+  - component: {fileID: 761130332}
   m_Layer: 5
   m_Name: BT - Play
   m_TagString: Untagged
@@ -2265,6 +2305,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761130327}
   m_CullTransparentMesh: 1
+--- !u!114 &761130332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761130327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &770897056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,6 +2495,7 @@ GameObject:
   - component: {fileID: 852209762}
   - component: {fileID: 852209761}
   - component: {fileID: 852209760}
+  - component: {fileID: 852209763}
   m_Layer: 5
   m_Name: BT - Sounds
   m_TagString: Untagged
@@ -2565,6 +2618,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852209758}
   m_CullTransparentMesh: 1
+--- !u!114 &852209763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852209758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &900535761
 GameObject:
   m_ObjectHideFlags: 0
@@ -3652,6 +3717,7 @@ GameObject:
   - component: {fileID: 1236691079}
   - component: {fileID: 1236691078}
   - component: {fileID: 1236691077}
+  - component: {fileID: 1236691080}
   m_Layer: 5
   m_Name: BT - Settings
   m_TagString: Untagged
@@ -3736,6 +3802,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1332588093}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SetNewAutoSelectButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1236691077}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1236691078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3774,6 +3852,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236691075}
   m_CullTransparentMesh: 1
+--- !u!114 &1236691080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236691075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1273555694
 GameObject:
   m_ObjectHideFlags: 0
@@ -4899,6 +4989,7 @@ GameObject:
   - component: {fileID: 1701560331}
   - component: {fileID: 1701560330}
   - component: {fileID: 1701560329}
+  - component: {fileID: 1701560332}
   m_Layer: 5
   m_Name: BT - Back
   m_TagString: Untagged
@@ -5021,6 +5112,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701560327}
   m_CullTransparentMesh: 1
+--- !u!114 &1701560332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701560327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1705407383
 GameObject:
   m_ObjectHideFlags: 0
@@ -5108,6 +5211,7 @@ GameObject:
   - component: {fileID: 1709598206}
   - component: {fileID: 1709598205}
   - component: {fileID: 1709598204}
+  - component: {fileID: 1709598207}
   m_Layer: 5
   m_Name: BT - Credits
   m_TagString: Untagged
@@ -5192,6 +5296,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1332588093}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SetNewAutoSelectButton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1709598204}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1709598205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5230,6 +5346,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709598202}
   m_CullTransparentMesh: 1
+--- !u!114 &1709598207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709598202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1715828084
 GameObject:
   m_ObjectHideFlags: 0
