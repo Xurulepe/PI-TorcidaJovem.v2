@@ -122,33 +122,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jogo dj_left
+      name: Arrow left
       rect:
         serializedVersion: 2
-        x: 429
-        y: 648
-        width: 122
-        height: 134
+        x: 430
+        y: 649
+        width: 120
+        height: 132
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cc137a599a8e52580800000000000000
-      internalID: -8852413677468962356
+      spriteID: dc5b46d374734c04fb1a99a76df4e3cb
+      internalID: -1287850493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jogo dj_down
+      name: Arrow down
       rect:
         serializedVersion: 2
-        x: 560
-        y: 648
+        x: 561
+        y: 649
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7aaeb8036cd694fb167f6cf64335c7
+      internalID: 1635364183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow up
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 652
+        width: 124
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a66577b92b87e45ace89959e823ec5
+      internalID: 899888210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow right
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 638
+        width: 137
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d8020a10009364fa62ba71884b9ba0
+      internalID: 2053560369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: left colored
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 380
+        width: 120
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9ef236cddb03e42a4fb469f60d4e9b
+      internalID: 177052849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: down colored
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 380
         width: 130
         height: 130
       alignment: 0
@@ -157,54 +245,54 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e53389b959f624d80800000000000000
-      internalID: -8267923277547556002
+      spriteID: fc218fe2d41c897409b71c6b2d94b638
+      internalID: 1699709692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jogo dj_up
+      name: up colored
       rect:
         serializedVersion: 2
-        x: 695
-        y: 651
-        width: 126
-        height: 125
+        x: 696
+        y: 383
+        width: 124
+        height: 123
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9e27d975677824d30800000000000000
-      internalID: 4414239527122334441
+      spriteID: a387b4998c3a57d42911345895ae5f70
+      internalID: 2127336633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jogo dj_right
+      name: right colored
       rect:
         serializedVersion: 2
-        x: 821
-        y: 637
-        width: 139
-        height: 143
+        x: 822
+        y: 369
+        width: 137
+        height: 141
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1346f6fda2c58aba0800000000000000
-      internalID: -6077506357929483215
+      spriteID: a78c88e2d5e5d3b43ade9572ad8aed1a
+      internalID: -805045158
       vertices: []
       indices: 
       edges: []
@@ -223,10 +311,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Jogo dj_down: -8267923277547556002
-      Jogo dj_left: -8852413677468962356
-      Jogo dj_right: -6077506357929483215
-      Jogo dj_up: 4414239527122334441
+      Arrow down: 1635364183
+      Arrow left: -1287850493
+      Arrow right: 2053560369
+      Arrow up: 899888210
+      Jogo dj_5: -1168056987
+      Jogo dj_6: 118084877
+      Jogo dj_7: -1928220893
+      Jogo dj_8: -904284977
+      down colored: 1699709692
+      left colored: 177052849
+      right colored: -805045158
+      up colored: 2127336633
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
