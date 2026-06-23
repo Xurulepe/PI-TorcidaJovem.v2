@@ -270,7 +270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &20718630
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4554,6 +4554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startMenu: {fileID: 1226923335}
   hudGame: {fileID: 525643477}
+  musicalNotesContainer: {fileID: 20718629}
   maxScoreText: {fileID: 2060784535}
   finalMenu: {fileID: 1838282167}
   playerScoreText: {fileID: 43160183}

@@ -7,6 +7,7 @@ public class GameMenu : MonoBehaviour
     [Header("Start Menu Settings")]
     [SerializeField] private GameObject startMenu;
     [SerializeField] private GameObject hudGame;
+    [SerializeField] private GameObject musicalNotesContainer;
     [SerializeField] private TextMeshProUGUI maxScoreText;
 
     [Header("Final Menu Settings")]
@@ -30,6 +31,7 @@ public class GameMenu : MonoBehaviour
     {
         startMenu.SetActive(false);
         hudGame.SetActive(true);
+        musicalNotesContainer.SetActive(true);
 
         GameManager.Instance.StartGame();
     }
@@ -48,6 +50,7 @@ public class GameMenu : MonoBehaviour
     {
         finalMenu.SetActive(true);
         hudGame.SetActive(false); 
+        musicalNotesContainer.SetActive(false);
 
         Debug.Log(PlayerPrefs.GetInt("Max Score"));
 
