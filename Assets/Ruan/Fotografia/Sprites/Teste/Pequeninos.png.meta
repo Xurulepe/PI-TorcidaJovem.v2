@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: ed0ef963cb504db45b6ccd3d9f1251f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8533262615198760656
+    second: Pequeninos_0
+  - first:
+      213: -652238185964545862
+    second: Pequeninos_1
+  - first:
+      213: 7941299959583824597
+    second: Pequeninos_2
+  - first:
+      213: -1667409433655440915
+    second: Pequeninos_3
+  - first:
+      213: 5884004319872550021
+    second: Pequeninos_4
+  - first:
+      213: 3868261083967910234
+    second: Pequeninos_5
+  - first:
+      213: 7531420150087111904
+    second: Pequeninos_6
+  - first:
+      213: -5267085063012291160
+    second: Pequeninos_7
+  - first:
+      213: -8552065769321038554
+    second: Pequeninos_8
+  - first:
+      213: -5178945252610615819
+    second: Pequeninos_9
+  - first:
+      213: -1770997742205043488
+    second: Pequeninos_10
+  - first:
+      213: -3989029170908013685
+    second: Pequeninos_11
+  - first:
+      213: -675714565581391710
+    second: Pequeninos_12
+  - first:
+      213: 7425996094194054721
+    second: Pequeninos_13
+  - first:
+      213: -1203214721650094389
+    second: Pequeninos_14
+  - first:
+      213: -3778359156345727020
+    second: Pequeninos_15
+  - first:
+      213: -8498875151682335412
+    second: Pequeninos_16
+  - first:
+      213: -866282319875482987
+    second: Pequeninos_17
+  - first:
+      213: -6556011496320701459
+    second: Pequeninos_18
+  - first:
+      213: -8114718043166507849
+    second: Pequeninos_19
+  - first:
+      213: 2440011855659379100
+    second: Pequeninos_20
+  - first:
+      213: 1911914539050857448
+    second: Pequeninos_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pequeninos_0
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1560
+        width: 240
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03105f5dcd2c39980800000000000000
+      internalID: -8533262615198760656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_1
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1711
+        width: 224
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab853a853d8c2f6f0800000000000000
+      internalID: -652238185964545862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_2
+      rect:
+        serializedVersion: 2
+        x: 1412
+        y: 1799
+        width: 83
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da51d90d3a253e60800000000000000
+      internalID: 7941299959583824597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_3
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 1730
+        width: 220
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de905d354fb2cd8e0800000000000000
+      internalID: -1667409433655440915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_4
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 1623
+        width: 231
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5840ede01ce28a150800000000000000
+      internalID: 5884004319872550021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_5
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 1396
+        width: 220
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a51ff5006f2dea530800000000000000
+      internalID: 3868261083967910234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_6
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1404
+        width: 224
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4592c29baf48860800000000000000
+      internalID: 7531420150087111904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_7
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1466
+        width: 83
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ade2699a0e87e6b0800000000000000
+      internalID: -5267085063012291160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_8
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1224
+        width: 82
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d77db5e75f05980800000000000000
+      internalID: -8552065769321038554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_9
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1098
+        width: 224
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5d2f26bb0b028b0800000000000000
+      internalID: -5178945252610615819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_10
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1133
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec79d5cfe62c67e0800000000000000
+      internalID: -1770997742205043488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_11
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 1063
+        width: 220
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b5b559a1f14a8c0800000000000000
+      internalID: -3989029170908013685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_12
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 681
+        width: 214
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a8b6f4ce216f96f0800000000000000
+      internalID: -675714565581391710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_13
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 823
+        width: 237
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146ffd16a107e0760800000000000000
+      internalID: 7425996094194054721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_14
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 791
+        width: 224
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce8687e5925d4fe0800000000000000
+      internalID: -1203214721650094389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_15
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 797
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d71b2cad52909bc0800000000000000
+      internalID: -3778359156345727020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_16
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 727
+        width: 220
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d8499141eed0a80800000000000000
+      internalID: -8498875151682335412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_17
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 520
+        width: 221
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ade90e1d85af3f0800000000000000
+      internalID: -866282319875482987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_18
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 410
+        width: 270
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb6d62874e5405a0800000000000000
+      internalID: -6556011496320701459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_19
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 111
+        width: 264
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc7b90feeab26f80800000000000000
+      internalID: -8114718043166507849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_20
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 201
+        width: 292
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99a150ead9acd120800000000000000
+      internalID: 2440011855659379100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pequeninos_21
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 212
+        width: 112
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3f70db42c788a10800000000000000
+      internalID: 1911914539050857448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pequeninos_0: -8533262615198760656
+      Pequeninos_1: -652238185964545862
+      Pequeninos_10: -1770997742205043488
+      Pequeninos_11: -3989029170908013685
+      Pequeninos_12: -675714565581391710
+      Pequeninos_13: 7425996094194054721
+      Pequeninos_14: -1203214721650094389
+      Pequeninos_15: -3778359156345727020
+      Pequeninos_16: -8498875151682335412
+      Pequeninos_17: -866282319875482987
+      Pequeninos_18: -6556011496320701459
+      Pequeninos_19: -8114718043166507849
+      Pequeninos_2: 7941299959583824597
+      Pequeninos_20: 2440011855659379100
+      Pequeninos_21: 1911914539050857448
+      Pequeninos_3: -1667409433655440915
+      Pequeninos_4: 5884004319872550021
+      Pequeninos_5: 3868261083967910234
+      Pequeninos_6: 7531420150087111904
+      Pequeninos_7: -5267085063012291160
+      Pequeninos_8: -8552065769321038554
+      Pequeninos_9: -5178945252610615819
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
