@@ -25,11 +25,8 @@ public class Npcs_Base : MonoBehaviour
     public Animator _anima;
 
     [Header("Controle de sprite")]
-    public GameObject go_sprite;
     public SpriteRenderer sp_rendere;
-    public Sprite Frente;
-    public Sprite Costa;
-   
+    public Sprite[] presonas;
 
     [Header("Parede")]
     public LayerMask paredeLayer;
@@ -41,7 +38,7 @@ public class Npcs_Base : MonoBehaviour
 
     void Start()
     {
-        EscolherNovaDirecao();
+        SelecSprite();
     }
 
     void Update()
@@ -70,8 +67,10 @@ public class Npcs_Base : MonoBehaviour
             }
 
             ControleSprite();
+            sp_rendere.sortingOrder = Mathf.RoundToInt(-transform.position.y * 100);
+
         }
-        
+
     }
 
     #region Controle Movimento
@@ -141,40 +140,20 @@ public class Npcs_Base : MonoBehaviour
 
     public void ControleSprite()
     {
-        controleDirecaoSprite();
-
-        if (direcaoAtual.y > 0)
-        {
-            sp_rendere.sprite = Costa;
-        }
-        else if (direcaoAtual.y < 0)
-        {
-            sp_rendere.sprite = Frente;
-        }
-
         _anima.SetBool("Walk", !parado);
+        if (direcaoAtual.x > 0)
+        {
+            sp_rendere.flipX = false;
+        }
+        else if(direcaoAtual.x < 0)
+        {
+            sp_rendere.flipX = true;
+        }
     }
 
-    public void controleDirecaoSprite()
+    public void SelecSprite()
     {
-        sp_rendere.sortingOrder = Mathf.RoundToInt(-transform.position.y * 100);
-
-        if (direcaoAtual.x < 0 && direcaoAtual.y < 0)
-        {
-            go_sprite.transform.localScale = new Vector2(-1, 1);
-        }
-        else if (direcaoAtual.x > 0 && direcaoAtual.y < 0)
-        {
-            go_sprite.transform.localScale = new Vector2(1, 1);
-        }
-        else if (direcaoAtual.x < 0 && direcaoAtual.y > 0)
-        {
-            go_sprite.transform.localScale = new Vector2(-1, 1);
-        }
-        else if (direcaoAtual.x > 0 && direcaoAtual.y > 0)
-        {
-            go_sprite.transform.localScale = new Vector2(1, 1);
-        }
+        sp_rendere.sprite = presonas[Random.Range(0, presonas.Length)];
     }
 
     #endregion
