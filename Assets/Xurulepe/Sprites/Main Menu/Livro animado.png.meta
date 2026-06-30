@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: e5dbd858779df1a489b9803fe5895e00
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3314140614644787699
+    second: Livro animado_0
+  - first:
+      213: -8919556868378818655
+    second: Livro animado_1
+  - first:
+      213: 8909538184096946213
+    second: Livro animado_2
+  - first:
+      213: 9078800998955803906
+    second: Livro animado_3
+  - first:
+      213: -4343211689685320355
+    second: Livro animado_4
+  - first:
+      213: 8769532713929208436
+    second: Livro animado_5
+  - first:
+      213: -2668383137162635562
+    second: Livro animado_6
+  - first:
+      213: 5513765344320036148
+    second: Livro animado_7
+  - first:
+      213: -1807566041200110926
+    second: Livro animado_8
+  - first:
+      213: 2611925301684323149
+    second: Livro animado_9
+  - first:
+      213: -94471111457983118
+    second: Livro animado_10
+  - first:
+      213: 7691333221965345720
+    second: Livro animado_11
+  - first:
+      213: 655444870822045378
+    second: Livro animado_12
+  - first:
+      213: -2325592606434760579
+    second: Livro animado_13
+  - first:
+      213: 5298601049065032870
+    second: Livro animado_14
+  - first:
+      213: -766061722760808316
+    second: Livro animado_15
+  - first:
+      213: -1554186704900435564
+    second: Livro animado_16
+  - first:
+      213: 2756274991910931650
+    second: Livro animado_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Livro animado_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 657
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9e89774513efd20800000000000000
+      internalID: 3314140614644787699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_1
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 657
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7826a394e573480800000000000000
+      internalID: -8919556868378818655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_2
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 657
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52890ef06c905ab70800000000000000
+      internalID: 8909538184096946213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_3
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 657
+        width: 171
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205e83138616efd70800000000000000
+      internalID: 9078800998955803906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_4
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 657
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d7bf3caffc9b3c0800000000000000
+      internalID: -4343211689685320355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_5
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 657
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 472fae35a83a3b970800000000000000
+      internalID: 8769532713929208436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_6
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 365
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d657c8acaff7fad0800000000000000
+      internalID: -2668383137162635562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 365
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d1e031e54d48c40800000000000000
+      internalID: 5513765344320036148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_8
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 365
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2553e234c3ae6e0800000000000000
+      internalID: -1807566041200110926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_9
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 365
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43cfba293c6f3420800000000000000
+      internalID: 2611925301684323149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_10
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 365
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 275b200560f50bef0800000000000000
+      internalID: -94471111457983118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_11
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 365
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3b760a0da1dba60800000000000000
+      internalID: 7691333221965345720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_12
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 83
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6233723ab981900800000000000000
+      internalID: 655444870822045378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_13
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 83
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d786e2198d5d9bfd0800000000000000
+      internalID: -2325592606434760579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_14
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 83
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac8808b499688940800000000000000
+      internalID: 5298601049065032870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_15
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 83
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48871d20ce66e55f0800000000000000
+      internalID: -766061722760808316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_16
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 83
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49156c32d6b6e6ae0800000000000000
+      internalID: -1554186704900435564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Livro animado_17
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 83
+        width: 170
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ccc4247081404620800000000000000
+      internalID: 2756274991910931650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0de603ab41c76204d94fdfd2b979de3b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Livro animado_0: 3314140614644787699
+      Livro animado_1: -8919556868378818655
+      Livro animado_10: -94471111457983118
+      Livro animado_11: 7691333221965345720
+      Livro animado_12: 655444870822045378
+      Livro animado_13: -2325592606434760579
+      Livro animado_14: 5298601049065032870
+      Livro animado_15: -766061722760808316
+      Livro animado_16: -1554186704900435564
+      Livro animado_17: 2756274991910931650
+      Livro animado_2: 8909538184096946213
+      Livro animado_3: 9078800998955803906
+      Livro animado_4: -4343211689685320355
+      Livro animado_5: 8769532713929208436
+      Livro animado_6: -2668383137162635562
+      Livro animado_7: 5513765344320036148
+      Livro animado_8: -1807566041200110926
+      Livro animado_9: 2611925301684323149
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
