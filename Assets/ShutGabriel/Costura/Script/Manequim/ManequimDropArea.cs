@@ -9,7 +9,10 @@ public class ManequimDropArea : MonoBehaviour, IDropHandler
 
         if (item != null)
         {
+            item.ConfirmarDrop();
             item.Vestir();
         }
     }
+
+
 }

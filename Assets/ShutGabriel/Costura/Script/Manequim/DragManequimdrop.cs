@@ -6,6 +6,8 @@ public class DragManequimdrop : MonoBehaviour, IPointerDownHandler, IBeginDragHa
     [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;
     [SerializeField] private GameObject roupaManequim;
+    private Vector2 posicaoInicial;
+    private bool soltouNoManequim = false;
 
     private void Awake()
     {
@@ -14,6 +16,9 @@ public class DragManequimdrop : MonoBehaviour, IPointerDownHandler, IBeginDragHa
     public void OnBeginDrag(PointerEventData eventData)
     {
         Debug.Log("Arrastar");
+        posicaoInicial = rectTransform.anchoredPosition;
+        soltouNoManequim = false;
+
     }
     public void OnDrag(PointerEventData eventData)
     {
@@ -23,11 +28,19 @@ public class DragManequimdrop : MonoBehaviour, IPointerDownHandler, IBeginDragHa
     public void OnEndDrag(PointerEventData eventData)
     {
         Debug.Log("Soltivo");
+        if (!soltouNoManequim)
+        {
+            rectTransform.anchoredPosition = posicaoInicial;
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         Debug.Log("OnPointerDowned");
+    }
+    public void ConfirmarDrop()
+    {
+        soltouNoManequim = true;
     }
     public void Vestir()
     {
