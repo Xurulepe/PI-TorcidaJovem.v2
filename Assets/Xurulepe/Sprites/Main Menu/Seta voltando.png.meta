@@ -1,0 +1,310 @@
+fileFormatVersion: 2
+guid: 180374c8ca128ca48a337af1f08ec18e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7636107041318361947
+    second: Seta voltando_0
+  - first:
+      213: 1615014043799430393
+    second: Seta voltando_1
+  - first:
+      213: -6478362027198895609
+    second: Seta voltando_2
+  - first:
+      213: -648179373096136054
+    second: Seta voltando_3
+  - first:
+      213: 408890154064371988
+    second: Seta voltando_4
+  - first:
+      213: -7732122795620652245
+    second: Seta voltando_5
+  - first:
+      213: -4686156213352215815
+    second: Seta voltando_6
+  - first:
+      213: -2083652867103002787
+    second: Seta voltando_7
+  - first:
+      213: -5623913207512570353
+    second: Seta voltando_8
+  - first:
+      213: 2998995293884275158
+    second: Seta voltando_9
+  - first:
+      213: -8639410935763258406
+    second: Seta voltando_10
+  - first:
+      213: -3206206996202366927
+    second: Seta voltando_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Seta voltando_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 506
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fac62590cd67feb0800000000000000
+      internalID: -4686156213352215815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seta voltando_7
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 506
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5fe91dc1c06513e0800000000000000
+      internalID: -2083652867103002787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seta voltando_8
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 506
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06e59a0cb8d3f1b0800000000000000
+      internalID: -5623913207512570353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seta voltando_9
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 506
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d95a0794529e9920800000000000000
+      internalID: 2998995293884275158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seta voltando_10
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 506
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3b4390785aa1880800000000000000
+      internalID: -8639410935763258406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Seta voltando_11
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 506
+        width: 177
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1385cf269b34183d0800000000000000
+      internalID: -3206206996202366927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1afd84e0dfbbe0b4a8054bdddf74cce2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Seta voltando_0: -7636107041318361947
+      Seta voltando_1: 1615014043799430393
+      Seta voltando_10: -8639410935763258406
+      Seta voltando_11: -3206206996202366927
+      Seta voltando_2: -6478362027198895609
+      Seta voltando_3: -648179373096136054
+      Seta voltando_4: 408890154064371988
+      Seta voltando_5: -7732122795620652245
+      Seta voltando_6: -4686156213352215815
+      Seta voltando_7: -2083652867103002787
+      Seta voltando_8: -5623913207512570353
+      Seta voltando_9: 2998995293884275158
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,358 @@
+fileFormatVersion: 2
+guid: e6f0c7774b9233a43a73fd62b391ee71
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3224228408997367605
+    second: Porta animada_0
+  - first:
+      213: -7921034595105451858
+    second: Porta animada_1
+  - first:
+      213: 4523721741496134653
+    second: Porta animada_2
+  - first:
+      213: 8001099474901163369
+    second: Porta animada_3
+  - first:
+      213: -5952836124693857127
+    second: Porta animada_4
+  - first:
+      213: 6561409806754548646
+    second: Porta animada_5
+  - first:
+      213: 8975447618518595134
+    second: Porta animada_6
+  - first:
+      213: -3902746160479129735
+    second: Porta animada_7
+  - first:
+      213: 8593461178002690564
+    second: Porta animada_8
+  - first:
+      213: 669593799211047614
+    second: Porta animada_9
+  - first:
+      213: 5763073878764043929
+    second: Porta animada_10
+  - first:
+      213: -8979256342054007210
+    second: Porta animada_11
+  - first:
+      213: 3108295881015723529
+    second: Porta animada_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Porta animada_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 816
+        width: 151
+        height: 211
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53fc201c7a2cebc20800000000000000
+      internalID: 3224228408997367605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Porta animada_1
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 805
+        width: 151
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0d821d005d21290800000000000000
+      internalID: -7921034595105451858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Porta animada_2
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 803
+        width: 152
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfba698c4fc77ce30800000000000000
+      internalID: 4523721741496134653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Porta animada_4
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 541
+        width: 157
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c72858517436da0800000000000000
+      internalID: -5952836124693857127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Porta animada_5
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 541
+        width: 181
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab8e55947fce0b50800000000000000
+      internalID: 6561409806754548646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Porta animada_6
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 541
+        width: 214
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e363de91e023f8c70800000000000000
+      internalID: 8975447618518595134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Porta animada_7
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 278
+        width: 224
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97f2f107b09a6d9c0800000000000000
+      internalID: -3902746160479129735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Porta animada_11
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 15
+        width: 222
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e82b85ee5436380800000000000000
+      internalID: -8979256342054007210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7d0a4d1faae018b4fafa0653832f4c97
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Porta animada_0: 3224228408997367605
+      Porta animada_1: -7921034595105451858
+      Porta animada_10: 5763073878764043929
+      Porta animada_11: -8979256342054007210
+      Porta animada_12: 3108295881015723529
+      Porta animada_2: 4523721741496134653
+      Porta animada_3: 8001099474901163369
+      Porta animada_4: -5952836124693857127
+      Porta animada_5: 6561409806754548646
+      Porta animada_6: 8975447618518595134
+      Porta animada_7: -3902746160479129735
+      Porta animada_8: 8593461178002690564
+      Porta animada_9: 669593799211047614
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

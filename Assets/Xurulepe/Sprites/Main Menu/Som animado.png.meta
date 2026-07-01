@@ -1,0 +1,324 @@
+fileFormatVersion: 2
+guid: 7ffab6689ceb1784c9808e91d6de1e11
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1008936932153634816
+    second: Som animado_0
+  - first:
+      213: 90125487801906770
+    second: Som animado_1
+  - first:
+      213: 2810881073267319297
+    second: Som animado_2
+  - first:
+      213: -6943098712013531820
+    second: Som animado_3
+  - first:
+      213: -5678257745269180035
+    second: Som animado_4
+  - first:
+      213: -6747412063058377071
+    second: Som animado_5
+  - first:
+      213: 1175624816093130670
+    second: Som animado_6
+  - first:
+      213: 587175508802244211
+    second: Som animado_7
+  - first:
+      213: -9044935582952692027
+    second: Som animado_8
+  - first:
+      213: 3924447935292527654
+    second: Som animado_9
+  - first:
+      213: -3722648358504373536
+    second: Som animado_10
+  - first:
+      213: 6269861027971718360
+    second: Som animado_11
+  - first:
+      213: 2433175416147651242
+    second: Som animado_12
+  - first:
+      213: -8370255791761676681
+    second: Som animado_13
+  - first:
+      213: -5998470516885928927
+    second: Som animado_14
+  - first:
+      213: -1857769360664391256
+    second: Som animado_15
+  - first:
+      213: 8236149703630988528
+    second: Som animado_16
+  - first:
+      213: 2404911809909175603
+    second: Som animado_17
+  - first:
+      213: 8403928641152226218
+    second: Som animado_18
+  - first:
+      213: -6192207682814847537
+    second: Som animado_19
+  - first:
+      213: -7004555196456345633
+    second: Som animado_20
+  - first:
+      213: -4907875222342352405
+    second: Som animado_21
+  - first:
+      213: -5907617736821693956
+    second: Som animado_22
+  - first:
+      213: -4911014811219362994
+    second: Som animado_23
+  - first:
+      213: -1785240048599262627
+    second: Som animado_24
+  - first:
+      213: 7650521605259466298
+    second: Som animado_25
+  - first:
+      213: 81767534688904991
+    second: Som animado_26
+  - first:
+      213: 7575418045962764473
+    second: Som animado_27
+  - first:
+      213: 8153282693418448770
+    second: Som animado_28
+  - first:
+      213: 5972882089895450616
+    second: Som animado_29
+  - first:
+      213: 6691522129175542847
+    second: Som animado_30
+  - first:
+      213: 7117649666212671720
+    second: Som animado_31
+  - first:
+      213: -1558103427877313038
+    second: Som animado_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Som animado_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 350
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 000d53ea4398ff1f0800000000000000
+      internalID: -1008936932153634816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Som animado_1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 672
+        width: 350
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25634a557a0304100800000000000000
+      internalID: 90125487801906770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Som animado_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 342
+        width: 350
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102a7f58171420720800000000000000
+      internalID: 2810881073267319297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Som animado_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 350
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196483c5a706c52a0800000000000000
+      internalID: -6747412063058377071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e37ca17c15cf82f45b0338bcdfc82710
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Som animado_0: -1008936932153634816
+      Som animado_1: 90125487801906770
+      Som animado_2: 2810881073267319297
+      Som animado_3: -6747412063058377071
+      Som animado_4: -5678257745269180035
+      Som animado_6: 1175624816093130670
+      Som animado_7: 587175508802244211
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
