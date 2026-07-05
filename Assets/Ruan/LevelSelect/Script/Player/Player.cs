@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -9,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] Animator _anima;
 
     [Header("controle de movimento")]
+    [SerializeField] bool podeMover;
     [SerializeField] bool _movendo;
     [SerializeField] float _veloMove;
     [SerializeField] Vector2 _directios;
@@ -23,7 +25,7 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        podeMover = true;
     }
 
     // Update is called once per frame
@@ -34,7 +36,11 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        movePLayer(_directios);
+        if (podeMover == true)
+        {
+            movePLayer(_directios);
+
+        }
     }
 
     #region controleMovimento
@@ -61,6 +67,15 @@ public class Player : MonoBehaviour
         _rb.linearVelocity = new Vector2(_veloMove * Direcao.x * Time.deltaTime, _rb.linearVelocityY);
     }
 
+    public void EnterLevel()
+    {
+        if (Gerenciador.instance.NomeCena != null && Gerenciador.instance.PodeCarregar == true)
+        {
+            podeMover = false;
+            Gerenciador.instance.fadeAnima.SetTrigger("Sair");
+        }
+    }
+
     #endregion
 
     #region controleAnima
@@ -75,6 +90,7 @@ public class Player : MonoBehaviour
     public void controles()
     {
         _Controls = new InputPlayer();
+        _Controls.Ruan.Action.performed += ctx => EnterLevel();
         _Controls.Ruan.Move.performed += ctx => _directios = ctx.ReadValue<Vector2>();
         _Controls.Ruan.Move.canceled += ctx => _directios = Vector2.zero;
 
