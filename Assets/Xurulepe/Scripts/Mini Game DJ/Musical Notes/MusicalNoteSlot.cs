@@ -4,6 +4,13 @@ public class MusicalNoteSlot : MonoBehaviour
 {
     [SerializeField] private LayerMask musicalNoteLayerMask;
 
+    private MusicalNoteUI musicalNoteUI;
+
+    private void Awake()
+    {
+        musicalNoteUI = GetComponent<MusicalNoteUI>();
+    }
+
     public void CheckForNote()
     {
         Collider2D colliderObject = Physics2D.OverlapBox(transform.position, Vector2.one, 0f, musicalNoteLayerMask);
@@ -22,8 +29,11 @@ public class MusicalNoteSlot : MonoBehaviour
             float distanceToNote = Vector2.Distance(transform.position, colliderObject.transform.position);
             GameManager.Instance.CalculateScore(distanceToNote);
 
-            MusicalNoteUI musicalNoteUI = colliderObject.GetComponent<MusicalNoteUI>();
-            musicalNoteUI.Blink();            
+            //MusicalNoteUI musicalNoteUI = colliderObject.GetComponent<MusicalNoteUI>();
+            musicalNoteUI.Blink();
+            musicalNoteUI.Pulse();
+            
+            musicalNote.DeactiveSelf();
         }
         else
         {

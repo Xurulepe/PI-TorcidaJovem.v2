@@ -18,6 +18,12 @@ public class MusicalNote : MonoBehaviour
         wasHit = true;
     }
 
+    public void DeactiveSelf()
+    {
+        GameManager.Instance.IncrementDeactivatedNotesCount();
+        gameObject.SetActive(false);
+    }
+
     private void OnDisable()
     {
         wasHit = false;

@@ -94,10 +94,6 @@ public class GameManager : MonoBehaviour
 
         if (deactivatedNotesCount >= maxNotesToSpawn * spawnersQuantity)
         {
-            Debug.Log("Fim de game");
-            Debug.Log("Score: " + score);
-            Debug.Log("Max score: " + PlayerPrefs.GetInt("Max Score"));
-
             SaveScore();
 
             OnGameComplete?.Invoke();

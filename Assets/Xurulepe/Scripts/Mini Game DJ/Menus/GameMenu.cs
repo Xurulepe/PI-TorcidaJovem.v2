@@ -61,8 +61,6 @@ public class GameMenu : MonoBehaviour
         hudGame.SetActive(false); 
         musicalNotesContainer.SetActive(false);
 
-        Debug.Log(PlayerPrefs.GetInt("Max Score"));
-
         UpdateFinalInfo();
     }
 
