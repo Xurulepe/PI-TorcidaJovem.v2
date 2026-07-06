@@ -10,6 +10,9 @@ namespace MiniGame.TecInformatica
         [SerializeField] private GameObject startMenu;
         [SerializeField] private GameObject finalMenu;
 
+        [Header("Scene Settings")]
+        [SerializeField] private int sceneBuildIndex = 1;
+
         private void Awake()
         {
             tableObject.SetActive(false);
@@ -36,6 +39,10 @@ namespace MiniGame.TecInformatica
         public void PlayAgain()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+        public void BackToSelectScene()
+        {
+            SceneManager.LoadScene(sceneBuildIndex);
         }
 
         public void Quit()

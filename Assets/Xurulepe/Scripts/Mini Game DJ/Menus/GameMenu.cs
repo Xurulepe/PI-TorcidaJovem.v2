@@ -15,6 +15,10 @@ public class GameMenu : MonoBehaviour
     [SerializeField] private TextMeshProUGUI playerScoreText;
     [SerializeField] private TextMeshProUGUI maxScoreFinalText;
 
+    [Header("Scene Sttings")]
+    [SerializeField] private int sceneBuildIndex = 1;
+
+
     private void Start()
     {
         maxScoreText.text += PlayerPrefs.GetInt("Max Score");
@@ -39,6 +43,11 @@ public class GameMenu : MonoBehaviour
     public void PlayAgain()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void BackToSelectScene()
+    {
+        SceneManager.LoadScene(sceneBuildIndex);
     }
 
     public void Quit()
