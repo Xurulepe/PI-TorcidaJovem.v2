@@ -443,6 +443,7 @@ GameObject:
   - component: {fileID: 181817264}
   - component: {fileID: 181817263}
   - component: {fileID: 181817266}
+  - component: {fileID: 181817267}
   m_Layer: 5
   m_Name: Btn - Start
   m_TagString: Untagged
@@ -587,6 +588,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &181817267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181817261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &184493751
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,6 +1091,7 @@ GameObject:
   - component: {fileID: 521286257}
   - component: {fileID: 521286256}
   - component: {fileID: 521286259}
+  - component: {fileID: 521286260}
   m_Layer: 5
   m_Name: Btn - Quit
   m_TagString: Untagged
@@ -1222,6 +1236,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &521286260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521286254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &525643477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,6 +1987,7 @@ GameObject:
   - component: {fileID: 926342279}
   - component: {fileID: 926342278}
   - component: {fileID: 926342281}
+  - component: {fileID: 926342282}
   m_Layer: 5
   m_Name: Btn - Play Again
   m_TagString: Untagged
@@ -2105,6 +2132,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &926342282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926342276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &959700676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2791,6 +2830,7 @@ GameObject:
   - component: {fileID: 1381680634}
   - component: {fileID: 1381680633}
   - component: {fileID: 1381680636}
+  - component: {fileID: 1381680637}
   m_Layer: 5
   m_Name: Btn - Quit
   m_TagString: Untagged
@@ -2935,6 +2975,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1381680637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381680631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1407091369
 GameObject:
   m_ObjectHideFlags: 0

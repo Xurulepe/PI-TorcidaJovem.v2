@@ -1829,6 +1829,7 @@ GameObject:
   - component: {fileID: 808616879}
   - component: {fileID: 808616878}
   - component: {fileID: 808616881}
+  - component: {fileID: 808616882}
   m_Layer: 5
   m_Name: Btn - Quit
   m_TagString: Untagged
@@ -1973,6 +1974,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &808616882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808616876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &826017955
 GameObject:
   m_ObjectHideFlags: 0
@@ -3651,6 +3664,7 @@ GameObject:
   - component: {fileID: 1243341377}
   - component: {fileID: 1243341376}
   - component: {fileID: 1243341379}
+  - component: {fileID: 1243341380}
   m_Layer: 5
   m_Name: Btn - Play Again
   m_TagString: Untagged
@@ -3795,6 +3809,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1243341380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243341374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1362113296
 GameObject:
   m_ObjectHideFlags: 0
@@ -5745,6 +5771,7 @@ GameObject:
   - component: {fileID: 1899660357}
   - component: {fileID: 1899660356}
   - component: {fileID: 1899660359}
+  - component: {fileID: 1899660360}
   m_Layer: 5
   m_Name: Btn - Quit
   m_TagString: Untagged
@@ -5889,6 +5916,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1899660360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899660354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1906982510 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6305479862471884160, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
@@ -5952,6 +5991,7 @@ GameObject:
   - component: {fileID: 2016545566}
   - component: {fileID: 2016545565}
   - component: {fileID: 2016545568}
+  - component: {fileID: 2016545569}
   m_Layer: 5
   m_Name: Btn - Start
   m_TagString: Untagged
@@ -6096,6 +6136,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2016545569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016545563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2018738373
 PrefabInstance:
   m_ObjectHideFlags: 0
