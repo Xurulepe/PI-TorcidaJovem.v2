@@ -169,12 +169,12 @@ TextureImporter:
       name: Design sem nome (1)_0
       rect:
         serializedVersion: 2
-        x: 150
-        y: 4157
-        width: 4719
-        height: 2676
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 149
+        y: 4153
+        width: 4722
+        height: 2683
+      alignment: 9
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: Design sem nome (1)_1
       rect:
         serializedVersion: 2
-        x: 118
+        x: 116
         y: 2611
-        width: 531
-        height: 730
+        width: 534
+        height: 733
       alignment: 9
-      pivot: {x: 0.51544493, y: 0.020658644}
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,12 +213,12 @@ TextureImporter:
       name: Design sem nome (1)_2
       rect:
         serializedVersion: 2
-        x: 759
-        y: 2625
-        width: 490
-        height: 741
+        x: 757
+        y: 2624
+        width: 494
+        height: 743
       alignment: 9
-      pivot: {x: 0.50000024, y: 0.009328083}
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,12 +235,12 @@ TextureImporter:
       name: Design sem nome (1)_3
       rect:
         serializedVersion: 2
-        x: 1417
-        y: 2640
-        width: 486
-        height: 742
+        x: 1415
+        y: 2638
+        width: 490
+        height: 744
       alignment: 9
-      pivot: {x: 0.505625, y: 0.021042159}
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: Design sem nome (1)_4
       rect:
         serializedVersion: 2
-        x: 2038
-        y: 2752
-        width: 440
-        height: 407
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2036
+        y: 2750
+        width: 443
+        height: 411
+      alignment: 9
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -279,12 +279,12 @@ TextureImporter:
       name: Design sem nome (1)_5
       rect:
         serializedVersion: 2
-        x: 2671
-        y: 3033
-        width: 312
-        height: 275
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2668
+        y: 3031
+        width: 316
+        height: 279
+      alignment: 9
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -301,12 +301,12 @@ TextureImporter:
       name: Design sem nome (1)_6
       rect:
         serializedVersion: 2
-        x: 3155
-        y: 2706
-        width: 175
-        height: 561
+        x: 3153
+        y: 2704
+        width: 179
+        height: 565
       alignment: 9
-      pivot: {x: 0.6209208, y: 0.019078653}
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -323,12 +323,12 @@ TextureImporter:
       name: Design sem nome (1)_7
       rect:
         serializedVersion: 2
-        x: 3490
-        y: 2264
-        width: 895
-        height: 1073
+        x: 4427
+        y: 2480
+        width: 224
+        height: 627
       alignment: 9
-      pivot: {x: 0.5, y: 0.018496212}
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -345,12 +345,12 @@ TextureImporter:
       name: Design sem nome (1)_8
       rect:
         serializedVersion: 2
-        x: 4429
-        y: 2483
-        width: 221
-        height: 622
+        x: 135
+        y: 2067
+        width: 450
+        height: 403
       alignment: 9
-      pivot: {x: 0.5478759, y: 0.01521208}
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -367,12 +367,12 @@ TextureImporter:
       name: Design sem nome (1)_9
       rect:
         serializedVersion: 2
-        x: 135
-        y: 2069
-        width: 448
-        height: 399
+        x: 753
+        y: 2081
+        width: 379
+        height: 406
       alignment: 9
-      pivot: {x: 0.5000001, y: 0.049211163}
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -389,12 +389,12 @@ TextureImporter:
       name: Design sem nome (1)_10
       rect:
         serializedVersion: 2
-        x: 755
-        y: 2082
-        width: 374
-        height: 403
+        x: 3194
+        y: 2074
+        width: 213
+        height: 306
       alignment: 9
-      pivot: {x: 0.5282898, y: 0.040558845}
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -411,12 +411,12 @@ TextureImporter:
       name: Design sem nome (1)_11
       rect:
         serializedVersion: 2
-        x: 1334
-        y: 2160
-        width: 490
-        height: 449
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2214
+        y: 1285
+        width: 361
+        height: 308
+      alignment: 9
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -433,12 +433,12 @@ TextureImporter:
       name: Design sem nome (1)_12
       rect:
         serializedVersion: 2
-        x: 2029
-        y: 2268
-        width: 428
-        height: 381
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2699
+        y: 1525
+        width: 368
+        height: 320
+      alignment: 9
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -455,12 +455,12 @@ TextureImporter:
       name: Design sem nome (1)_13
       rect:
         serializedVersion: 2
-        x: 2629
-        y: 2363
-        width: 457
-        height: 468
+        x: 3129
+        y: 1408
+        width: 262
+        height: 210
       alignment: 9
-      pivot: {x: 0.5463039, y: 0.10437012}
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -477,12 +477,12 @@ TextureImporter:
       name: Design sem nome (1)_14
       rect:
         serializedVersion: 2
-        x: 3196
-        y: 2074
-        width: 209
-        height: 303
+        x: 3549
+        y: 1463
+        width: 293
+        height: 583
       alignment: 9
-      pivot: {x: 0.52531356, y: 0.028602323}
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -499,12 +499,12 @@ TextureImporter:
       name: Design sem nome (1)_15
       rect:
         serializedVersion: 2
-        x: 4247
-        y: 1548
-        width: 676
-        height: 875
+        x: 149
+        y: 74
+        width: 897
+        height: 1078
       alignment: 9
-      pivot: {x: 0.504807, y: 0.020946428}
+      pivot: {x: 0.5, y: 0.21}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -521,12 +521,12 @@ TextureImporter:
       name: Design sem nome (1)_16
       rect:
         serializedVersion: 2
-        x: 81
-        y: 1147
-        width: 1300
-        height: 763
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1220
+        y: 74
+        width: 1304
+        height: 767
+      alignment: 9
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -543,12 +543,12 @@ TextureImporter:
       name: Design sem nome (1)_17
       rect:
         serializedVersion: 2
-        x: 1400
-        y: 1511
-        width: 681
-        height: 614
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 2835
+        y: 172
+        width: 679
+        height: 881
+      alignment: 9
+      pivot: {x: 0.5, y: 0.24}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -557,116 +557,6 @@ TextureImporter:
       bones: []
       spriteID: 48499156cc25295f0800000000000000
       internalID: -751447149994470268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Design sem nome (1)_18
-      rect:
-        serializedVersion: 2
-        x: 2344
-        y: 1821
-        width: 241
-        height: 283
-      alignment: 9
-      pivot: {x: 0.71950877, y: 0.051366583}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 78b53ee6427cb30c0800000000000000
-      internalID: -4594860035508315257
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Design sem nome (1)_19
-      rect:
-        serializedVersion: 2
-        x: 2700
-        y: 1527
-        width: 365
-        height: 316
-      alignment: 9
-      pivot: {x: 0.4955486, y: 0.06811794}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9444c0c1f78b8c4f0800000000000000
-      internalID: -808193277042080695
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Design sem nome (1)_20
-      rect:
-        serializedVersion: 2
-        x: 3552
-        y: 1465
-        width: 291
-        height: 581
-      alignment: 9
-      pivot: {x: 0.45533568, y: 0.030208096}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 50794cc41b5a50400800000000000000
-      internalID: 289819931951011589
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Design sem nome (1)_21
-      rect:
-        serializedVersion: 2
-        x: 2215
-        y: 1287
-        width: 358
-        height: 304
-      alignment: 9
-      pivot: {x: 0.4863854, y: 0.013659427}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cd733b3dae711e0c0800000000000000
-      internalID: -4548327851325966372
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Design sem nome (1)_22
-      rect:
-        serializedVersion: 2
-        x: 3130
-        y: 1411
-        width: 258
-        height: 205
-      alignment: 9
-      pivot: {x: 0.5, y: 0.05618033}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c095557cac5bcecc0800000000000000
-      internalID: -3680366912936257268
       vertices: []
       indices: 
       edges: []
@@ -695,12 +585,7 @@ TextureImporter:
       Design sem nome (1)_15: -8432507644873504949
       Design sem nome (1)_16: 1633327998592266979
       Design sem nome (1)_17: -751447149994470268
-      Design sem nome (1)_18: -4594860035508315257
-      Design sem nome (1)_19: -808193277042080695
       Design sem nome (1)_2: 1141033131339445803
-      Design sem nome (1)_20: 289819931951011589
-      Design sem nome (1)_21: -4548327851325966372
-      Design sem nome (1)_22: -3680366912936257268
       Design sem nome (1)_3: 1999856423951557611
       Design sem nome (1)_4: -7071246716268264465
       Design sem nome (1)_5: 4335955734673371778

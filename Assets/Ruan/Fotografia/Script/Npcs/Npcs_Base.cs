@@ -30,7 +30,13 @@ public class Npcs_Base : MonoBehaviour
 
     [Header("Parede")]
     public LayerMask paredeLayer;
-    public float distanciaParede = 0.5f;
+    public float raioDeteccao = 0.25f;
+    public Transform PontoRaycast;
+
+    [Header("Detecção")]
+    public float tempoSemDetectar = 0.3f;
+
+    private float cooldownDeteccao;
 
     [Header("controleMissao")]
     public bool ObjMissao;
@@ -66,8 +72,12 @@ public class Npcs_Base : MonoBehaviour
                 Mover();
             }
 
+            if (cooldownDeteccao > 0)
+                cooldownDeteccao -= Time.deltaTime;
+
+            DetectarParede();
+
             ControleSprite();
-            sp_rendere.sortingOrder = Mathf.RoundToInt(-transform.position.y * 100);
 
         }
 
@@ -114,23 +124,30 @@ public class Npcs_Base : MonoBehaviour
     void DetectarParede()
     {
         if (parado) return;
+        if (cooldownDeteccao > 0) return;
 
-        RaycastHit2D hit = Physics2D.Raycast(
-            transform.position,
-            direcaoAtual,
-            distanciaParede,
+        Collider2D hit = Physics2D.OverlapCircle(
+            PontoRaycast.position,
+            raioDeteccao,
             paredeLayer
         );
 
-        Debug.DrawRay(transform.position, direcaoAtual * distanciaParede, Color.red);
-
-        if (hit.collider != null)
+        if (hit != null)
         {
-            // Faz o NPC ir para longe da parede
-            direcaoAtual = -direcaoAtual;
+            // Direção para longe da parede
+            Vector2 novaDirecao = ((Vector2)transform.position - hit.ClosestPoint(transform.position)).normalized;
 
-            // Novo tempo andando
+            // Se por algum motivo a direção ficar zerada
+            if (novaDirecao == Vector2.zero)
+                novaDirecao = -direcaoAtual;
+
+            direcaoAtual = novaDirecao;
+
+            // Continua andando por mais um tempo
             timer = Random.Range(tempoAndandoMin, tempoAndandoMax);
+
+            // Ignora novas detecções por alguns instantes
+            cooldownDeteccao = tempoSemDetectar;
         }
     }
 
@@ -160,20 +177,7 @@ public class Npcs_Base : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        if (direcaoAtual == Vector2.zero) return;
-
         Gizmos.color = Color.red;
-
-        // Linha da visão
-        Gizmos.DrawLine(
-            transform.position,
-            transform.position + (Vector3)(direcaoAtual.normalized * distanciaParede)
-        );
-
-        // Bola no final da visão
-        Gizmos.DrawSphere(
-            transform.position + (Vector3)(direcaoAtual.normalized * distanciaParede),
-            0.08f
-        );
+        Gizmos.DrawWireSphere(PontoRaycast.position, raioDeteccao);
     }
 }
