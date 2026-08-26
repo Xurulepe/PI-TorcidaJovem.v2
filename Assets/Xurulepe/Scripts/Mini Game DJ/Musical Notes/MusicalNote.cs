@@ -10,7 +10,7 @@ public class MusicalNote : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y + 0.01f * moveSpeed, transform.position.z);
+        transform.position = new Vector3(transform.position.x, transform.position.y - 0.01f * moveSpeed, transform.position.z);
     }
 
     public void SetHit()
