@@ -11,9 +11,13 @@ public class MusicalNoteSpawner : MonoBehaviour
     private int maxNotesCount;
     private int spawnedNotesCount;
 
+    private RectTransform rectTransform;
+
+
     private void Awake()
     {
         spawnTimer = Random.Range(minimumSpawnTime, maximumSpawnTime);
+        rectTransform = GetComponent<RectTransform>();
     }
 
     private void Start()
@@ -36,7 +40,8 @@ public class MusicalNoteSpawner : MonoBehaviour
 
             if (musicalNote != null)
             {
-                musicalNote.transform.position = transform.position;
+                //musicalNote.transform.position = transform.position;
+                musicalNote.GetComponent<MusicalNote>().SetPosition(rectTransform.anchoredPosition);
                 musicalNote.SetActive(true);
 
                 spawnedNotesCount++;

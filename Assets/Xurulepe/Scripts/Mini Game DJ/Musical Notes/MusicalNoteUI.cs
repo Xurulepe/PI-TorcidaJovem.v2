@@ -1,17 +1,19 @@
 using DG.Tweening;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MusicalNoteUI : MonoBehaviour
 {
-    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Image image;
     [SerializeField] private float changeColorDuration = 0.5f;
 
     private Color originalColor;
 
+
     private void Awake()
     {
-        originalColor = spriteRenderer.color;
+        originalColor = image.color;
     }
 
     public void Blink()
@@ -21,11 +23,11 @@ public class MusicalNoteUI : MonoBehaviour
 
     private IEnumerator FlashColor()
     {
-        spriteRenderer.color = GameManager.Instance.CurrentMusicalNoteData.noteSpriteColor;
+        image.color = GameManager.Instance.CurrentMusicalNoteData.noteSpriteColor;
 
         yield return new WaitForSeconds(changeColorDuration);
 
-        spriteRenderer.color = originalColor;
+        image.color = originalColor;
     }
 
     public void Pulse()

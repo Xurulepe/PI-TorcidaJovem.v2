@@ -3,14 +3,16 @@ using UnityEngine;
 public class MusicalNote : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
+    [SerializeField] private RectTransform rectTransform;
 
     private bool wasHit = false;
 
     public bool WasHit => wasHit;
 
-    private void FixedUpdate()
+    private void Update()
     {
-        transform.position = new Vector3(transform.position.x, transform.position.y - 0.01f * moveSpeed, transform.position.z);
+        //transform.position = new Vector3(transform.position.x, transform.position.y * moveSpeed * Time.deltaTime, transform.position.z);
+        rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, rectTransform.anchoredPosition.y -1f * moveSpeed * Time.deltaTime);
     }
 
     public void SetHit()
@@ -22,6 +24,16 @@ public class MusicalNote : MonoBehaviour
     {
         GameManager.Instance.IncrementDeactivatedNotesCount();
         gameObject.SetActive(false);
+    }
+
+    public void SetPosition(Vector2 position)
+    {
+        rectTransform.anchoredPosition = position;
+    }
+
+    public Vector2 GetPosition()
+    {
+        return rectTransform.anchoredPosition;
     }
 
     private void OnDisable()
