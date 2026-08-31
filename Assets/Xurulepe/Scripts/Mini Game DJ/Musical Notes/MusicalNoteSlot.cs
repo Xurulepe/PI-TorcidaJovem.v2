@@ -22,10 +22,25 @@ public class MusicalNoteSlot : MonoBehaviour
         activeMusicalNoteList = GameManager.Instance.GetActiveNotesList(noteType);
     }
 
+    private void Update()  // testing
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Time.timeScale = 0f;
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Time.timeScale = 1f;
+        }
+    }
+
     public void CheckForNote()
     {
         //Debug.Log("Is rectTransform null? " + (rectTransform == null));
         Rect rect = GetWorldRect(rectTransform);
+
+        float containerPositionY = RectTransformUtility.WorldToScreenPoint(null, rect.position).y;
+        float notePositionY = 0f;
 
         bool isNoteInSlot = false;
 
@@ -40,17 +55,20 @@ public class MusicalNoteSlot : MonoBehaviour
                 continue;
             }
 
-            if (rect.Overlaps(GetWorldRect(note)))
+            Rect noteRect = GetWorldRect(note);
+
+            if (rect.Overlaps(noteRect))
             {
                 isNoteInSlot = true;
                 musicalNote = note.GetComponent<MusicalNote>();
+                notePositionY = RectTransformUtility.WorldToScreenPoint(null, noteRect.position).y;
                 break;
             }
         }
 
         if (isNoteInSlot)
         {
-            Debug.Log("Note in slot");
+            //Debug.Log("Note in slot");
                         
             if (musicalNote.WasHit)
             {
@@ -59,7 +77,10 @@ public class MusicalNoteSlot : MonoBehaviour
 
             musicalNote.SetHit();
 
-            float distanceToNote = Vector2.Distance(rectTransform.anchoredPosition, musicalNote.GetPosition());
+            float distanceToNote = Mathf.Abs(containerPositionY - notePositionY);
+            Debug.Log("Distance to note: " + distanceToNote);
+            Debug.Log("Container position Y: " + containerPositionY);
+            Debug.Log("Note position Y: " + notePositionY);
             GameManager.Instance.CalculateScore(distanceToNote);
 
             //MusicalNoteUI musicalNoteUI = colliderObject.GetComponent<MusicalNoteUI>();
