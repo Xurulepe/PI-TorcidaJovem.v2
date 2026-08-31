@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -17,6 +18,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private MusicalNoteDataSO goodMusicalNoteData;
     [SerializeField] private MusicalNoteDataSO coolMusicalNoteData;
     [SerializeField] private MusicalNoteDataSO missMusicalNoteData;
+
+    [Header("Active Musical Notes")]
+    public List<RectTransform> activeLeftMusicalNoteList = new List<RectTransform>();
+    public List<RectTransform> activeDownMusicalNoteList = new List<RectTransform>();
+    public List<RectTransform> activeUpMusicalNoteList = new List<RectTransform>();
+    public List<RectTransform> activeRightMusicalNoteList = new List<RectTransform>();
+
 
     public int Score => score;
     public int ComboCount => comboCount;
@@ -107,6 +115,57 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("Max Score", score);
 
             Debug.Log("New score: " + score);
+        }
+    }
+
+    public void AddActiveNote(RectTransform noteRectTransform, MusicalNotePool.NoteType noteType)
+    {
+        switch (noteType)
+        {
+            case MusicalNotePool.NoteType.Left:
+                activeLeftMusicalNoteList.Add(noteRectTransform);
+
+                break;
+
+            case MusicalNotePool.NoteType.Down:
+                activeDownMusicalNoteList.Add(noteRectTransform);
+
+                break;
+
+            case MusicalNotePool.NoteType.Up:
+                activeUpMusicalNoteList.Add(noteRectTransform);
+
+                break;
+
+            case MusicalNotePool.NoteType.Right:
+                activeRightMusicalNoteList.Add(noteRectTransform);
+
+                break;
+
+            default:
+
+                break;
+        }
+    }
+
+    public List<RectTransform> GetActiveNotesList(MusicalNotePool.NoteType noteType)
+    {
+        switch (noteType)
+        {
+            case MusicalNotePool.NoteType.Left:
+                return activeLeftMusicalNoteList;
+
+            case MusicalNotePool.NoteType.Down:
+                return activeDownMusicalNoteList;
+
+            case MusicalNotePool.NoteType.Up:
+                return activeUpMusicalNoteList;
+
+            case MusicalNotePool.NoteType.Right:
+                return activeRightMusicalNoteList;
+
+            default:
+                return null;
         }
     }
 }

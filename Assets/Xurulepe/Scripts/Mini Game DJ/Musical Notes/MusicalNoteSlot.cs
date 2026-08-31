@@ -1,11 +1,15 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MusicalNoteSlot : MonoBehaviour
 {
     [SerializeField] private LayerMask musicalNoteLayerMask;
+    [SerializeField] private MusicalNotePool.NoteType noteType;
+    [SerializeField] private RectTransform rectTransform;
 
     private MusicalNoteUI musicalNoteUI;
-    private RectTransform rectTransform;
+
+    private List<RectTransform> activeMusicalNoteList;
 
     private void Awake()
     {
@@ -13,15 +17,41 @@ public class MusicalNoteSlot : MonoBehaviour
         rectTransform = GetComponent<RectTransform>();
     }
 
+    private void Start()
+    {
+        activeMusicalNoteList = GameManager.Instance.GetActiveNotesList(noteType);
+    }
+
     public void CheckForNote()
     {
-        Collider2D colliderObject = Physics2D.OverlapBox(rectTransform.anchoredPosition, Vector2.one, 0f, musicalNoteLayerMask);
-        //RectTransformUtility.RectangleContainsScreenPoint(rectTransform, rectTransform.anchoredPosition);
+        //Debug.Log("Is rectTransform null? " + (rectTransform == null));
+        Rect rect = GetWorldRect(rectTransform);
 
-        if (colliderObject != null)
+        bool isNoteInSlot = false;
+
+        MusicalNote musicalNote = null;
+
+        for (int i = 0; i < activeMusicalNoteList.Count; i++)
         {
-            MusicalNote musicalNote = colliderObject.GetComponent<MusicalNote>();
+            RectTransform note = activeMusicalNoteList[i];
 
+            if (note == null)
+            {
+                continue;
+            }
+
+            if (rect.Overlaps(GetWorldRect(note)))
+            {
+                isNoteInSlot = true;
+                musicalNote = note.GetComponent<MusicalNote>();
+                break;
+            }
+        }
+
+        if (isNoteInSlot)
+        {
+            Debug.Log("Note in slot");
+                        
             if (musicalNote.WasHit)
             {
                 return;
@@ -42,6 +72,23 @@ public class MusicalNoteSlot : MonoBehaviour
         {
             GameManager.Instance.ReduceScore();
         }
+    }
+
+    private Rect GetWorldRect(RectTransform rectTransform)
+    {
+        Vector3[] corners = new Vector3[4];
+        //Debug.Log("Is local rectTransform null? " + (rectTransform == null));
+        ////Debug.Log("RectTransform: " + rectTransform.name);
+        //Debug.Log("Vector3 array length: " + corners.Length);
+        rectTransform.GetWorldCorners(corners);
+
+        float x = corners[0].x;
+        float y = corners[0].y;
+
+        float width = corners[2].x - corners[0].x;
+        float height = corners[2].y - corners[0].y;
+
+        return new Rect(x, y, width, height);
     }
 
     private void OnDrawGizmosSelected()

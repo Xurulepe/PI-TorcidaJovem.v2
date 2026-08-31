@@ -36,13 +36,17 @@ public class MusicalNoteSpawner : MonoBehaviour
 
         if (spawnTimer <= 0f)
         {
-            GameObject musicalNote = MusicalNotePool.Instance.GetPooledObject(noteType);
+            GameObject musicalNoteObject = MusicalNotePool.Instance.GetPooledObject(noteType);
 
-            if (musicalNote != null)
+            if (musicalNoteObject != null)
             {
-                //musicalNote.transform.position = transform.position;
-                musicalNote.GetComponent<MusicalNote>().SetPosition(rectTransform.anchoredPosition);
-                musicalNote.SetActive(true);
+                MusicalNote musicalNote = musicalNoteObject.GetComponent<MusicalNote>();
+
+                musicalNote.SetPosition(rectTransform.anchoredPosition);
+
+                GameManager.Instance.AddActiveNote(musicalNote.GetComponent<RectTransform>(), noteType);
+
+                musicalNoteObject.SetActive(true);
 
                 spawnedNotesCount++;
             }

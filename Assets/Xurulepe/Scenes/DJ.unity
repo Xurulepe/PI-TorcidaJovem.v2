@@ -839,6 +839,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &299266932 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7406867916641707650, guid: 4550eec3c15925242b459c79df213c88, type: 3}
+  m_PrefabInstance: {fileID: 8030693921868012963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c81d4b8d3e740342860f5209d34d67f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &319728604
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,6 +970,8 @@ MonoBehaviour:
   musicalNoteLayerMask:
     serializedVersion: 2
     m_Bits: 64
+  noteType: 0
+  rectTransform: {fileID: 0}
 --- !u!61 &380084250
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1844,6 +1857,8 @@ MonoBehaviour:
   musicalNoteLayerMask:
     serializedVersion: 2
     m_Bits: 64
+  noteType: 0
+  rectTransform: {fileID: 0}
 --- !u!61 &753597816
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1939,6 +1954,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3165476175298559700, guid: 4550eec3c15925242b459c79df213c88, type: 3}
   m_PrefabInstance: {fileID: 1362152105}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &814327385 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7406867916641707650, guid: 4550eec3c15925242b459c79df213c88, type: 3}
+  m_PrefabInstance: {fileID: 1362152105}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c81d4b8d3e740342860f5209d34d67f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &877815887
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,6 +2017,8 @@ MonoBehaviour:
   musicalNoteLayerMask:
     serializedVersion: 2
     m_Bits: 64
+  noteType: 0
+  rectTransform: {fileID: 0}
 --- !u!61 &877815890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2621,6 +2649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Note Checker (Right)
       objectReference: {fileID: 0}
+    - target: {fileID: 7406867916641707650, guid: 4550eec3c15925242b459c79df213c88, type: 3}
+      propertyPath: noteType
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2785,6 +2817,8 @@ MonoBehaviour:
   musicalNoteLayerMask:
     serializedVersion: 2
     m_Bits: 64
+  noteType: 0
+  rectTransform: {fileID: 0}
 --- !u!61 &1097537851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3317,16 +3351,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Note Checker (Down)
       objectReference: {fileID: 0}
+    - target: {fileID: 7406867916641707650, guid: 4550eec3c15925242b459c79df213c88, type: 3}
+      propertyPath: noteType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4550eec3c15925242b459c79df213c88, type: 3}
+--- !u!114 &1181055238 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7406867916641707650, guid: 4550eec3c15925242b459c79df213c88, type: 3}
+  m_PrefabInstance: {fileID: 1180923852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c81d4b8d3e740342860f5209d34d67f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1206070660 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3165476175298559700, guid: 4550eec3c15925242b459c79df213c88, type: 3}
   m_PrefabInstance: {fileID: 1045935906}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1206070661 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7406867916641707650, guid: 4550eec3c15925242b459c79df213c88, type: 3}
+  m_PrefabInstance: {fileID: 1045935906}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c81d4b8d3e740342860f5209d34d67f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1226923335
 GameObject:
   m_ObjectHideFlags: 0
@@ -3852,6 +3912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Note Checker (Up)
       objectReference: {fileID: 0}
+    - target: {fileID: 7406867916641707650, guid: 4550eec3c15925242b459c79df213c88, type: 3}
+      propertyPath: noteType
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4103,6 +4167,10 @@ MonoBehaviour:
   goodMusicalNoteData: {fileID: 11400000, guid: f98efc27ebdcab7468a0f99ef2abb993, type: 2}
   coolMusicalNoteData: {fileID: 11400000, guid: 61bd0d268a9738447a2f71be23e1df11, type: 2}
   missMusicalNoteData: {fileID: 11400000, guid: f773626d90e2c924e90a7337aef95a8c, type: 2}
+  activeLeftMusicalNoteList: []
+  activeDownMusicalNoteList: []
+  activeUpMusicalNoteList: []
+  activeRightMusicalNoteList: []
 --- !u!4 &1377810149
 Transform:
   m_ObjectHideFlags: 0
@@ -4439,10 +4507,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aed2b8cc017b12b44a8e9f16bb01b3ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftMusicalNote: {fileID: 380084249}
-  rightMusicalNote: {fileID: 753597815}
-  downMusicalNote: {fileID: 877815889}
-  upMusicalNote: {fileID: 1097537850}
+  leftMusicalNote: {fileID: 299266932}
+  rightMusicalNote: {fileID: 1206070661}
+  downMusicalNote: {fileID: 1181055238}
+  upMusicalNote: {fileID: 814327385}
 --- !u!114 &1407091371
 MonoBehaviour:
   m_ObjectHideFlags: 0
