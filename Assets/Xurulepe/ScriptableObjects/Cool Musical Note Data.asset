@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cool Musical Note Data
   m_EditorClassIdentifier: 
   scoreValue: 5
-  timingWindow: 0.9
+  timingWindow: 63
   accuracyInfo: Cool!
   noteGradient:
     topLeft: {r: 1, g: 0.96470594, b: 0.56078434, a: 1}

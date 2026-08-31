@@ -43,6 +43,7 @@ public class MusicalNoteSpawner : MonoBehaviour
                 MusicalNote musicalNote = musicalNoteObject.GetComponent<MusicalNote>();
 
                 musicalNote.SetPosition(rectTransform.anchoredPosition);
+                musicalNote.SetNoteType(noteType);
 
                 GameManager.Instance.AddActiveNote(musicalNote.GetComponent<RectTransform>(), noteType);
 

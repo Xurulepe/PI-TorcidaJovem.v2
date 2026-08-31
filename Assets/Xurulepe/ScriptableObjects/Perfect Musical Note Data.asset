@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Perfect Musical Note Data
   m_EditorClassIdentifier: 
   scoreValue: 20
-  timingWindow: 0.2
+  timingWindow: 7
   accuracyInfo: Perfect!
   noteGradient:
     topLeft: {r: 0.60784316, g: 0.8313726, b: 0.8117648, a: 1}

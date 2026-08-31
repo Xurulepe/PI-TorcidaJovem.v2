@@ -148,6 +148,36 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void RemoveActiveNote(RectTransform noteRectTransform, MusicalNotePool.NoteType noteType)
+    {
+        switch (noteType)
+        {
+            case MusicalNotePool.NoteType.Left:
+                activeLeftMusicalNoteList.Remove(noteRectTransform);
+
+                break;
+
+            case MusicalNotePool.NoteType.Down:
+                activeDownMusicalNoteList.Remove(noteRectTransform);
+
+                break;
+
+            case MusicalNotePool.NoteType.Up:
+                activeUpMusicalNoteList.Remove(noteRectTransform);
+
+                break;
+
+            case MusicalNotePool.NoteType.Right:
+                activeRightMusicalNoteList.Remove(noteRectTransform);
+
+                break;
+
+            default:
+
+                break;
+        }
+    }
+
     public List<RectTransform> GetActiveNotesList(MusicalNotePool.NoteType noteType)
     {
         switch (noteType)

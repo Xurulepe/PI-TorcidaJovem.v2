@@ -72,6 +72,7 @@ public class MusicalNoteSlot : MonoBehaviour
                         
             if (musicalNote.WasHit)
             {
+                Debug.Log("Nota já foi hit");
                 return;
             }
 
