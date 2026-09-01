@@ -44,7 +44,10 @@ public class Npcs_Base : MonoBehaviour
 
     void Start()
     {
-        SelecSprite();
+        if (ObjMissao == false)
+        {
+            SelecSprite();
+        }
     }
 
     void Update()

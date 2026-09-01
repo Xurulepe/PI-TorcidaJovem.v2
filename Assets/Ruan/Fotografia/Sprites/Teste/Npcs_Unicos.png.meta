@@ -1,10 +1,31 @@
 fileFormatVersion: 2
-guid: 831d83a556c9b84448600c01600b1484
+guid: ec995a4455b804c40916c8bedc87661b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6553981221537692626
-    second: menuBox_0
+      213: 8973676024691936476
+    second: Npcs_Unicos_0
+  - first:
+      213: -6581907171743879620
+    second: Npcs_Unicos_1
+  - first:
+      213: -398447425551388295
+    second: Npcs_Unicos_2
+  - first:
+      213: -4981870397023120190
+    second: Npcs_Unicos_3
+  - first:
+      213: 2806629843047967957
+    second: Npcs_Unicos_4
+  - first:
+      213: 990082133902300466
+    second: Npcs_Unicos_5
+  - first:
+      213: -7985253221112116801
+    second: Npcs_Unicos_6
+  - first:
+      213: 5916195895448512420
+    second: Npcs_Unicos_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 600
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +134,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: menuBox_0
+      name: Npcs_Unicos_0
       rect:
         serializedVersion: 2
-        x: 561
-        y: 157
-        width: 799
-        height: 643
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 114, y: 110, z: 111, w: 121}
+        x: 195
+        y: 51
+        width: 605
+        height: 673
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e244aa1bdc49b05a0800000000000000
-      internalID: -6553981221537692626
+      spriteID: cdcc335ccc6e88c70800000000000000
+      internalID: 8973676024691936476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Npcs_Unicos_1
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 29
+        width: 605
+        height: 695
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e2c9bbc4e58a4a0800000000000000
+      internalID: -6581907171743879620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Npcs_Unicos_2
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 29
+        width: 605
+        height: 695
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97137527d2e687af0800000000000000
+      internalID: -398447425551388295
       vertices: []
       indices: 
       edges: []
@@ -138,7 +203,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 881d14283df1fca458459e5330b62487
+    spriteID: ed0506f78a40ae94987c6fd3131afc76
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +213,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      menuBox_0: -6553981221537692626
+      Npcs_Unicos_0: 8973676024691936476
+      Npcs_Unicos_1: -6581907171743879620
+      Npcs_Unicos_2: -398447425551388295
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

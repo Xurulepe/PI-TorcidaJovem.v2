@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GerenciadorFotografia : MonoBehaviour
 {
@@ -15,14 +16,27 @@ public class GerenciadorFotografia : MonoBehaviour
     public GameObject[] missao;
     public GameObject[] Fotos;
 
+    public int FotosTirada;
+
+    [Header("TelaFinal")]
+    public GameObject telaFinal;
+
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
         }
-    }   
+    }
 
+    private void Update()
+    {
+        if (FotosTirada >= 3 && inFoto == false)
+        {
+            telaFinal.SetActive(true);
+            inFoto = true;
+        }
+    }
     public void ExecutarFoto()
     {
         if (inFoto == false)
@@ -53,7 +67,13 @@ public class GerenciadorFotografia : MonoBehaviour
     {
         yield return new WaitForSeconds(0.28f);
         Fotos[npcSelecionado.GetComponent<Npcs_Base>().QualMissao].SetActive(true);
+        FotosTirada++;
 
+    }
+
+    public void sairSelecFase()
+    {
+        SceneManager.LoadScene("Cenas_select");
     }
 }
 

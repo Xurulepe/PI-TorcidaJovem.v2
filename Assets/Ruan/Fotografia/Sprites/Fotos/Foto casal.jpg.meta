@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 831d83a556c9b84448600c01600b1484
+guid: d843fb4e97965054497ddfa83341c515
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6553981221537692626
-    second: menuBox_0
+      213: -6603484083039505672
+    second: Foto casal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: menuBox_0
+      name: Foto casal_0
       rect:
         serializedVersion: 2
-        x: 561
-        y: 157
-        width: 799
-        height: 643
+        x: 0
+        y: 0
+        width: 1152
+        height: 922
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 114, y: 110, z: 111, w: 121}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e244aa1bdc49b05a0800000000000000
-      internalID: -6553981221537692626
+      spriteID: 8f2fb769636bb54a0800000000000000
+      internalID: -6603484083039505672
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 881d14283df1fca458459e5330b62487
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      menuBox_0: -6553981221537692626
+      Foto casal_0: -6603484083039505672
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
