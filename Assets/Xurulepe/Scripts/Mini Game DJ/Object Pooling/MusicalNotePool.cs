@@ -3,21 +3,14 @@ using UnityEngine;
 
 public class MusicalNotePool : MonoBehaviour
 {
-    public static MusicalNotePool Instance;
+    public static MusicalNotePool Instance { get; private set; }
 
     [Header("Musical Notes Pooling System")]
     [SerializeField] private ObjectPool leftMusicalNote;
     [SerializeField] private ObjectPool downMusicalNote;
     [SerializeField] private ObjectPool upMusicalNote;
     [SerializeField] private ObjectPool rightMusicalNote;
-
-    public enum NoteType
-    {
-        Left, 
-        Down,
-        Up,
-        Right
-    }
+    
 
     private void Awake()
     {
@@ -34,23 +27,31 @@ public class MusicalNotePool : MonoBehaviour
         rightMusicalNote.SetupPool();
     }
 
-    public GameObject GetPooledObject(NoteType noteType)
+    public GameObject GetPooledObject(NoteDirection noteDirection)
     {
-        switch (noteType)
+        switch (noteDirection)
         {
-            case NoteType.Left:
+            case NoteDirection.Left:
                 return leftMusicalNote.GetPooledObject();
             
-            case NoteType.Down:
+            case NoteDirection.Down:
                 return downMusicalNote.GetPooledObject();
 
-            case NoteType.Up:
+            case NoteDirection.Up:
                 return upMusicalNote.GetPooledObject();
 
-            case NoteType.Right:
+            case NoteDirection.Right:
                 return rightMusicalNote.GetPooledObject();
         }
 
         return null;
     }
+}
+
+public enum NoteDirection
+{
+    Left,
+    Down,
+    Up,
+    Right
 }

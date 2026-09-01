@@ -456,6 +456,10 @@ PrefabInstance:
       propertyPath: noteType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5243502821731053614, guid: 67ebf71535022d940aca8f6d3da7f0d4, type: 3}
+      propertyPath: noteDirection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7582612538731412312, guid: 67ebf71535022d940aca8f6d3da7f0d4, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -847,11 +851,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c81d4b8d3e740342860f5209d34d67f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteDirection: 0
   musicalNoteLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  noteType: 0
-  rectTransform: {fileID: 0}
 --- !u!61 &380084250
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1785,11 +1788,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c81d4b8d3e740342860f5209d34d67f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteDirection: 0
   musicalNoteLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  noteType: 0
-  rectTransform: {fileID: 0}
 --- !u!61 &753597816
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1945,11 +1947,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c81d4b8d3e740342860f5209d34d67f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteDirection: 0
   musicalNoteLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  noteType: 0
-  rectTransform: {fileID: 0}
 --- !u!61 &877815890
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2584,6 +2585,10 @@ PrefabInstance:
       propertyPath: noteType
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7406867916641707650, guid: 4550eec3c15925242b459c79df213c88, type: 3}
+      propertyPath: noteDirection
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2745,11 +2750,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c81d4b8d3e740342860f5209d34d67f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteDirection: 0
   musicalNoteLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  noteType: 0
-  rectTransform: {fileID: 0}
 --- !u!61 &1097537851
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3284,6 +3288,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7406867916641707650, guid: 4550eec3c15925242b459c79df213c88, type: 3}
       propertyPath: noteType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7406867916641707650, guid: 4550eec3c15925242b459c79df213c88, type: 3}
+      propertyPath: noteDirection
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -3898,6 +3906,10 @@ PrefabInstance:
       propertyPath: noteType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7406867916641707650, guid: 4550eec3c15925242b459c79df213c88, type: 3}
+      propertyPath: noteDirection
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4019,6 +4031,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5243502821731053614, guid: 67ebf71535022d940aca8f6d3da7f0d4, type: 3}
       propertyPath: noteType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243502821731053614, guid: 67ebf71535022d940aca8f6d3da7f0d4, type: 3}
+      propertyPath: noteDirection
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7582612538731412312, guid: 67ebf71535022d940aca8f6d3da7f0d4, type: 3}
@@ -4352,6 +4368,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5243502821731053614, guid: 67ebf71535022d940aca8f6d3da7f0d4, type: 3}
       propertyPath: noteType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5243502821731053614, guid: 67ebf71535022d940aca8f6d3da7f0d4, type: 3}
+      propertyPath: noteDirection
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7582612538731412312, guid: 67ebf71535022d940aca8f6d3da7f0d4, type: 3}
@@ -7165,7 +7185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10fece472739a944b5ee170c49aaea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteType: 2
+  noteDirection: 0
   minimumSpawnTime: 1
   maximumSpawnTime: 5
 --- !u!1 &2500861675474341452
@@ -7197,7 +7217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10fece472739a944b5ee170c49aaea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteType: 3
+  noteDirection: 0
   minimumSpawnTime: 1
   maximumSpawnTime: 5
 --- !u!4 &4053641340063105369
@@ -7379,7 +7399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10fece472739a944b5ee170c49aaea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteType: 1
+  noteDirection: 0
   minimumSpawnTime: 1
   maximumSpawnTime: 5
 --- !u!1 &6053160258453362518
@@ -7863,7 +7883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10fece472739a944b5ee170c49aaea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteType: 0
+  noteDirection: 0
   minimumSpawnTime: 1
   maximumSpawnTime: 5
 --- !u!212 &8934578053368314107

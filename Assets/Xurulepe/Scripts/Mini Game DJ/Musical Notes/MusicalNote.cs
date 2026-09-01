@@ -5,9 +5,10 @@ public class MusicalNote : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private RectTransform rectTransform;
 
+    private NoteDirection noteDirection;
     private bool wasHit = false;
-    private MusicalNotePool.NoteType noteType;
     private bool wasChecked = false;
+
 
     public bool WasHit => wasHit;
     public bool WasChecked => wasChecked;
@@ -15,7 +16,6 @@ public class MusicalNote : MonoBehaviour
 
     private void Update()
     {
-        //transform.position = new Vector3(transform.position.x, transform.position.y * moveSpeed * Time.deltaTime, transform.position.z);
         rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, rectTransform.anchoredPosition.y -1f * moveSpeed * Time.deltaTime);
     }
 
@@ -32,7 +32,7 @@ public class MusicalNote : MonoBehaviour
     public void DeactiveSelf()
     {
         GameManager.Instance.IncrementDeactivatedNotesCount();
-        GameManager.Instance.RemoveActiveNote(rectTransform, noteType);
+        GameManager.Instance.RemoveActiveNote(rectTransform, noteDirection);
         gameObject.SetActive(false);
     }
 
@@ -46,9 +46,9 @@ public class MusicalNote : MonoBehaviour
         return rectTransform.anchoredPosition;
     }
 
-    public void SetNoteType(MusicalNotePool.NoteType noteType)
+    public void SetNoteDirection(NoteDirection noteDirection)
     {
-        this.noteType = noteType;
+        this.noteDirection = noteDirection;
     }
 
     private void OnDisable()

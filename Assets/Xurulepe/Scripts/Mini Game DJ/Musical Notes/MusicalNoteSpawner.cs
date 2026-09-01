@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class MusicalNoteSpawner : MonoBehaviour
 {
-    [SerializeField] private MusicalNotePool.NoteType noteType;
+    [SerializeField] private NoteDirection noteDirection;
     [SerializeField] private float minimumSpawnTime;
     [SerializeField] private float maximumSpawnTime;
 
     private float spawnTimer;
-
     private int maxNotesCount;
     private int spawnedNotesCount;
-
     private RectTransform rectTransform;
 
 
@@ -36,16 +34,16 @@ public class MusicalNoteSpawner : MonoBehaviour
 
         if (spawnTimer <= 0f)
         {
-            GameObject musicalNoteObject = MusicalNotePool.Instance.GetPooledObject(noteType);
+            GameObject musicalNoteObject = MusicalNotePool.Instance.GetPooledObject(noteDirection);
 
             if (musicalNoteObject != null)
             {
                 MusicalNote musicalNote = musicalNoteObject.GetComponent<MusicalNote>();
 
                 musicalNote.SetPosition(rectTransform.anchoredPosition);
-                musicalNote.SetNoteType(noteType);
+                musicalNote.SetNoteDirection(noteDirection);
 
-                GameManager.Instance.AddActiveNote(musicalNote.GetComponent<RectTransform>(), noteType);
+                GameManager.Instance.AddActiveNote(musicalNote.GetComponent<RectTransform>(), noteDirection);
 
                 musicalNoteObject.SetActive(true);
 

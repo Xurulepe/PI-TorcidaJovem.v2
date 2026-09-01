@@ -5,12 +5,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private int score = 0;
-    private int comboCount = 0;
-    private MusicalNoteDataSO currentMusicalNoteData;
     [SerializeField] private int maxNotesToSpawn;
+
+    private MusicalNoteDataSO currentMusicalNoteData;
+    private int comboCount = 0;
     private int deactivatedNotesCount;
     private bool isGameRunning = false;
-
     private int maxScore;
 
     [Header("Musical Notes Settings")]
@@ -33,14 +33,24 @@ public class GameManager : MonoBehaviour
     public int DeactivatedNotesCount => deactivatedNotesCount;
     public bool IsGameRunning => isGameRunning;
 
+
     public event Action OnScoreChanged;
     public event Action OnGameComplete;
 
+
     public static GameManager Instance { get; private set; }
+
 
     private void Awake()
     {
-        Instance = this;
+        if (Instance == null)
+        {
+            Instance = this; 
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void StartGame()
@@ -48,6 +58,7 @@ public class GameManager : MonoBehaviour
         isGameRunning = true;
     }
 
+    #region SCORE CONTROLLER
     public void CalculateScore(float distanceToNote)
     {
         if (distanceToNote <= perfectMusicalNoteData.timingWindow)
@@ -89,6 +100,17 @@ public class GameManager : MonoBehaviour
         OnScoreChanged?.Invoke();
     }
 
+    private void SaveScore()
+    {
+        if (score > PlayerPrefs.GetInt("Max Score"))
+        {
+            PlayerPrefs.SetInt("Max Score", score);
+
+            Debug.Log("New score: " + score);
+        }
+    }
+    #endregion
+
     public void IncrementDeactivatedNotesCount()
     {
         deactivatedNotesCount++;
@@ -108,36 +130,27 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void SaveScore()
+    #region MUSICAL NOTE CONTROLLER
+    public void AddActiveNote(RectTransform noteRectTransform, NoteDirection noteDirection)
     {
-        if (score > PlayerPrefs.GetInt("Max Score"))
+        switch (noteDirection)
         {
-            PlayerPrefs.SetInt("Max Score", score);
-
-            Debug.Log("New score: " + score);
-        }
-    }
-
-    public void AddActiveNote(RectTransform noteRectTransform, MusicalNotePool.NoteType noteType)
-    {
-        switch (noteType)
-        {
-            case MusicalNotePool.NoteType.Left:
+            case NoteDirection.Left:
                 activeLeftMusicalNoteList.Add(noteRectTransform);
 
                 break;
 
-            case MusicalNotePool.NoteType.Down:
+            case NoteDirection.Down:
                 activeDownMusicalNoteList.Add(noteRectTransform);
 
                 break;
 
-            case MusicalNotePool.NoteType.Up:
+            case NoteDirection.Up:
                 activeUpMusicalNoteList.Add(noteRectTransform);
 
                 break;
 
-            case MusicalNotePool.NoteType.Right:
+            case NoteDirection.Right:
                 activeRightMusicalNoteList.Add(noteRectTransform);
 
                 break;
@@ -148,26 +161,26 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void RemoveActiveNote(RectTransform noteRectTransform, MusicalNotePool.NoteType noteType)
+    public void RemoveActiveNote(RectTransform noteRectTransform, NoteDirection noteDirection)
     {
-        switch (noteType)
+        switch (noteDirection)
         {
-            case MusicalNotePool.NoteType.Left:
+            case NoteDirection.Left:
                 activeLeftMusicalNoteList.Remove(noteRectTransform);
 
                 break;
 
-            case MusicalNotePool.NoteType.Down:
+            case NoteDirection.Down:
                 activeDownMusicalNoteList.Remove(noteRectTransform);
 
                 break;
 
-            case MusicalNotePool.NoteType.Up:
+            case NoteDirection.Up:
                 activeUpMusicalNoteList.Remove(noteRectTransform);
 
                 break;
 
-            case MusicalNotePool.NoteType.Right:
+            case NoteDirection.Right:
                 activeRightMusicalNoteList.Remove(noteRectTransform);
 
                 break;
@@ -178,24 +191,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public List<RectTransform> GetActiveNotesList(MusicalNotePool.NoteType noteType)
+    public List<RectTransform> GetActiveNotesList(NoteDirection noteDirection)
     {
-        switch (noteType)
+        switch (noteDirection)
         {
-            case MusicalNotePool.NoteType.Left:
+            case NoteDirection.Left:
                 return activeLeftMusicalNoteList;
 
-            case MusicalNotePool.NoteType.Down:
+            case NoteDirection.Down:
                 return activeDownMusicalNoteList;
 
-            case MusicalNotePool.NoteType.Up:
+            case NoteDirection.Up:
                 return activeUpMusicalNoteList;
 
-            case MusicalNotePool.NoteType.Right:
+            case NoteDirection.Right:
                 return activeRightMusicalNoteList;
 
             default:
                 return null;
         }
     }
+    #endregion
 }

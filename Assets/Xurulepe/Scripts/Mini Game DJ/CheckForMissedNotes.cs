@@ -5,10 +5,10 @@ public class CheckForMissedNotes : MonoBehaviour
 {
     [SerializeField] private float checkInterval;
     [SerializeField] private RectTransform rectTransform;
+    [SerializeField] private List<RectTransform> allActiveMusicalNoteList = new List<RectTransform>();
 
     private Rect rect;
     private float timer = 0f;
-    [SerializeField] private List<RectTransform> allActiveMusicalNoteList = new List<RectTransform>();
 
 
     private void Start()
@@ -32,10 +32,10 @@ public class CheckForMissedNotes : MonoBehaviour
     private void UpdateList()
     {
         allActiveMusicalNoteList.Clear();
-        allActiveMusicalNoteList.AddRange(GameManager.Instance.GetActiveNotesList(MusicalNotePool.NoteType.Left));
-        allActiveMusicalNoteList.AddRange(GameManager.Instance.GetActiveNotesList(MusicalNotePool.NoteType.Down));
-        allActiveMusicalNoteList.AddRange(GameManager.Instance.GetActiveNotesList(MusicalNotePool.NoteType.Up));
-        allActiveMusicalNoteList.AddRange(GameManager.Instance.GetActiveNotesList(MusicalNotePool.NoteType.Right));
+        allActiveMusicalNoteList.AddRange(GameManager.Instance.GetActiveNotesList(NoteDirection.Left));
+        allActiveMusicalNoteList.AddRange(GameManager.Instance.GetActiveNotesList(NoteDirection.Down));
+        allActiveMusicalNoteList.AddRange(GameManager.Instance.GetActiveNotesList(NoteDirection.Up));
+        allActiveMusicalNoteList.AddRange(GameManager.Instance.GetActiveNotesList(NoteDirection.Right));
     }
 
     private void Check()
@@ -64,7 +64,6 @@ public class CheckForMissedNotes : MonoBehaviour
                     MusicalNoteUI musicalNoteUI = musicalNote.gameObject.GetComponent<MusicalNoteUI>();
                     musicalNoteUI.Blink();
 
-                    Debug.LogWarning("passou");
                     return;
                 }
 
@@ -76,9 +75,6 @@ public class CheckForMissedNotes : MonoBehaviour
     private Rect GetWorldRect(RectTransform rectTransform)
     {
         Vector3[] corners = new Vector3[4];
-        //Debug.Log("Is local rectTransform null? " + (rectTransform == null));
-        ////Debug.Log("RectTransform: " + rectTransform.name);
-        //Debug.Log("Vector3 array length: " + corners.Length);
         rectTransform.GetWorldCorners(corners);
 
         float x = corners[0].x;

@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class MusicalNoteSlot : MonoBehaviour
 {
+    [SerializeField] private NoteDirection noteDirection;
     [SerializeField] private LayerMask musicalNoteLayerMask;
-    [SerializeField] private MusicalNotePool.NoteType noteType;
-    [SerializeField] private RectTransform rectTransform;
-
+    
+    private RectTransform rectTransform;
     private MusicalNoteUI musicalNoteUI;
+    private List<RectTransform> activeMusicalNoteList =  new List<RectTransform>();
 
-    private List<RectTransform> activeMusicalNoteList;
 
     private void Awake()
     {
@@ -19,7 +19,7 @@ public class MusicalNoteSlot : MonoBehaviour
 
     private void Start()
     {
-        activeMusicalNoteList = GameManager.Instance.GetActiveNotesList(noteType);
+        activeMusicalNoteList = GameManager.Instance.GetActiveNotesList(noteDirection);
     }
 
     private void Update()  // testing
@@ -36,7 +36,6 @@ public class MusicalNoteSlot : MonoBehaviour
 
     public void CheckForNote()
     {
-        //Debug.Log("Is rectTransform null? " + (rectTransform == null));
         Rect rect = GetWorldRect(rectTransform);
 
         float containerPositionY = RectTransformUtility.WorldToScreenPoint(null, rect.position).y;
@@ -62,29 +61,23 @@ public class MusicalNoteSlot : MonoBehaviour
                 isNoteInSlot = true;
                 musicalNote = note.GetComponent<MusicalNote>();
                 notePositionY = RectTransformUtility.WorldToScreenPoint(null, noteRect.position).y;
+
                 break;
             }
         }
 
         if (isNoteInSlot)
-        {
-            //Debug.Log("Note in slot");
-                        
+        {                        
             if (musicalNote.WasHit)
             {
-                Debug.Log("Nota já foi hit");
                 return;
             }
 
             musicalNote.SetHit();
 
             float distanceToNote = Mathf.Abs(containerPositionY - notePositionY);
-            Debug.Log("Distance to note: " + distanceToNote);
-            Debug.Log("Container position Y: " + containerPositionY);
-            Debug.Log("Note position Y: " + notePositionY);
             GameManager.Instance.CalculateScore(distanceToNote);
 
-            //MusicalNoteUI musicalNoteUI = colliderObject.GetComponent<MusicalNoteUI>();
             musicalNoteUI.Blink();
             musicalNoteUI.Pulse();
             
@@ -99,9 +92,6 @@ public class MusicalNoteSlot : MonoBehaviour
     private Rect GetWorldRect(RectTransform rectTransform)
     {
         Vector3[] corners = new Vector3[4];
-        //Debug.Log("Is local rectTransform null? " + (rectTransform == null));
-        ////Debug.Log("RectTransform: " + rectTransform.name);
-        //Debug.Log("Vector3 array length: " + corners.Length);
         rectTransform.GetWorldCorners(corners);
 
         float x = corners[0].x;
