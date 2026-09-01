@@ -13,7 +13,7 @@ public class PlayerInputDJ : MonoBehaviour
 
     public void SetInput(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && GameManager.Instance.IsGameRunning)
         {
             input = context.ReadValue<Vector2>();
 
