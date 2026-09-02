@@ -50,11 +50,6 @@ public class GameMenu : MonoBehaviour
         SceneManager.LoadScene(sceneBuildIndex);
     }
 
-    public void Quit()
-    {
-        Debug.Log("Quit!");
-    }
-
     private void ShowFinalPanel()
     {
         finalMenu.SetActive(true);

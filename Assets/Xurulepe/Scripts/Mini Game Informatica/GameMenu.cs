@@ -40,15 +40,10 @@ namespace MiniGame.TecInformatica
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
         public void BackToSelectScene()
         {
             SceneManager.LoadScene(sceneBuildIndex);
-        }
-
-        public void Quit()
-        {
-            Debug.Log("Quit!");
-            Application.Quit();
         }
     }
 }
