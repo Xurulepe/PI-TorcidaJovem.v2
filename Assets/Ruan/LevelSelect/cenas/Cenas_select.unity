@@ -4668,7 +4668,7 @@ Transform:
   m_GameObject: {fileID: 1227625564}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.861118, y: -1.6349976, z: -10}
+  m_LocalPosition: {x: -21.857916, y: -1.6349976, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5844,11 +5844,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8861079543951533867, guid: f144ac2f17c7c5f43a1d7ad76b1fd457, type: 3}
       propertyPath: nomeCena
-      value: 
+      value: Costura
       objectReference: {fileID: 0}
     - target: {fileID: 8861079543951533867, guid: f144ac2f17c7c5f43a1d7ad76b1fd457, type: 3}
       propertyPath: JogoPronto
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

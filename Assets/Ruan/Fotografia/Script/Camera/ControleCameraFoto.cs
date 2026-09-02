@@ -60,7 +60,10 @@ public class ControleCameraFoto : MonoBehaviour
             if (tempoUltimoToque >= 0 &&
                 tempoAtual - tempoUltimoToque <= tempoMaximoDoubleTap)
             {
-                TirarFoto();
+                if (GerenciadorFotografia.instance.inFoto == false)
+                {
+                    TirarFoto();
+                }
 
                 // Reseta para não contar um terceiro toque
                 tempoUltimoToque = -1f;

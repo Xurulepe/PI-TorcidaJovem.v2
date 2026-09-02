@@ -11,6 +11,7 @@ public class GerenciadorFotografia : MonoBehaviour
 
     public Animator animaDiafragma;
     public bool inFoto;
+    public bool UltimoAberto;
 
     [Header("controle de missao")]
     public GameObject[] missao;
@@ -20,6 +21,7 @@ public class GerenciadorFotografia : MonoBehaviour
 
     [Header("TelaFinal")]
     public GameObject telaFinal;
+    public GameObject BtnVoltar;
 
     private void Awake()
     {
@@ -31,6 +33,11 @@ public class GerenciadorFotografia : MonoBehaviour
 
     private void Update()
     {
+        if (FotosTirada == 3 && UltimoAberto == true)
+        {
+            BtnVoltar.SetActive(false);
+        }
+
         if (FotosTirada >= 3 && inFoto == false)
         {
             telaFinal.SetActive(true);
