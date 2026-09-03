@@ -32,7 +32,7 @@ public class MusicalNote : MonoBehaviour
     public void DeactiveSelf()
     {
         GameManager.Instance.IncrementDeactivatedNotesCount();
-        GameManager.Instance.RemoveActiveNote(rectTransform, noteDirection);
+        GameManager.Instance.RemoveActiveMusicalNote(rectTransform, noteDirection);
         gameObject.SetActive(false);
     }
 

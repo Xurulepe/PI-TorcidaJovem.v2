@@ -19,7 +19,7 @@ public class MusicalNoteSlot : MonoBehaviour
 
     private void Start()
     {
-        activeMusicalNoteList = GameManager.Instance.GetActiveNotesList(noteDirection);
+        activeMusicalNoteList = GameManager.Instance.GetActiveMusicalNotes(noteDirection);
     }
 
     private void Update()  // testing

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreValue: 5
   timingWindow: 63
-  accuracyInfo: Cool!
+  accuracyInfo: Nada mau!
   noteGradient:
     topLeft: {r: 1, g: 0.96470594, b: 0.56078434, a: 1}
     topRight: {r: 1, g: 0.96470594, b: 0.56078434, a: 1}

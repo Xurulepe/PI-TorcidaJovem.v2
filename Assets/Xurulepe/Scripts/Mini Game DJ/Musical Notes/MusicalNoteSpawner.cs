@@ -43,7 +43,7 @@ public class MusicalNoteSpawner : MonoBehaviour
                 musicalNote.SetPosition(rectTransform.anchoredPosition);
                 musicalNote.SetNoteDirection(noteDirection);
 
-                GameManager.Instance.AddActiveNote(musicalNote.GetComponent<RectTransform>(), noteDirection);
+                GameManager.Instance.AddActiveMusicalNote(musicalNote.GetComponent<RectTransform>(), noteDirection);
 
                 musicalNoteObject.SetActive(true);
 

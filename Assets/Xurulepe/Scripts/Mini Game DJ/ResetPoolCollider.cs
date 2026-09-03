@@ -7,6 +7,7 @@ public class ResetPoolCollider : MonoBehaviour
     [SerializeField] private RectTransform rectTransform;
     [SerializeField] private List<RectTransform> allActiveMusicalNoteList = new List<RectTransform>();
 
+
     private Rect rect;
     private float timer = 0f;
 
@@ -14,6 +15,7 @@ public class ResetPoolCollider : MonoBehaviour
     private void Start()
     {
         rect = GetWorldRect(rectTransform);
+        allActiveMusicalNoteList = GameManager.Instance.GetAllActiveMusicalNotes();
     }
 
     private void Update()
@@ -24,18 +26,8 @@ public class ResetPoolCollider : MonoBehaviour
         {
             timer = 0f;
 
-            UpdateList();
             Check();
         }
-    }
-
-    private void UpdateList()
-    {
-        allActiveMusicalNoteList.Clear();
-        allActiveMusicalNoteList.AddRange(GameManager.Instance.GetActiveNotesList(NoteDirection.Left));
-        allActiveMusicalNoteList.AddRange(GameManager.Instance.GetActiveNotesList(NoteDirection.Down));
-        allActiveMusicalNoteList.AddRange(GameManager.Instance.GetActiveNotesList(NoteDirection.Up));
-        allActiveMusicalNoteList.AddRange(GameManager.Instance.GetActiveNotesList(NoteDirection.Right));
     }
 
     private void Check()

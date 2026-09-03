@@ -7,23 +7,24 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int score = 0;
     [SerializeField] private int maxNotesToSpawn;
 
-    private MusicalNoteDataSO currentMusicalNoteData;
-    private int comboCount = 0;
-    private int deactivatedNotesCount;
-    private bool isGameRunning = false;
-    private int maxScore;
-
     [Header("Musical Notes Settings")]
     [SerializeField] private MusicalNoteDataSO perfectMusicalNoteData;
     [SerializeField] private MusicalNoteDataSO goodMusicalNoteData;
     [SerializeField] private MusicalNoteDataSO coolMusicalNoteData;
     [SerializeField] private MusicalNoteDataSO missMusicalNoteData;
 
-    [Header("Active Musical Notes")]
-    public List<RectTransform> activeLeftMusicalNoteList = new List<RectTransform>();
-    public List<RectTransform> activeDownMusicalNoteList = new List<RectTransform>();
-    public List<RectTransform> activeUpMusicalNoteList = new List<RectTransform>();
-    public List<RectTransform> activeRightMusicalNoteList = new List<RectTransform>();
+
+    private MusicalNoteDataSO currentMusicalNoteData;
+    private int comboCount = 0;
+    private int deactivatedNotesCount;
+    private bool isGameRunning = false;
+    private int maxScore;
+
+    private List<RectTransform> activeLeftMusicalNoteList = new List<RectTransform>();
+    private List<RectTransform> activeDownMusicalNoteList = new List<RectTransform>();
+    private List<RectTransform> activeUpMusicalNoteList = new List<RectTransform>();
+    private List<RectTransform> activeRightMusicalNoteList = new List<RectTransform>();
+    private List<RectTransform> allActiveMusicalNoteList = new List<RectTransform>();
 
 
     public int Score => score;
@@ -111,6 +112,7 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
+    #region MUSICAL NOTE CONTROLLER
     public void IncrementDeactivatedNotesCount()
     {
         deactivatedNotesCount++;
@@ -126,12 +128,13 @@ public class GameManager : MonoBehaviour
         {
             SaveScore();
 
+            isGameRunning = false;
+
             OnGameComplete?.Invoke();
         }
     }
 
-    #region MUSICAL NOTE CONTROLLER
-    public void AddActiveNote(RectTransform noteRectTransform, NoteDirection noteDirection)
+    public void AddActiveMusicalNote(RectTransform noteRectTransform, NoteDirection noteDirection)
     {
         switch (noteDirection)
         {
@@ -159,9 +162,11 @@ public class GameManager : MonoBehaviour
 
                 break;
         }
+
+        allActiveMusicalNoteList.Add(noteRectTransform);
     }
 
-    public void RemoveActiveNote(RectTransform noteRectTransform, NoteDirection noteDirection)
+    public void RemoveActiveMusicalNote(RectTransform noteRectTransform, NoteDirection noteDirection)
     {
         switch (noteDirection)
         {
@@ -189,9 +194,11 @@ public class GameManager : MonoBehaviour
 
                 break;
         }
+
+        allActiveMusicalNoteList.Remove(noteRectTransform);
     }
 
-    public List<RectTransform> GetActiveNotesList(NoteDirection noteDirection)
+    public List<RectTransform> GetActiveMusicalNotes(NoteDirection noteDirection)
     {
         switch (noteDirection)
         {
@@ -210,6 +217,11 @@ public class GameManager : MonoBehaviour
             default:
                 return null;
         }
+    }
+
+    public List<RectTransform> GetAllActiveMusicalNotes()
+    {
+        return allActiveMusicalNoteList;
     }
     #endregion
 }
