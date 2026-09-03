@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class MusicalNoteClicker : MonoBehaviour
+public class MusicalNoteClicker : MonoBehaviour, IPointerDownHandler
 {
     [SerializeField] private MusicalNoteSlot musicalNoteSlot;
 
-    private void OnMouseDown()
+    public void OnPointerDown(PointerEventData eventData)
     {
         musicalNoteSlot.CheckForNote();
     }

@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7187951693034241364
 RectTransform:
   m_ObjectHideFlags: 0
@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 3165476175298559700}
   - component: {fileID: 7406867916641707650}
   - component: {fileID: 2747484426511584201}
+  - component: {fileID: 6650789281788925}
   m_Layer: 5
   m_Name: Note Checker (DIRECTION)
   m_TagString: Untagged
@@ -183,11 +184,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c81d4b8d3e740342860f5209d34d67f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteDirection: 0
   musicalNoteLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  noteType: 0
-  rectTransform: {fileID: 3165476175298559700}
 --- !u!114 &2747484426511584201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,8 +200,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f849e1d06a0e3a94abb24cc1bc2281fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 3828725346317227271}
+  image: {fileID: 3918456487806909754}
   changeColorDuration: 0.5
+--- !u!114 &6650789281788925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4512798274027598401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4412edb808559be4196444ca40ad2c27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicalNoteSlot: {fileID: 7406867916641707650}
 --- !u!1 &4720455304606932242
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,7 +232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5120429557146536678
 RectTransform:
   m_ObjectHideFlags: 0

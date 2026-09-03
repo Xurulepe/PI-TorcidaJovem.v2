@@ -86,6 +86,9 @@ public class MusicalNoteSlot : MonoBehaviour
         else
         {
             GameManager.Instance.ReduceScore();
+
+            musicalNoteUI.Blink();
+            musicalNoteUI.Pulse();
         }
     }
 
