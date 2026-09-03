@@ -1,29 +1,26 @@
-﻿using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Nova Pergunta", menuName = "Pergunta")]
-
-
 public class perguntas : ScriptableObject
 {
     public string _pergunta;
+
     public string[] _respostas;
+
+    // Índice da resposta correta
     public int _correct;
 
-    public void CheckPerg(int value)
+    public bool CheckPerg(int value)
     {
-        if(value == _correct)
+        if (value == _correct)
         {
-            Debug.Log("Certa reposta");
+            return true;
         }
         else
         {
-            Debug.Log("Errada reposta");
+            return false;
         }
     }
-
-   
-
-
-
 }
+

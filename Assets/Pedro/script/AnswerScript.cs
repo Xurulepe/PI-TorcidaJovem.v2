@@ -1,25 +1,33 @@
+
 using UnityEngine;
-using System.Collections.Generic;
-using System.Collections;
+using UnityEngine.UI;
 
 public class AnswerScript : MonoBehaviour
 {
-
-    public bool isCorrect = false;
     public QuizManager quizManager;
 
+    // 0 = primeira resposta
+    // 1 = segunda resposta
+    // 2 = terceira resposta
+    // 3 = quarta resposta
+    public int valorResposta;
+
+    private Button botao;
+
+    private void Awake()
+    {
+        botao = GetComponent<Button>();
+    }
 
     public void Answer()
     {
-        if (isCorrect)
+        if (quizManager == null)
         {
-            Debug.Log("Correct Answer");
-            //quizManager.correct();
+            Debug.LogError("QuizManager não foi configurado no AnswerScript!");
+            return;
         }
-        else
-        {
-            Debug.Log("Wrong Answer");
-            //quizManager.correct();
-        }
+
+        quizManager.Correct(valorResposta, botao);
     }
 }
+
