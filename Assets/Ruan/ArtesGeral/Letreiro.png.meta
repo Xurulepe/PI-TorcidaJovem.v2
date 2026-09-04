@@ -1,0 +1,251 @@
+fileFormatVersion: 2
+guid: ec3d011dd9976084391ba5317b4a071a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1814521467050229620
+    second: Letreiro_0
+  - first:
+      213: -2675184631826454949
+    second: Letreiro_1
+  - first:
+      213: 3589467485101598300
+    second: Letreiro_2
+  - first:
+      213: -5723410047009120582
+    second: Letreiro_3
+  - first:
+      213: -3472730141054480039
+    second: Letreiro_4
+  - first:
+      213: -7304107245681631503
+    second: Letreiro_5
+  - first:
+      213: 7055038874594281742
+    second: Letreiro_6
+  - first:
+      213: -1343529249231349552
+    second: Letreiro_7
+  - first:
+      213: 3198972326023028550
+    second: Letreiro_8
+  - first:
+      213: 8068253508164422533
+    second: Letreiro_9
+  - first:
+      213: 527662049637389809
+    second: Letreiro_10
+  - first:
+      213: 8584305967999355367
+    second: Letreiro_11
+  - first:
+      213: -826778312379343953
+    second: Letreiro_12
+  - first:
+      213: -6704166279347576844
+    second: Letreiro_13
+  - first:
+      213: 7858914021029633086
+    second: Letreiro_14
+  - first:
+      213: -1986465870527074292
+    second: Letreiro_15
+  - first:
+      213: -2187525943953118482
+    second: Letreiro_16
+  - first:
+      213: -8109162370769938398
+    second: Letreiro_17
+  - first:
+      213: -8121188319973717927
+    second: Letreiro_18
+  - first:
+      213: 1058894197155282817
+    second: Letreiro_19
+  - first:
+      213: -6880057747680868227
+    second: Letreiro_20
+  - first:
+      213: 1004811304567009172
+    second: Letreiro_21
+  - first:
+      213: -1815375763275480212
+    second: Letreiro_22
+  - first:
+      213: 6832868414331475979
+    second: Letreiro_23
+  - first:
+      213: -5785051035264869881
+    second: Letreiro_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Letreiro_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 1536
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f79d819a97e2910800000000000000
+      internalID: 1814521467050229620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Letreiro_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1536
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56666740c5dfdad0800000000000000
+      internalID: -2675184631826454949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e3c0b02962a409e44b36f870010be530
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Letreiro_0: 1814521467050229620
+      Letreiro_1: -2675184631826454949
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

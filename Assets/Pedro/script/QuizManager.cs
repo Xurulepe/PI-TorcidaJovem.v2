@@ -1,9 +1,9 @@
-
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class QuizManager : MonoBehaviour
 {
@@ -34,10 +34,83 @@ public class QuizManager : MonoBehaviour
     public Sprite ImagemCerta;
     public Sprite ImagemErrada;
 
+    [Header("Icones Question")]
+    public int QualQuestion;
+
+    public Image[] Icone;
+    public Sprite IconeQuest;
+    public Sprite IconeCerto;
+    public Sprite IconeErrado;
+
+    [Header("Resultado")]
+    public int quantidadePerguntas = 5;
+    public int acertos = 0;
+
+    public GameObject TelaVitoria;
+    public GameObject TelaDerrota;
+
+    private bool[] Respostas;
+    private bool[] Respondidas;
+
     private void Start()
     {
         Shuffle(_perg);
+
+        // Garante que teremos no máximo 5 perguntas
+        quantidadePerguntas = Mathf.Min(5, _perg.Count);
+
+        Respostas = new bool[quantidadePerguntas];
+        Respondidas = new bool[quantidadePerguntas];
+
+        _quest = 0;
+        acertos = 0;
+
+        // Esconde as telas de resultado
+        if (TelaVitoria != null)
+            TelaVitoria.SetActive(false);
+
+        if (TelaDerrota != null)
+            TelaDerrota.SetActive(false);
+
+        ControleIcone();
         generateQuestion();
+    }
+
+    // =========================================================
+    // CONTROLE DOS ÍCONES
+    // =========================================================
+
+    public void ControleIcone()
+    {
+        for (int i = 0; i < Icone.Length; i++)
+        {
+            // Se não existe pergunta para esse ícone
+            if (i >= quantidadePerguntas)
+            {
+                Icone[i].gameObject.SetActive(false);
+                continue;
+            }
+
+            Icone[i].gameObject.SetActive(true);
+
+            // Ainda não respondeu
+            if (!Respondidas[i])
+            {
+                Icone[i].sprite = IconeQuest;
+            }
+            // Já respondeu
+            else
+            {
+                if (Respostas[i])
+                {
+                    Icone[i].sprite = IconeCerto;
+                }
+                else
+                {
+                    Icone[i].sprite = IconeErrado;
+                }
+            }
+        }
     }
 
     // =========================================================
@@ -46,21 +119,32 @@ public class QuizManager : MonoBehaviour
 
     public void Correct(int value, Button botao)
     {
-        // Impede clicar várias vezes enquanto está dando feedback
         if (respondendo)
             return;
 
         respondendo = true;
 
-        // Verifica diretamente se a resposta está correta
+        // Verifica a resposta
         bool acertou = _perg[_quest].CheckPerg(value);
 
-        // Começa o feedback
+        // Salva resposta
+        Respostas[_quest] = acertou;
+        Respondidas[_quest] = true;
+
+        if (acertou)
+        {
+            acertos++;
+        }
+
+        // Atualiza os ícones
+        ControleIcone();
+
+        // Feedback visual
         StartCoroutine(FeedbackResposta(acertou, botao));
     }
 
     // =========================================================
-    // FEEDBACK VERDE / VERMELHO
+    // FEEDBACK
     // =========================================================
 
     IEnumerator FeedbackResposta(bool acertou, Button botao)
@@ -78,21 +162,14 @@ public class QuizManager : MonoBehaviour
                 else
                     corFeedback = corErrada;
 
-               
-
-                // Pisca
                 for (int i = 0; i < quantidadePiscadas; i++)
                 {
                     imagemBotao.color = corFeedback;
 
-                    if (acertou == true)
-                    {
+                    if (acertou)
                         Personagem.sprite = ImagemCerta;
-                    }
                     else
-                    {
                         Personagem.sprite = ImagemErrada;
-                    }
 
                     yield return new WaitForSeconds(tempoPiscar);
 
@@ -102,7 +179,6 @@ public class QuizManager : MonoBehaviour
                     yield return new WaitForSeconds(tempoPiscar);
                 }
 
-                // Deixa a cor por mais um instante
                 imagemBotao.color = corFeedback;
 
                 yield return new WaitForSeconds(tempoPiscar);
@@ -110,24 +186,21 @@ public class QuizManager : MonoBehaviour
         }
 
         // =====================================================
-        // PRÓXIMA PERGUNTA
+        // VERIFICA SE ACABARAM AS 5 PERGUNTAS
         // =====================================================
 
-        if (_quest >= _perg.Count - 1)
+        if (_quest >= quantidadePerguntas - 1)
         {
-            _quest = 0;
+            FinalizarQuiz();
+            yield break;
         }
-        else
-        {
-            _quest++;
-        }
+
+        // Próxima pergunta
+        _quest++;
 
         generateQuestion();
 
-        // =====================================================
-        // RESET DOS BOTÕES
-        // =====================================================
-
+        // Reset dos botões
         foreach (Button btn in btns)
         {
             if (btn == null)
@@ -140,6 +213,53 @@ public class QuizManager : MonoBehaviour
         }
 
         respondendo = false;
+    }
+
+    // =========================================================
+    // FINALIZA O QUIZ
+    // =========================================================
+
+    void FinalizarQuiz()
+    {
+        Debug.Log("QUIZ FINALIZADO!");
+        Debug.Log("Acertos: " + acertos + " / " + quantidadePerguntas);
+
+        // Mais acertos do que erros = VITÓRIA
+        int erros = quantidadePerguntas - acertos;
+
+        if (acertos > erros)
+        {
+            Debug.Log("JOGADOR GANHOU!");
+
+            if (TelaVitoria != null)               
+                TelaVitoria.SetActive(true);
+            
+        }
+        else
+        {
+            Debug.Log("JOGADOR PERDEU!");
+
+            if (TelaDerrota != null)
+                TelaDerrota.SetActive(true);
+        }
+
+        for (int i = 0; i < btns.Length; i++)
+        {
+            btns[i].enabled = false;
+        }
+
+        respondendo = true;
+    }
+
+
+    public void SairGame()
+    {
+        SceneManager.LoadScene("Cenas_select");
+    }
+
+    public void ResetarJogo()
+    {
+        SceneManager.LoadScene("Quiz");
     }
 
     // =========================================================
