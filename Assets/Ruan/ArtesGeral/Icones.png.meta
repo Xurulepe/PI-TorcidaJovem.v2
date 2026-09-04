@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 0d4adec5adfd5f6469b192a8e43c98ea
+guid: 7be94cee015bfae48b14443405151a77
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1780020970381023785
-    second: menuButtons_0
+      213: 7500482938498694921
+    second: Icones_0
   - first:
-      213: -8116832724500392004
-    second: menuButtons_1
+      213: -3497490083377588883
+    second: Icones_1
   - first:
-      213: -707739129474786754
-    second: menuButtons_2
-  - first:
-      213: 7280839829642279632
-    second: menuButtons_3
+      213: 449118660652190612
+    second: Icones_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,35 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button laranja
+      name: Icones_0
       rect:
         serializedVersion: 2
-        x: 557
-        y: 545
-        width: 576
-        height: 118
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 28, y: 35, z: 23, w: 29}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7d561bfbb581c47e0800000000000000
-      internalID: -1780020970381023785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: button azul
-      rect:
-        serializedVersion: 2
-        x: 557
-        y: 416
-        width: 576
-        height: 105
+        x: 722
+        y: 1419
+        width: 603
+        height: 487
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb753e254a73b5f80800000000000000
-      internalID: -8116832724500392004
+      spriteID: 90fb7194e71171860800000000000000
+      internalID: 7500482938498694921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: button verde
+      name: Icones_1
       rect:
         serializedVersion: 2
-        x: 557
-        y: 298
-        width: 576
-        height: 99
+        x: 712
+        y: 756
+        width: 623
+        height: 524
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e3ad202f20b9d26f0800000000000000
-      internalID: -707739129474786754
+      spriteID: d65d3d6bc4b667fc0800000000000000
+      internalID: -3497490083377588883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: button roxo
+      name: Icones_2
       rect:
         serializedVersion: 2
-        x: 556
-        y: 182
-        width: 578
-        height: 96
+        x: 722
+        y: 91
+        width: 627
+        height: 526
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,30 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0daf750ef3dba0560800000000000000
-      internalID: 7280839829642279632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: menuButtons_0
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 711
-        width: 576
-        height: 118
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfbba3d6c602d9c4286f068a5654852c
-      internalID: -395732129
+      spriteID: 49b4c26da079b3600800000000000000
+      internalID: 449118660652190612
       vertices: []
       indices: 
       edges: []
@@ -235,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 13f7be49132abe949af9d8af6e57c2fd
+    spriteID: d225d59607bd7774883c7db874ba1d03
     internalID: 0
     vertices: []
     indices: 
@@ -245,11 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      button azul: -8116832724500392004
-      button laranja: -1780020970381023785
-      button roxo: 7280839829642279632
-      button verde: -707739129474786754
-      menuButtons_0: -395732129
+      Icones_0: 7500482938498694921
+      Icones_1: -3497490083377588883
+      Icones_2: 449118660652190612
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
