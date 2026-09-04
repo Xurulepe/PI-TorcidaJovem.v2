@@ -59,6 +59,11 @@ public class GameManager : MonoBehaviour
         isGameRunning = true;
     }
 
+    public void FinishGame()
+    {
+        OnGameComplete?.Invoke();
+    }
+
     #region SCORE CONTROLLER
     public void CalculateScore(float distanceToNote)
     {
@@ -84,9 +89,9 @@ public class GameManager : MonoBehaviour
     {
         currentMusicalNoteData = missMusicalNoteData;
 
-        SetScore(score + currentMusicalNoteData.scoreValue);
-
         comboCount = 0;
+
+        SetScore(score + currentMusicalNoteData.scoreValue);
     }
 
     private void SetScore(int newScore)
@@ -130,7 +135,8 @@ public class GameManager : MonoBehaviour
 
             isGameRunning = false;
 
-            OnGameComplete?.Invoke();
+            float triggerGameCompleteDelay = currentMusicalNoteData.pulseDuration * 3;
+            Invoke(nameof(FinishGame), triggerGameCompleteDelay);
         }
     }
 
