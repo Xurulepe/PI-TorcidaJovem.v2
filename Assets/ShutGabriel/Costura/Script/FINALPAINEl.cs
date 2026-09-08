@@ -6,7 +6,7 @@ public class FINALPAINEl : MonoBehaviour
     [SerializeField] private CanvasGroup painelTransicao;
 
     [Header("Vestido Final")]
-    [SerializeField] private GameObject vestidoFinal;
+    [SerializeField] public GameObject vestidoFinal;
     [SerializeField] private SpriteRenderer spriteVestido;
 
     [Header("Configurações")]
@@ -25,7 +25,6 @@ public class FINALPAINEl : MonoBehaviour
     public void Finalizar()
     {
         botaoFinalizar.SetActive(false);
-
         painelTransicao.DOKill();
         spriteVestido.DOKill();
 
@@ -48,6 +47,7 @@ public class FINALPAINEl : MonoBehaviour
                         .OnComplete(() =>
                         {
                             painelTransicao.blocksRaycasts = false;
+                            botaoFinalizar.SetActive(false);
                         });
                 });
             });

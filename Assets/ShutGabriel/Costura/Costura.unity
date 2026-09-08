@@ -145,7 +145,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10011504}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -767, y: -133.8}
+  m_AnchoredPosition: {x: -786, y: 0}
   m_SizeDelta: {x: 332.95, y: 71.52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &10011506
@@ -583,7 +583,7 @@ GameObject:
   - component: {fileID: 91487842}
   - component: {fileID: 91487841}
   m_Layer: 5
-  m_Name: PrincipalBT
+  m_Name: Verificar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -606,8 +606,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -746.55, y: 462.33}
-  m_SizeDelta: {x: 94.58, y: 27.07}
+  m_AnchoredPosition: {x: -720.32, y: 57.16}
+  m_SizeDelta: {x: 81.07, y: 16.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &91487841
 MonoBehaviour:
@@ -653,61 +653,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1589505008}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 797504761}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1270699445}
-        m_TargetAssemblyTypeName: InventarioOPEN, Assembly-CSharp
-        m_MethodName: EntrouPrincipal
+      - m_Target: {fileID: 1336154160}
+        m_TargetAssemblyTypeName: BotaoFinalizar, Assembly-CSharp
+        m_MethodName: VerificarPecas
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 165555951}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InventarioOPEN, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3393,12 +3345,12 @@ RectTransform:
   - {fileID: 1772019923}
   - {fileID: 91487840}
   - {fileID: 1336154161}
-  - {fileID: 10011505}
   - {fileID: 1120643571}
   - {fileID: 1769056047}
   - {fileID: 1266938005}
   - {fileID: 402434189}
   - {fileID: 1173386811}
+  - {fileID: 10011505}
   m_Father: {fileID: 1711209858}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3983,7 +3935,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Voltar
+  m_text: Verificar
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4010,13 +3962,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 12.48
+  m_fontSizeBase: 12.48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -4649,7 +4601,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10.820007, y: 5.460022}
+  m_AnchoredPosition: {x: -10.820068, y: 5.460083}
   m_SizeDelta: {x: -741.97, y: -383.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1173386812
@@ -5568,6 +5520,7 @@ MonoBehaviour:
   - {fileID: 1225708313}
   - {fileID: 299507443}
   botaoFinalizar: {fileID: 10011504}
+  _finalPainel: {fileID: 402434190}
 --- !u!4 &1336154161
 Transform:
   m_ObjectHideFlags: 0

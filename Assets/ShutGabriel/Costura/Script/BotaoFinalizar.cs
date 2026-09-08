@@ -9,25 +9,37 @@ public class BotaoFinalizar : MonoBehaviour
     [Header("Botão Finalizar")]
     public GameObject botaoFinalizar;
 
+    [Header("FINAL")]
+    [SerializeField] private FINALPAINEl _finalPainel;
+
     void Start()
     {
         botaoFinalizar.SetActive(false);
     }
 
-    void Update()
+    private void Update()
     {
         VerificarPecas();
     }
 
-    void VerificarPecas()
+    public void VerificarPecas()
     {
+        if (_finalPainel.vestidoFinal.activeSelf)
+        {
+            botaoFinalizar.SetActive(false);
+            return;
+        }
+
         foreach (GameObject peca in pecasDoVestido)
         {
             if (!peca.activeSelf)
             {
+                botaoFinalizar.SetActive(false);
                 return;
             }
         }
+
         botaoFinalizar.SetActive(true);
     }
 }
+
