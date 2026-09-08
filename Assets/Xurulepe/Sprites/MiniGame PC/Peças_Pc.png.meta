@@ -1,16 +1,28 @@
 fileFormatVersion: 2
-guid: 325c27ce118747344874f323ae917db0
+guid: 21985faa4b917484c92b1700cbe5fe2b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3530111892931072742
-    second: Gabinete_0
+      213: 3398488827643222056
+    second: "Pe\xE7as_Pc_0"
   - first:
-      213: -8594107065606226287
-    second: Gabinete_1
+      213: 8449937425196686421
+    second: "Pe\xE7as_Pc_1"
   - first:
-      213: 6071241906377887089
-    second: Gabinete_2
+      213: 1224917209743889174
+    second: "Pe\xE7as_Pc_2"
+  - first:
+      213: -1974174372576307403
+    second: "Pe\xE7as_Pc_3"
+  - first:
+      213: -3579277839475130701
+    second: "Pe\xE7as_Pc_4"
+  - first:
+      213: 3671299110238304364
+    second: "Pe\xE7as_Pc_5"
+  - first:
+      213: -2797016416003324818
+    second: "Pe\xE7as_Pc_6"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,67 +131,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gabinete_0
+      name: Motherboard
       rect:
         serializedVersion: 2
-        x: 66
-        y: 52
-        width: 1010
-        height: 822
+        x: 46
+        y: 490
+        width: 458
+        height: 414
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1d267ccfe5820fc0800000000000000
-      internalID: -3530111892931072742
+      spriteID: 828dec0359bd92f20800000000000000
+      internalID: 3398488827643222056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gabinete_1
+      name: Fan
       rect:
         serializedVersion: 2
-        x: 1067
-        y: 608
-        width: 9
-        height: 21
+        x: 573
+        y: 658
+        width: 206
+        height: 211
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19ebdd848299bb880800000000000000
-      internalID: -8594107065606226287
+      spriteID: 55c902b8155344570800000000000000
+      internalID: 8449937425196686421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gabinete_2
+      name: PSU
       rect:
         serializedVersion: 2
-        x: 1095
-        y: 181
-        width: 25
-        height: 11
+        x: 919
+        y: 663
+        width: 267
+        height: 201
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17d8e17d852614450800000000000000
-      internalID: 6071241906377887089
+      spriteID: 6131c0e56b7cff010800000000000000
+      internalID: 1224917209743889174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAM
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 658
+        width: 84
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 537d8e52ed25a94e0800000000000000
+      internalID: -1974174372576307403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GPU top view
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 201
+        width: 460
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be38a1d4c9d35ec0800000000000000
+      internalID: -3579277839475130701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GPU side view
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 282
+        width: 469
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6836f1e61313f230800000000000000
+      internalID: 3671299110238304364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CPU
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 282
+        width: 123
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e648f2d83600f29d0800000000000000
+      internalID: -2797016416003324818
       vertices: []
       indices: 
       edges: []
@@ -188,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b469b0275a691e246a069e3da5072f33
     internalID: 0
     vertices: []
     indices: 
@@ -198,9 +298,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Gabinete_0: -3530111892931072742
-      Gabinete_1: -8594107065606226287
-      Gabinete_2: 6071241906377887089
+      CPU: -2797016416003324818
+      Fan: 8449937425196686421
+      GPU side view: 3671299110238304364
+      GPU top view: -3579277839475130701
+      Motherboard: 3398488827643222056
+      PSU: 1224917209743889174
+      RAM: -1974174372576307403
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,4 @@
 using DG.Tweening;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -11,18 +10,23 @@ namespace MiniGame.TecInformatica
     {
         [Header("Draggable Item Settings")]
         [SerializeField] private Image image;
+        [SerializeField] private Sprite finalSprite;
         [SerializeField] private float onDragScaleMultiplier = 1.25f;
         [SerializeField] private float moveDuration = 0.05f;
         [SerializeField] private ItemType itemType;
+
 
         [Header("Slots Settings")]
         [SerializeField] private bool hasSlots = false;
         [SerializeField] private List<GameObject> slotList = new List<GameObject>();
 
+
+        private Sprite initialSprite;
         private Vector3 originalScale;
         private Transform parentAfterDrag;
         private Tween moveTween;
         private InventorySlot inventorySlot;
+
 
         public ItemType ItemType => itemType;
         public Transform ParentAfterDrag => parentAfterDrag;
@@ -31,6 +35,7 @@ namespace MiniGame.TecInformatica
 
         private void Awake()
         {
+            initialSprite = image.sprite;
             originalScale = transform.localScale;
             inventorySlot = transform.parent.GetComponent<InventorySlot>();
         }
@@ -71,6 +76,11 @@ namespace MiniGame.TecInformatica
             transform.SetParent(parentAfterDrag);
             transform.localScale = originalScale;
 
+            if (finalSprite != null)
+            {
+                image.sprite = finalSprite; 
+            }
+
             image.raycastTarget = true;
 
             if (hasSlots)
@@ -80,6 +90,7 @@ namespace MiniGame.TecInformatica
 
             if (inventorySlot.IsTableSlot)
             {
+                image.sprite = initialSprite;
                 GameManager.Instance.RemoveComputerComponent(ItemType);
             }
         }
