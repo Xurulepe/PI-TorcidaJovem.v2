@@ -6352,6 +6352,7 @@ MonoBehaviour:
   npcSelecionado: {fileID: 0}
   animaDiafragma: {fileID: 1377240004}
   inFoto: 0
+  UltimoAberto: 0
   missao:
   - {fileID: 1768948622}
   - {fileID: 1481240762}
@@ -6362,6 +6363,7 @@ MonoBehaviour:
   - {fileID: 58408847}
   FotosTirada: 0
   telaFinal: {fileID: 2039952867}
+  BtnVoltar: {fileID: 449179887}
 --- !u!1 &624631445
 GameObject:
   m_ObjectHideFlags: 0
