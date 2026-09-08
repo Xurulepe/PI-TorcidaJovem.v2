@@ -13,6 +13,9 @@ public class FINALPAINEl : MonoBehaviour
     [SerializeField] private float duracaoFade = 1f;
     [SerializeField] private float tempoEspera = 2f;
 
+    [Header("Botão Finalizar")]
+    [SerializeField] private GameObject botaoFinalizar;
+
     private void Start()
     {
         painelTransicao.alpha = 0f;
@@ -21,19 +24,26 @@ public class FINALPAINEl : MonoBehaviour
 
     public void Finalizar()
     {
+        botaoFinalizar.SetActive(false);
+
         painelTransicao.DOKill();
         spriteVestido.DOKill();
+
         painelTransicao.blocksRaycasts = true;
+
         painelTransicao.DOFade(1f, duracaoFade)
             .OnComplete(() =>
             {
                 vestidoFinal.SetActive(true);
+
                 Color cor = spriteVestido.color;
                 cor.a = 0f;
                 spriteVestido.color = cor;
+
                 DOVirtual.DelayedCall(tempoEspera, () =>
                 {
                     painelTransicao.DOFade(0f, duracaoFade);
+
                     spriteVestido.DOFade(1f, duracaoFade)
                         .OnComplete(() =>
                         {
