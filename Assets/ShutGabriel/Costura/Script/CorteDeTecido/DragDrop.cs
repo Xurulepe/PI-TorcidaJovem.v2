@@ -86,8 +86,9 @@ public class DragDrop : MonoBehaviour,
         if (outside || collision)
         {
             Debug.Log("RESET");
-
-            ResetAllItems();
+            rectTransform.anchoredPosition = startPosition;
+            bloqueado = false;
+            //ResetAllItems();
         }
 
         else
