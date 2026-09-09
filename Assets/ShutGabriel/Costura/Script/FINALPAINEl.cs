@@ -15,6 +15,7 @@ public class FINALPAINEl : MonoBehaviour
 
     [Header("Botão Finalizar")]
     [SerializeField] private GameObject botaoFinalizar;
+    [SerializeField] private GameObject botaoVoltar;
 
     private void Start()
     {
@@ -25,6 +26,7 @@ public class FINALPAINEl : MonoBehaviour
     public void Finalizar()
     {
         botaoFinalizar.SetActive(false);
+        botaoVoltar.SetActive(false);
         painelTransicao.DOKill();
         spriteVestido.DOKill();
 
@@ -48,6 +50,7 @@ public class FINALPAINEl : MonoBehaviour
                         {
                             painelTransicao.blocksRaycasts = false;
                             botaoFinalizar.SetActive(false);
+                            botaoVoltar.SetActive(true);
                         });
                 });
             });
