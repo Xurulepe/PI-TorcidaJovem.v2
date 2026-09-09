@@ -6280,7 +6280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8861079543951533867, guid: f144ac2f17c7c5f43a1d7ad76b1fd457, type: 3}
       propertyPath: JogoPronto
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6525,7 +6525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8861079543951533867, guid: f144ac2f17c7c5f43a1d7ad76b1fd457, type: 3}
       propertyPath: JogoPronto
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
