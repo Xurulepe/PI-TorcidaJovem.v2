@@ -12,6 +12,7 @@ namespace MiniGame.TecInformatica
         [SerializeField] private Image image;
         [SerializeField] private Sprite finalSprite;
         [SerializeField] private float onDragScaleMultiplier = 1.25f;
+        [SerializeField] private Vector3 finalDragScale = Vector3.one;
         [SerializeField] private float moveDuration = 0.05f;
         [SerializeField] private ItemType itemType;
 
@@ -74,7 +75,7 @@ namespace MiniGame.TecInformatica
 
             transform.position = eventData.position;
             transform.SetParent(parentAfterDrag);
-            transform.localScale = originalScale;
+            transform.localScale = finalDragScale;
 
             if (finalSprite != null)
             {
@@ -90,6 +91,7 @@ namespace MiniGame.TecInformatica
 
             if (inventorySlot.IsTableSlot)
             {
+                transform.localScale = originalScale;
                 image.sprite = initialSprite;
                 GameManager.Instance.RemoveComputerComponent(ItemType);
             }
