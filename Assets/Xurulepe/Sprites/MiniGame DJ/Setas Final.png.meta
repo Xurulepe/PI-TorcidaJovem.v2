@@ -134,7 +134,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Setas Final_0
+      name: Left Arrow
       rect:
         serializedVersion: 2
         x: 417
@@ -142,7 +142,7 @@ TextureImporter:
         width: 128
         height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -156,7 +156,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Setas Final_1
+      name: Down Arrow
       rect:
         serializedVersion: 2
         x: 548
@@ -164,7 +164,7 @@ TextureImporter:
         width: 140
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,7 +178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Setas Final_2
+      name: Up Arrow
       rect:
         serializedVersion: 2
         x: 691
@@ -186,7 +186,7 @@ TextureImporter:
         width: 140
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -200,7 +200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Setas Final_3
+      name: Right Arrow
       rect:
         serializedVersion: 2
         x: 834
@@ -208,7 +208,7 @@ TextureImporter:
         width: 128
         height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -222,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Setas Final_4
+      name: Left Checker
       rect:
         serializedVersion: 2
         x: 421
@@ -230,7 +230,7 @@ TextureImporter:
         width: 128
         height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -244,15 +244,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Setas Final_5
+      name: Down Checker
       rect:
         serializedVersion: 2
         x: 552
-        y: 381
+        y: 382
         width: 140
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -266,7 +266,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Setas Final_6
+      name: Up Checker
       rect:
         serializedVersion: 2
         x: 695
@@ -274,7 +274,7 @@ TextureImporter:
         width: 140
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -288,7 +288,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Setas Final_7
+      name: Right Checker
       rect:
         serializedVersion: 2
         x: 838
@@ -296,7 +296,7 @@ TextureImporter:
         width: 128
         height: 140
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -313,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: faaae7d5619e530479b8944821ee360a
     internalID: 0
     vertices: []
     indices: 
@@ -323,14 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Setas Final_0: -8099125783872812354
-      Setas Final_1: -8267077089167772696
-      Setas Final_2: 5602322568198348439
-      Setas Final_3: -3715026687951850018
-      Setas Final_4: 1861755857756491195
-      Setas Final_5: -12620207317835363
-      Setas Final_6: -8880156698388545136
-      Setas Final_7: -7194387632244546990
+      Down Arrow: -8267077089167772696
+      Down Checker: -12620207317835363
+      Left Arrow: -8099125783872812354
+      Left Checker: 1861755857756491195
+      Right Arrow: -3715026687951850018
+      Right Checker: -7194387632244546990
+      Up Arrow: 5602322568198348439
+      Up Checker: -8880156698388545136
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
