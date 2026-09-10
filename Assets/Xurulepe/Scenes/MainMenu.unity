@@ -396,6 +396,7 @@ GameObject:
   - component: {fileID: 170308994}
   - component: {fileID: 170308997}
   - component: {fileID: 170308998}
+  - component: {fileID: 170308999}
   m_Layer: 5
   m_Name: BT - Back
   m_TagString: Untagged
@@ -552,6 +553,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &170308999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170308992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f12ca21b2b23d40b9f01ce68665d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 59bb3a3a5260eaa46967e054205cc41d, type: 3}
 --- !u!1 &170592896
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,6 +924,7 @@ GameObject:
   - component: {fileID: 245415220}
   - component: {fileID: 245415223}
   - component: {fileID: 245415224}
+  - component: {fileID: 245415225}
   m_Layer: 5
   m_Name: BT - Quit
   m_TagString: Untagged
@@ -1066,6 +1081,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &245415225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245415218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f12ca21b2b23d40b9f01ce68665d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 59bb3a3a5260eaa46967e054205cc41d, type: 3}
 --- !u!1 &245731490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,6 +1258,7 @@ GameObject:
   - component: {fileID: 355692898}
   - component: {fileID: 355692901}
   - component: {fileID: 355692902}
+  - component: {fileID: 355692903}
   m_Layer: 5
   m_Name: BT - Back
   m_TagString: Untagged
@@ -1386,6 +1415,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &355692903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355692896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f12ca21b2b23d40b9f01ce68665d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 59bb3a3a5260eaa46967e054205cc41d, type: 3}
 --- !u!1 &381054431
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,6 +2295,7 @@ GameObject:
   - component: {fileID: 761130329}
   - component: {fileID: 761130332}
   - component: {fileID: 761130333}
+  - component: {fileID: 761130334}
   m_Layer: 5
   m_Name: BT - Play
   m_TagString: Untagged
@@ -2409,6 +2452,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &761130334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761130327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f12ca21b2b23d40b9f01ce68665d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 59bb3a3a5260eaa46967e054205cc41d, type: 3}
 --- !u!1 &770897056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2589,6 +2645,7 @@ GameObject:
   - component: {fileID: 852209760}
   - component: {fileID: 852209763}
   - component: {fileID: 852209764}
+  - component: {fileID: 852209765}
   m_Layer: 5
   m_Name: BT - Sounds
   m_TagString: Untagged
@@ -2745,6 +2802,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &852209765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852209758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f12ca21b2b23d40b9f01ce68665d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 59bb3a3a5260eaa46967e054205cc41d, type: 3}
 --- !u!1 &900535761
 GameObject:
   m_ObjectHideFlags: 0
@@ -4781,6 +4851,7 @@ GameObject:
   - component: {fileID: 1701560329}
   - component: {fileID: 1701560332}
   - component: {fileID: 1701560333}
+  - component: {fileID: 1701560334}
   m_Layer: 5
   m_Name: BT - Back
   m_TagString: Untagged
@@ -4937,6 +5008,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1701560334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701560327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f12ca21b2b23d40b9f01ce68665d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 59bb3a3a5260eaa46967e054205cc41d, type: 3}
 --- !u!1 &1705407383
 GameObject:
   m_ObjectHideFlags: 0
@@ -5026,6 +5110,7 @@ GameObject:
   - component: {fileID: 1709598204}
   - component: {fileID: 1709598207}
   - component: {fileID: 1709598208}
+  - component: {fileID: 1709598209}
   m_Layer: 5
   m_Name: BT - Credits
   m_TagString: Untagged
@@ -5194,6 +5279,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1709598209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709598202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f12ca21b2b23d40b9f01ce68665d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 59bb3a3a5260eaa46967e054205cc41d, type: 3}
 --- !u!1 &1715828084
 GameObject:
   m_ObjectHideFlags: 0
@@ -6090,6 +6188,7 @@ GameObject:
   - component: {fileID: 173926127548394932}
   - component: {fileID: 1303241943158129412}
   - component: {fileID: 1629831172244538147}
+  - component: {fileID: 7516704568827488661}
   m_Layer: 5
   m_Name: BT - Settings
   m_TagString: Untagged
@@ -6097,6 +6196,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7516704568827488661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7516704568827488660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f12ca21b2b23d40b9f01ce68665d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 59bb3a3a5260eaa46967e054205cc41d, type: 3}
 --- !u!1 &7980034055427713432
 GameObject:
   m_ObjectHideFlags: 0

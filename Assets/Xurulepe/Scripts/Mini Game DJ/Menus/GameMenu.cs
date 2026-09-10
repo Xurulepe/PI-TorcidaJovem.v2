@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class GameMenu : MonoBehaviour
 {
+    [Header("Game Music")]
+    [SerializeField] private AudioClip gameMusic;
+
     [Header("Start Menu Settings")]
     [SerializeField] private GameObject startMenu;
     [SerializeField] private GameObject hudGame;
@@ -38,6 +41,8 @@ public class GameMenu : MonoBehaviour
         musicalNotesContainer.SetActive(true);
 
         GameManager.Instance.StartGame();
+
+        AudioManager.Instance.PlayMusic(gameMusic);
     }
 
     public void PlayAgain()

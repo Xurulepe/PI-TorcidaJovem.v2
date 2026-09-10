@@ -528,6 +528,7 @@ GameObject:
   - component: {fileID: 181817263}
   - component: {fileID: 181817266}
   - component: {fileID: 181817267}
+  - component: {fileID: 181817268}
   m_Layer: 5
   m_Name: Btn - Start
   m_TagString: Untagged
@@ -684,6 +685,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &181817268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181817261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f12ca21b2b23d40b9f01ce68665d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 59bb3a3a5260eaa46967e054205cc41d, type: 3}
 --- !u!114 &299266932 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7406867916641707650, guid: 4550eec3c15925242b459c79df213c88, type: 3}
@@ -885,6 +899,7 @@ GameObject:
   - component: {fileID: 521286256}
   - component: {fileID: 521286259}
   - component: {fileID: 521286260}
+  - component: {fileID: 521286261}
   m_Layer: 5
   m_Name: Btn - Quit
   m_TagString: Untagged
@@ -1041,6 +1056,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &521286261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521286254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f12ca21b2b23d40b9f01ce68665d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 59bb3a3a5260eaa46967e054205cc41d, type: 3}
 --- !u!1 &525643477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,6 +1686,7 @@ GameObject:
   - component: {fileID: 926342278}
   - component: {fileID: 926342281}
   - component: {fileID: 926342282}
+  - component: {fileID: 926342283}
   m_Layer: 5
   m_Name: Btn - Play Again
   m_TagString: Untagged
@@ -1814,6 +1843,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &926342283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926342276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f12ca21b2b23d40b9f01ce68665d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 59bb3a3a5260eaa46967e054205cc41d, type: 3}
 --- !u!1 &959700676
 GameObject:
   m_ObjectHideFlags: 0
@@ -2982,6 +3024,7 @@ GameObject:
   - component: {fileID: 1381680633}
   - component: {fileID: 1381680636}
   - component: {fileID: 1381680637}
+  - component: {fileID: 1381680638}
   m_Layer: 5
   m_Name: Btn - Quit
   m_TagString: Untagged
@@ -3138,6 +3181,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c156daf9913b154da012dd8ebfd1270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1381680638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381680631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f12ca21b2b23d40b9f01ce68665d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickSound: {fileID: 8300000, guid: 59bb3a3a5260eaa46967e054205cc41d, type: 3}
 --- !u!1001 &1386340167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4681,6 +4737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e8c3deae04647f43925a9d844b4217d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameMusic: {fileID: 8300000, guid: d0db2dfd3b3e0754e9891365a3480d30, type: 3}
   startMenu: {fileID: 1226923335}
   hudGame: {fileID: 525643477}
   musicalNotesContainer: {fileID: 1543416704}
