@@ -52,6 +52,11 @@ public class QuizManager : MonoBehaviour
     private bool[] Respostas;
     private bool[] Respondidas;
 
+    [Header("Sound control")]
+    public AudioClip musicaJogo;
+    public AudioClip SomRespostaCerta;
+    public AudioClip SomRespostaErrada;
+
     private void Start()
     {
         Shuffle(_perg);
@@ -74,6 +79,8 @@ public class QuizManager : MonoBehaviour
 
         ControleIcone();
         generateQuestion();
+        AudioManager.Instance.PlayMusic(musicaJogo);
+
     }
 
     // =========================================================
@@ -133,7 +140,14 @@ public class QuizManager : MonoBehaviour
 
         if (acertou)
         {
+            AudioManager.Instance.PlaySFX(SomRespostaCerta);
+
             acertos++;
+        }
+        else
+        {
+            AudioManager.Instance.PlaySFX(SomRespostaErrada);
+
         }
 
         // Atualiza os ícones

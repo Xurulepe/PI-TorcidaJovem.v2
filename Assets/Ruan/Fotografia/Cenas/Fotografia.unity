@@ -430,7 +430,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2108.71, y: 1203.27}
+  m_SizeDelta: {x: 3842.49, y: 2192.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58408849
 MonoBehaviour:
@@ -707,7 +707,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2108.71, y: 1203.27}
+  m_SizeDelta: {x: 3842.49, y: 2192.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &133903567
 GameObject:
@@ -6364,6 +6364,10 @@ MonoBehaviour:
   FotosTirada: 0
   telaFinal: {fileID: 2039952867}
   BtnVoltar: {fileID: 449179887}
+  musicaJogo: {fileID: 8300000, guid: 42ef9aca04322184c8ba7e2fdd6d3759, type: 3}
+  somFoto: {fileID: 8300000, guid: 2db8393641cc7ab479e61000ce33814d, type: 3}
+  somImpreFoto: {fileID: 8300000, guid: ef98f84b580e0bc478ea16a6d1b5870e, type: 3}
+  somFinalJogo: {fileID: 8300000, guid: 4e9996cc781dd484c98195b0732afe48, type: 3}
 --- !u!1 &624631445
 GameObject:
   m_ObjectHideFlags: 0
@@ -14403,7 +14407,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1986.67, y: 2024.06}
+  m_SizeDelta: {x: 2986.53, y: 2024.06}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1377240004
 Animator:
@@ -19674,7 +19678,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2108.71, y: 1203.27}
+  m_SizeDelta: {x: 3842.49, y: 2192.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1866979500
 MonoBehaviour:

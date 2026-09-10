@@ -663,7 +663,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5499,6 +5499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b79ae6543bfef4f84a46cd99618fa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicaMenu: {fileID: 0}
   menuList:
   - {fileID: 1332588093}
   - {fileID: 624758055}

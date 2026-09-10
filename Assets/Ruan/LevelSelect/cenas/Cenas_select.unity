@@ -4619,8 +4619,8 @@ Camera:
   m_GameObject: {fileID: 1227625564}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -4670,7 +4670,7 @@ Transform:
   m_GameObject: {fileID: 1227625564}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.857786, y: -1.6349976, z: -10}
+  m_LocalPosition: {x: -21.854593, y: -1.6349976, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4906,6 +4906,7 @@ MonoBehaviour:
   setas: {fileID: 987928155}
   SetaFrente: {fileID: 1123752890}
   SetaTras: {fileID: 146217484}
+  audioClip: {fileID: 8300000, guid: cdefb4ce2f38b4845a88c183b08ee3d4, type: 3}
 --- !u!1 &1313349456
 GameObject:
   m_ObjectHideFlags: 0
@@ -5485,7 +5486,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 27.890625, y: 15.09375, z: 26.25}
+  m_LocalScale: {x: 123.5313, y: 66.852234, z: 116.264755}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1227625567}

@@ -23,12 +23,22 @@ public class GerenciadorFotografia : MonoBehaviour
     public GameObject telaFinal;
     public GameObject BtnVoltar;
 
+    [Header("Sound control")]
+    public AudioClip musicaJogo;
+    public AudioClip somFoto;
+    public AudioClip somImpreFoto;
+    public AudioClip somFinalJogo;
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
         }
+    }
+
+    private void Start()
+    {
+        AudioManager.Instance.PlayMusic(musicaJogo);
     }
 
     private void Update()
@@ -41,6 +51,7 @@ public class GerenciadorFotografia : MonoBehaviour
         if (FotosTirada >= 3 && inFoto == false)
         {
             telaFinal.SetActive(true);
+            AudioManager.Instance.PlaySFX(somFinalJogo);
             inFoto = true;
         }
     }
@@ -49,6 +60,8 @@ public class GerenciadorFotografia : MonoBehaviour
         if (inFoto == false)
         {
             animaDiafragma.SetTrigger("Foto");
+            AudioManager.Instance.PlaySFX(somFoto);
+
             if (npcSelecionado != null)
             {
                 if (npcSelecionado.GetComponent<Npcs_Base>().ObjMissao == true)
@@ -56,6 +69,8 @@ public class GerenciadorFotografia : MonoBehaviour
                     if (missao[npcSelecionado.GetComponent<Npcs_Base>().QualMissao].activeInHierarchy == true)
                     {
                         StartCoroutine(AbrirFoto());
+                        AudioManager.Instance.PlaySFX(somImpreFoto);
+
                         //missao[npcSelecionado.GetComponent<Npcs_Base>().QualMissao].GetComponent<Animator>().SetTrigger("Sair");
 
                         inFoto = true;

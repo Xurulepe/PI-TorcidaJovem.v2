@@ -4,9 +4,18 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+    public AudioClip musicaMenu;
+
     [SerializeField] private List<Menu> menuList = new List<Menu>();
 
     private int currentMenuIndex = 0;
+
+
+    public void Start()
+    {
+        AudioManager.Instance.PlayMusic(musicaMenu);
+    }
 
     public void OpenMenu(Menu menu)
     {

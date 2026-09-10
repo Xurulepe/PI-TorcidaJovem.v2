@@ -17,6 +17,9 @@ public class Gerenciador : MonoBehaviour
     public GameObject SetaFrente;
     public GameObject SetaTras;
 
+    [Header("Musica Control")]
+    public AudioClip audioClip;
+
     private void Awake()
     {
         if (instance == null)
@@ -25,9 +28,9 @@ public class Gerenciador : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void Start()
     {
-        
+        AudioManager.Instance.PlayMusic(audioClip);
     }
 
     public void GoNextDoor()

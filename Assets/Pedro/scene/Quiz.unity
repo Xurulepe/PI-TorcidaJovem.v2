@@ -1540,6 +1540,9 @@ MonoBehaviour:
   acertos: 0
   TelaVitoria: {fileID: 1051442156}
   TelaDerrota: {fileID: 1554427324}
+  musicaJogo: {fileID: 8300000, guid: 674ed0e206410384e975082c08d58866, type: 3}
+  SomRespostaCerta: {fileID: 8300000, guid: 0a69f736b746801419df01525505abc1, type: 3}
+  SomRespostaErrada: {fileID: 8300000, guid: 9bc48a6a8981f324f89febd2f1ac2de7, type: 3}
 --- !u!1 &923047910
 GameObject:
   m_ObjectHideFlags: 0
