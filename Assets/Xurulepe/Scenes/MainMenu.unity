@@ -5499,7 +5499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b79ae6543bfef4f84a46cd99618fa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicaMenu: {fileID: 0}
+  musicaMenu: {fileID: 8300000, guid: a7d8d25a64d46704cb8d8b4836f742f8, type: 3}
   menuList:
   - {fileID: 1332588093}
   - {fileID: 624758055}
