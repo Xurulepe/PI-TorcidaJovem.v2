@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class Portas : MonoBehaviour
@@ -6,6 +7,13 @@ public class Portas : MonoBehaviour
     public GameObject Seta;
     public bool JogoPronto;
     public string nomeCena;
+
+    public TextMeshProUGUI TextoPorta;
+
+    private void Start()
+    {
+        TextoPorta.text = nomeCena;
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
