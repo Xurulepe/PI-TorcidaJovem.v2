@@ -203,7 +203,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 770897057}
   m_HandleRect: {fileID: 1656779486}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
@@ -2624,7 +2624,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1715828085}
   m_HandleRect: {fileID: 381054432}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
@@ -3150,7 +3150,6 @@ GameObject:
   - component: {fileID: 989444562}
   - component: {fileID: 989444561}
   - component: {fileID: 989444560}
-  - component: {fileID: 989444564}
   m_Layer: 5
   m_Name: Sounds Menu
   m_TagString: Untagged
@@ -3256,21 +3255,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989444558}
   m_CullTransparentMesh: 1
---- !u!114 &989444564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 989444558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1acc9fbb8d40af44389625dffffdcb2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  masterSlider: {fileID: 1313434}
-  musicSlider: {fileID: 803425410}
-  sfxSlider: {fileID: 1273555696}
 --- !u!1 &1004854745
 GameObject:
   m_ObjectHideFlags: 0
@@ -3838,7 +3822,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 900535762}
   m_HandleRect: {fileID: 1583659470}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
@@ -5491,6 +5475,7 @@ GameObject:
   - component: {fileID: 1987704180}
   - component: {fileID: 1987704179}
   - component: {fileID: 1987704183}
+  - component: {fileID: 1987704184}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -5603,6 +5588,21 @@ MonoBehaviour:
   - {fileID: 624758055}
   - {fileID: 512138340}
   - {fileID: 989444561}
+--- !u!114 &1987704184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987704178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1acc9fbb8d40af44389625dffffdcb2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masterSlider: {fileID: 1313434}
+  musicSlider: {fileID: 803425410}
+  sfxSlider: {fileID: 1273555696}
 --- !u!1 &2046293405
 GameObject:
   m_ObjectHideFlags: 0
