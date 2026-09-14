@@ -5,6 +5,8 @@ public class ControleUi : MonoBehaviour
 {
     public GameObject BtnVoltar;
 
+    public GameObject objMissao;
+    public GameObject TelaTutorial;
 
     public void Update()
     {       
@@ -33,4 +35,12 @@ public class ControleUi : MonoBehaviour
             GerenciadorFotografia.instance.UltimoAberto = true;
         }
     }
+
+
+    public void FecharTelaTuto()
+    {
+        objMissao.SetActive(true);
+        TelaTutorial.SetActive(false);
+    }
+
 }

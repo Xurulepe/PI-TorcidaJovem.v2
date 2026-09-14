@@ -28,6 +28,9 @@ public class GerenciadorFotografia : MonoBehaviour
     public AudioClip somFoto;
     public AudioClip somImpreFoto;
     public AudioClip somFinalJogo;
+
+    [Header("uicontrol")]
+    public ControleUi _uiControl;
     private void Awake()
     {
         if (instance == null)

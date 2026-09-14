@@ -21,27 +21,38 @@ public class ControleCameraFoto : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        movimentoControle = context.ReadValue<Vector2>();
+        if (GerenciadorFotografia.instance._uiControl.TelaTutorial.activeInHierarchy == false)
+        {
+            movimentoControle = context.ReadValue<Vector2>();
 
-        if (movimentoControle.sqrMagnitude > 0.01f)
-            usandoControle = true;
+            if (movimentoControle.sqrMagnitude > 0.01f)
+                usandoControle = true;
+        }
     }
 
     public void OnFoto(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (GerenciadorFotografia.instance._uiControl.TelaTutorial.activeInHierarchy == false)
         {
-            TirarFoto();
+            if (context.started)
+            {
+                TirarFoto();
+            }
         }
+        
     }
 
     void Update()
     {
-        if (GerenciadorFotografia.instance.inFoto)
-            return;
+        if (GerenciadorFotografia.instance._uiControl.TelaTutorial.activeInHierarchy == false)
+        {
+            if (GerenciadorFotografia.instance.inFoto)
+                return;
 
-        ControleCamera();
-        VerificarDoubleTap();
+            ControleCamera();
+            VerificarDoubleTap();
+        }
+       
     }
 
     private void VerificarDoubleTap()
