@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CosturaController : MonoBehaviour
 {
@@ -10,20 +11,17 @@ public class CosturaController : MonoBehaviour
     public List<DragDrop> ObjInventario = new List<DragDrop>();
     [SerializeField] public GameObject botaoFinal;
    
-    void Start()
-    {
-       
-    }
-    void Update()
-    {
-        
-    }
-
     public void Recortes()
     {
         for (int i = 0; i < objFisicos.Count; i++)
         {
             objFisicos[i].MudarImgff();
         }
+    }
+
+
+    public void sairMenu()
+    {
+        SceneManager.LoadScene("Cenas_select");
     }
 }
