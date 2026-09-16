@@ -16283,6 +16283,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5e222348245bd0409898d660a1d985d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usarMouse: 0
+  usarControle: 0
+  usarTouch: 1
   velocidadeControle: 10
   tempoSuavizacao: 0.1
   tempoMaximoDoubleTap: 0.3

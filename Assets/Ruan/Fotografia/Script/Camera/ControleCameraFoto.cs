@@ -3,6 +3,11 @@ using UnityEngine.InputSystem;
 
 public class ControleCameraFoto : MonoBehaviour
 {
+    [Header("Inputs Ativos")]
+    public bool usarMouse = true;
+    public bool usarControle = true;
+    public bool usarTouch = true;
+
     [Header("Controle")]
     public float velocidadeControle = 10f;
 
@@ -21,6 +26,9 @@ public class ControleCameraFoto : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
+        if (!usarControle)
+            return;
+
         if (GerenciadorFotografia.instance._uiControl.TelaTutorial.activeInHierarchy == false)
         {
             movimentoControle = context.ReadValue<Vector2>();
@@ -39,7 +47,6 @@ public class ControleCameraFoto : MonoBehaviour
                 TirarFoto();
             }
         }
-        
     }
 
     void Update()
@@ -52,22 +59,22 @@ public class ControleCameraFoto : MonoBehaviour
             ControleCamera();
             VerificarDoubleTap();
         }
-       
     }
 
     private void VerificarDoubleTap()
     {
+        if (!usarTouch)
+            return;
+
         if (Touchscreen.current == null)
             return;
 
         var toque = Touchscreen.current.primaryTouch;
 
-        // Detecta quando o dedo acabou de tocar na tela
         if (toque.press.wasPressedThisFrame)
         {
             float tempoAtual = Time.time;
 
-            // Segundo toque dentro do tempo permitido
             if (tempoUltimoToque >= 0 &&
                 tempoAtual - tempoUltimoToque <= tempoMaximoDoubleTap)
             {
@@ -76,12 +83,10 @@ public class ControleCameraFoto : MonoBehaviour
                     TirarFoto();
                 }
 
-                // Reseta para não contar um terceiro toque
                 tempoUltimoToque = -1f;
             }
             else
             {
-                // Primeiro toque
                 tempoUltimoToque = tempoAtual;
             }
         }
@@ -98,24 +103,27 @@ public class ControleCameraFoto : MonoBehaviour
     public void ControleCamera()
     {
         // =========================
-        // CONTROLE
+        // CONTROLE / GAMEPAD
         // =========================
 
-        if (usandoControle)
+        if (usarControle && usandoControle)
         {
             transform.position += new Vector3(
                 movimentoControle.x,
                 movimentoControle.y,
                 0f
             ) * velocidadeControle * Time.deltaTime;
+
+            return;
         }
 
         // =========================
         // TOUCH
         // =========================
 
-        else if (Touchscreen.current != null &&
-                 Touchscreen.current.primaryTouch.press.isPressed)
+        if (usarTouch &&
+            Touchscreen.current != null &&
+            Touchscreen.current.primaryTouch.press.isPressed)
         {
             Vector2 posicaoTouch =
                 Touchscreen.current.primaryTouch.position.ReadValue();
@@ -131,19 +139,16 @@ public class ControleCameraFoto : MonoBehaviour
                 ref velocidadeAtual,
                 tempoSuavizacao
             );
+
+            return;
         }
 
         // =========================
         // MOUSE
         // =========================
 
-        else if (Mouse.current != null)
+        if (usarMouse && Mouse.current != null)
         {
-            if (Mouse.current.delta.ReadValue().sqrMagnitude > 0.01f)
-            {
-                usandoControle = false;
-            }
-
             Vector3 posMouse = Camera.main.ScreenToWorldPoint(
                 Mouse.current.position.ReadValue()
             );
