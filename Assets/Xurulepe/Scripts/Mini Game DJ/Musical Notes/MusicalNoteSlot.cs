@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class MusicalNoteSlot : MonoBehaviour
 {
+    [SerializeField] private AudioClip noteSfx;
     [SerializeField] private NoteDirection noteDirection;
     [SerializeField] private LayerMask musicalNoteLayerMask;
     
@@ -90,6 +91,8 @@ public class MusicalNoteSlot : MonoBehaviour
             musicalNoteUI.Blink();
             musicalNoteUI.Pulse();
         }
+
+        AudioManager.Instance.PlaySFX(noteSfx, true);
     }
 
     private Rect GetWorldRect(RectTransform rectTransform)

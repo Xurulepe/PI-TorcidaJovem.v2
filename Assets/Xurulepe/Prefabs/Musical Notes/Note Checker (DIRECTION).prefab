@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c81d4b8d3e740342860f5209d34d67f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteSfx: {fileID: 8300000, guid: 6356a0f67002f8849ba42e499202b19c, type: 3}
   noteDirection: 0
   musicalNoteLayerMask:
     serializedVersion: 2

@@ -1793,6 +1793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc1738b950b6be54cbccaa93bcf44c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameMusic: {fileID: 8300000, guid: 8c8b9da4b44e52a45a8a17e9ed725dc9, type: 3}
   tableObject: {fileID: 174246517}
   gameUI: {fileID: 719180618}
   startMenu: {fileID: 6005156405154745589}

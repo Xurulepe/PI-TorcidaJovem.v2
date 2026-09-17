@@ -5,6 +5,10 @@ namespace MiniGame.TecInformatica
 {
     public class GameMenu : MonoBehaviour
     {
+        [Header("Game Music")]
+        [SerializeField] private AudioClip gameMusic;
+
+        [Header("References")]
         [SerializeField] private GameObject tableObject;
         [SerializeField] private GameObject gameUI;
         [SerializeField] private GameObject startMenu;
@@ -21,6 +25,8 @@ namespace MiniGame.TecInformatica
         private void Start()
         {
             GameManager.Instance.OnGameFinished += ShowFinalMenu;
+
+            AudioManager.Instance.PlayMusic(gameMusic);
         }
 
         private void ShowFinalMenu()

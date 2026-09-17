@@ -11,6 +11,10 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
 
+    [Header("Pitch Settings")]
+    [SerializeField] private float minPitch = 0.8f;
+    [SerializeField] private float maxPitch = 1.2f;
+
     [Header("UI Sliders")]
     [SerializeField] private Slider masterVolumeSlider;
     [SerializeField] private Slider musicVolumeSlider;
@@ -49,11 +53,20 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
-    public void PlaySFX(AudioClip clip)
+    public void PlaySFX(AudioClip clip, bool randomPitch = false)
     {
         if (clip == null)
         {
             return;
+        }
+
+        if (randomPitch)
+        {
+            sfxSource.pitch = Random.Range(minPitch, maxPitch);
+        }
+        else
+        {
+            sfxSource.pitch = 1f;
         }
 
         sfxSource.PlayOneShot(clip);
