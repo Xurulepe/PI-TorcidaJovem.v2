@@ -27,7 +27,8 @@ public class DragDrop : MonoBehaviour,
 
     private void Awake()
     {
-        _image= GetComponent<Image>();
+        
+        _image = GetComponent<Image>();
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         costuraController = Camera.main.GetComponent<CosturaController>();
