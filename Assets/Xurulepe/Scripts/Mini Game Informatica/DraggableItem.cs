@@ -73,7 +73,7 @@ namespace MiniGame.TecInformatica
         {
             moveTween = transform.DOMove(parentAfterDrag.position, moveDuration).OnComplete(KillMoveTween);
 
-            transform.position = eventData.position;
+            //transform.position = eventData.position;
             transform.SetParent(parentAfterDrag);
             transform.localScale = finalDragScale;
 
