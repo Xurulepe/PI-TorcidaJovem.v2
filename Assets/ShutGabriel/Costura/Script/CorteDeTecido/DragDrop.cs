@@ -103,23 +103,23 @@ public class DragDrop : MonoBehaviour,
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
 
-        
+        // Está fora da DropArea
         if (!IsInsideArea())
         {
+            Debug.Log("Fora da área!");
             ResetItem();
             return;
         }
 
-       
+        // Está dentro, mas colidiu com outro Image
         if (HasCollision())
         {
-            Debug.Log("Colidiu com outro Image! Voltando para posição original.");
-
+            Debug.Log("Colidiu com outro Image! Voltando.");
             ResetItem();
             return;
         }
 
-        
+        // Está dentro e não colidiu
         Debug.Log("Objeto colocado corretamente.");
 
         if (!costuraController.OBJDentro.Contains(this))
@@ -165,17 +165,16 @@ public class DragDrop : MonoBehaviour,
 
         foreach (DragDrop item in allItems)
         {
+            // Não verifica contra ele mesmo
             if (item == this)
-                continue;
-
-            // Ignora objetos que não estão na DropArea
-            if (!item.IsInsideArea())
                 continue;
 
             Rect otherRect = GetWorldRect(item.rectTransform);
 
-            if (myRect.Overlaps(otherRect))
+            // Verifica se os dois Images estão se sobrepondo
+            if (myRect.Overlaps(otherRect, true))
             {
+                Debug.Log("COLISÃO COM: " + item.gameObject.name);
                 return true;
             }
         }
