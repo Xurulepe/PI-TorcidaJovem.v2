@@ -103,31 +103,36 @@ public class DragDrop : MonoBehaviour,
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
 
-        bool outside = !IsInsideArea();
-        bool collision = HasCollision();
-
-        if (outside || collision)
+        
+        if (!IsInsideArea())
         {
-            Debug.Log("RESET");
-            rectTransform.anchoredPosition = startPosition;
-            bloqueado = false;
-            //ResetAllItems();
+            ResetItem();
+            return;
         }
 
-        else
+       
+        if (HasCollision())
         {
-            Debug.Log("Na area");
+            Debug.Log("Colidiu com outro Image! Voltando para posição original.");
 
-            if (!costuraController.OBJDentro.Contains(this))
-                costuraController.OBJDentro.Add(this);
-
-            costuraController.OBJFora.Remove(this);
-            if (costuraController.OBJFora.Count == 0)
-            {
-                costuraController.botaoFinal.SetActive(true);
-            }
-            bloqueado = true;
+            ResetItem();
+            return;
         }
+
+        
+        Debug.Log("Objeto colocado corretamente.");
+
+        if (!costuraController.OBJDentro.Contains(this))
+            costuraController.OBJDentro.Add(this);
+
+        costuraController.OBJFora.Remove(this);
+
+        if (costuraController.OBJFora.Count == 0)
+        {
+            costuraController.botaoFinal.SetActive(true);
+        }
+
+        bloqueado = true;
     }
 
     bool IsInsideArea()
@@ -163,8 +168,11 @@ public class DragDrop : MonoBehaviour,
             if (item == this)
                 continue;
 
-            Rect otherRect =
-                GetWorldRect(item.rectTransform);
+            // Ignora objetos que não estão na DropArea
+            if (!item.IsInsideArea())
+                continue;
+
+            Rect otherRect = GetWorldRect(item.rectTransform);
 
             if (myRect.Overlaps(otherRect))
             {
