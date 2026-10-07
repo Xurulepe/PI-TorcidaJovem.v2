@@ -16,6 +16,7 @@ public class CosturaController : MonoBehaviour
 
     public void Start()
     {
+       
         AudioManager.Instance.PlayMusic(gameMusic);
     }
     public void Recortes()
@@ -30,5 +31,21 @@ public class CosturaController : MonoBehaviour
     public void sairMenu()
     {
         SceneManager.LoadScene("Cenas_select");
+    }
+    public void ResetCostura()
+    {
+        OBJDentro.Clear();
+        OBJFora.Clear();
+
+        foreach (DragDrop item in objFisicos)
+        {
+            if (!OBJFora.Contains(item))
+                OBJFora.Add(item);
+
+            item.ResetItem();
+        }
+
+        if (botaoFinal != null)
+            botaoFinal.SetActive(false);
     }
 }

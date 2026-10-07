@@ -27,18 +27,44 @@ public class DragDrop : MonoBehaviour,
 
     private void Awake()
     {
-        
         _image = GetComponent<Image>();
+        rectTransform = GetComponent<RectTransform>();
+        canvasGroup = GetComponent<CanvasGroup>();
+
+        costuraController = Camera.main.GetComponent<CosturaController>();
+
+        startPosition = rectTransform.anchoredPosition;
+
+        if (!costuraController.OBJFora.Contains(this))
+            costuraController.OBJFora.Add(this);
+
+        if (!costuraController.objFisicos.Contains(this))
+            costuraController.objFisicos.Add(this);
+
+        if (!allItems.Contains(this))
+            allItems.Add(this);
+        /*_image = GetComponent<Image>();
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
         costuraController = Camera.main.GetComponent<CosturaController>();
         costuraController.OBJFora.Add(this);
         costuraController.objFisicos.Add(this);
         startPosition = rectTransform.anchoredPosition;
+        allItems.Add(this);*/
+        // MudarImgff();
 
-        allItems.Add(this);
-       // MudarImgff();
+    }
+    private void OnDestroy()
+    {
+        allItems.Remove(this);
 
+        if (costuraController != null)
+        {
+            costuraController.OBJFora.Remove(this);
+            costuraController.OBJDentro.Remove(this);
+            costuraController.objFisicos.Remove(this);
+            costuraController.ObjInventario.Remove(this);
+        }
     }
 
     public void MudarImgff()
@@ -48,10 +74,6 @@ public class DragDrop : MonoBehaviour,
 
         
     }
-    
-
-
-
     public void OnPointerDown(PointerEventData eventData)
     {
         Debug.Log("Pointer Down");
@@ -181,5 +203,15 @@ public class DragDrop : MonoBehaviour,
                 item.startPosition;
             item.bloqueado = false;
         }
+    }
+    public void ResetItem()
+    {
+        rectTransform.anchoredPosition = startPosition;
+        bloqueado = false;
+
+        if (!costuraController.OBJFora.Contains(this))
+            costuraController.OBJFora.Add(this);
+
+        costuraController.OBJDentro.Remove(this);
     }
 }
