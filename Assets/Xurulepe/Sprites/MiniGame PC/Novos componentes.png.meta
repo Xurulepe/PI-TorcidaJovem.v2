@@ -131,7 +131,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Novos componentes editados_0
+      name: Motherboard
       rect:
         serializedVersion: 2
         x: 47
@@ -139,7 +139,7 @@ TextureImporter:
         width: 423
         height: 492
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,7 +153,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Novos componentes editados_1
+      name: CPU
       rect:
         serializedVersion: 2
         x: 553
@@ -161,7 +161,7 @@ TextureImporter:
         width: 113
         height: 114
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,7 +175,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Novos componentes editados_2
+      name: GPU on table
       rect:
         serializedVersion: 2
         x: 48
@@ -183,7 +183,7 @@ TextureImporter:
         width: 520
         height: 229
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -197,7 +197,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Novos componentes editados_3
+      name: GPU top view
       rect:
         serializedVersion: 2
         x: 653
@@ -205,7 +205,7 @@ TextureImporter:
         width: 202
         height: 534
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -219,7 +219,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Novos componentes editados_4
+      name: CPU Cooler top view
       rect:
         serializedVersion: 2
         x: 65
@@ -227,7 +227,7 @@ TextureImporter:
         width: 203
         height: 211
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -241,7 +241,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Novos componentes editados_5
+      name: CPU Cooler on table
       rect:
         serializedVersion: 2
         x: 295
@@ -249,7 +249,7 @@ TextureImporter:
         width: 203
         height: 239
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -263,7 +263,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Novos componentes editados_6
+      name: RAM
       rect:
         serializedVersion: 2
         x: 778
@@ -271,7 +271,7 @@ TextureImporter:
         width: 61
         height: 226
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -288,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ba3a6aa6329c14a4bad3eba82f4782ec
     internalID: 0
     vertices: []
     indices: 
@@ -298,13 +298,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Novos componentes editados_0: 3169032665220516029
-      Novos componentes editados_1: -6278752904865761107
-      Novos componentes editados_2: -6010175590912352475
-      Novos componentes editados_3: -6629143029384076753
-      Novos componentes editados_4: 5187757177388017013
-      Novos componentes editados_5: -2375482193620086018
-      Novos componentes editados_6: 3834066897826422911
+      CPU: -6278752904865761107
+      CPU Cooler on table: -2375482193620086018
+      CPU Cooler top view: 5187757177388017013
+      GPU on table: -6010175590912352475
+      GPU top view: -6629143029384076753
+      Motherboard: 3169032665220516029
+      RAM: 3834066897826422911
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
