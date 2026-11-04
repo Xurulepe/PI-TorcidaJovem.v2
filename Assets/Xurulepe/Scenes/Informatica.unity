@@ -238,7 +238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6629143029384076753, guid: 49f41eee5e44b6c47b1f75faf4108ffc, type: 3}
+  m_Sprite: {fileID: 1216011812, guid: 49f41eee5e44b6c47b1f75faf4108ffc, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -743,7 +743,7 @@ PrefabInstance:
     - target: {fileID: 6759835138052508666, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 5187757177388017013, guid: 49f41eee5e44b6c47b1f75faf4108ffc, type: 3}
+      objectReference: {fileID: -1633201609, guid: 49f41eee5e44b6c47b1f75faf4108ffc, type: 3}
     - target: {fileID: 6759835138052508666, guid: 6103529caefec8548a81eb1de9809a6d, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -1814,7 +1814,7 @@ PrefabInstance:
     - target: {fileID: 3806377516181518854, guid: bc4fc3c901239ff40bef80c9cdc8d2d2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -6010175590912352475, guid: 49f41eee5e44b6c47b1f75faf4108ffc, type: 3}
+      objectReference: {fileID: -1042034950, guid: 49f41eee5e44b6c47b1f75faf4108ffc, type: 3}
     - target: {fileID: 3806377516181518854, guid: bc4fc3c901239ff40bef80c9cdc8d2d2, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -1838,7 +1838,7 @@ PrefabInstance:
     - target: {fileID: 5381358826464050511, guid: bc4fc3c901239ff40bef80c9cdc8d2d2, type: 3}
       propertyPath: finalSprite
       value: 
-      objectReference: {fileID: -6629143029384076753, guid: 49f41eee5e44b6c47b1f75faf4108ffc, type: 3}
+      objectReference: {fileID: 1216011812, guid: 49f41eee5e44b6c47b1f75faf4108ffc, type: 3}
     - target: {fileID: 5381358826464050511, guid: bc4fc3c901239ff40bef80c9cdc8d2d2, type: 3}
       propertyPath: moveDuration
       value: 0.05
@@ -2384,7 +2384,7 @@ PrefabInstance:
     - target: {fileID: 3806377516181518854, guid: bc4fc3c901239ff40bef80c9cdc8d2d2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2375482193620086018, guid: 49f41eee5e44b6c47b1f75faf4108ffc, type: 3}
+      objectReference: {fileID: 1765378187, guid: 49f41eee5e44b6c47b1f75faf4108ffc, type: 3}
     - target: {fileID: 3806377516181518854, guid: bc4fc3c901239ff40bef80c9cdc8d2d2, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -2405,6 +2405,10 @@ PrefabInstance:
       propertyPath: itemType
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5381358826464050511, guid: bc4fc3c901239ff40bef80c9cdc8d2d2, type: 3}
+      propertyPath: finalSprite
+      value: 
+      objectReference: {fileID: -1633201609, guid: 49f41eee5e44b6c47b1f75faf4108ffc, type: 3}
     - target: {fileID: 5381358826464050511, guid: bc4fc3c901239ff40bef80c9cdc8d2d2, type: 3}
       propertyPath: moveDuration
       value: 0.05

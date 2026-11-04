@@ -134,20 +134,64 @@ TextureImporter:
       name: Motherboard
       rect:
         serializedVersion: 2
-        x: 47
-        y: 606
-        width: 423
-        height: 492
+        x: 10
+        y: 653
+        width: 421
+        height: 490
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: db804143b6aaafb20800000000000000
+      spriteID: 4576ff42f63d4e342b4d65ce31142629
       internalID: 3169032665220516029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooler - PC
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 923
+        width: 201
+        height: 209
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a231e580de8210408f23624fa925278
+      internalID: -1633201609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cooler - Table
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 894
+        width: 201
+        height: 237
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315a71ef70ff6064ab58e21c90ac1423
+      internalID: 1765378187
       vertices: []
       indices: 
       edges: []
@@ -156,119 +200,53 @@ TextureImporter:
       name: CPU
       rect:
         serializedVersion: 2
-        x: 553
-        y: 964
-        width: 113
-        height: 114
+        x: 466
+        y: 774
+        width: 111
+        height: 112
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: da83601df736dd8a0800000000000000
+      spriteID: 7e9042e01096b884a81c849cd4c23bd8
       internalID: -6278752904865761107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GPU on table
+      name: GPU - Table
       rect:
         serializedVersion: 2
-        x: 48
-        y: 314
-        width: 520
-        height: 229
+        x: 49
+        y: 315
+        width: 518
+        height: 227
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 52f12f1b421979ca0800000000000000
-      internalID: -6010175590912352475
+      spriteID: 96666d8e73656d94b886dd1774723afb
+      internalID: -1042034950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GPU top view
+      name: RAM - Table
       rect:
         serializedVersion: 2
-        x: 653
-        y: 349
-        width: 202
-        height: 534
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f222e48998d8004a0800000000000000
-      internalID: -6629143029384076753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CPU Cooler top view
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 92
-        width: 203
-        height: 211
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 575223bbaad9ef740800000000000000
-      internalID: 5187757177388017013
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CPU Cooler on table
-      rect:
-        serializedVersion: 2
-        x: 295
-        y: 63
-        width: 203
-        height: 239
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef2520fd787980fd0800000000000000
-      internalID: -2375482193620086018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RAM
-      rect:
-        serializedVersion: 2
-        x: 778
-        y: 64
-        width: 61
+        x: 779
+        y: 65
+        width: 59
         height: 226
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -276,10 +254,32 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f702702a787553530800000000000000
+      spriteID: d0cc7a6ef93dab64380fe67c89650738
       internalID: 3834066897826422911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GPU - PC
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 188
+        width: 531
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ece0dbdda8a36e489326cf0099b4056
+      internalID: 1216011812
       vertices: []
       indices: 
       edges: []
@@ -299,12 +299,12 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       CPU: -6278752904865761107
-      CPU Cooler on table: -2375482193620086018
-      CPU Cooler top view: 5187757177388017013
-      GPU on table: -6010175590912352475
-      GPU top view: -6629143029384076753
+      Cooler - PC: -1633201609
+      Cooler - Table: 1765378187
+      GPU - PC: 1216011812
+      GPU - Table: -1042034950
       Motherboard: 3169032665220516029
-      RAM: 3834066897826422911
+      RAM - Table: 3834066897826422911
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
