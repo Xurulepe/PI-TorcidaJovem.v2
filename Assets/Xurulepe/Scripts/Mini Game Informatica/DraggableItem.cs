@@ -55,6 +55,11 @@ namespace MiniGame.TecInformatica
         {
             DeactiveSlots();
 
+            if (finalSprite != null)
+            {
+                image.sprite = finalSprite;
+            }
+
             parentAfterDrag = transform.parent;
             transform.localScale *= onDragScaleMultiplier;
 
