@@ -8,6 +8,9 @@ namespace MiniGame.TecInformatica
     {
         [Header("References")]
         [SerializeField] private TextMeshProUGUI infoText;
+        [SerializeField] private RectTransform infoTextTransform;
+        [SerializeField] private RectTransform startPosition;
+        [SerializeField] private RectTransform finalPosition;
 
         [Header("Animation Settings")]
         [SerializeField] private float targetScale;
@@ -20,6 +23,10 @@ namespace MiniGame.TecInformatica
             GameManager.Instance.OnPCChecked += UpdateText;
 
             infoText.color = Color.green;
+
+            infoTextTransform.anchoredPosition = startPosition.anchoredPosition;
+            infoTextTransform.DOAnchorPos(finalPosition.anchoredPosition, 1f);
+
             infoText.SetText("Coloque todos os componentes corretamente.");
             infoText.DOFade(0f, fadeToTransparentDuration * 2);
         }
@@ -27,6 +34,8 @@ namespace MiniGame.TecInformatica
         private void UpdateText()
         {
             infoText.color = Color.red;
+            infoTextTransform.anchoredPosition = startPosition.anchoredPosition;
+            infoTextTransform.DOAnchorPos(finalPosition.anchoredPosition, 1f);
 
             if (!GameManager.Instance.HasGameFinished)
             {
