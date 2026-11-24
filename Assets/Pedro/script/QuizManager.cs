@@ -273,7 +273,7 @@ public class QuizManager : MonoBehaviour
 
     public void ResetarJogo()
     {
-        SceneManager.LoadScene("Quiz");
+        SceneManager.LoadScene("Ingles");
     }
 
     // =========================================================
