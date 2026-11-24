@@ -77,7 +77,19 @@ public class MusicalNoteSlot : MonoBehaviour
             musicalNote.SetHit();
 
             float distanceToNote = Mathf.Abs(containerPositionY - notePositionY);
+
+            // pegar info de precisão
             GameManager.Instance.CalculateScore(distanceToNote);
+
+            GameObject accuracyInfoObject = AccuracyInfoPool.Instance.GetPooledObject();
+            if (accuracyInfoObject != null )
+            {
+                AccuracyInfo accuracyInfo = accuracyInfoObject.GetComponent<AccuracyInfo>();
+                accuracyInfo.Setup(GameManager.Instance.CurrentMusicalNoteData.accuracyInfo, rectTransform.anchoredPosition.x);
+
+                accuracyInfoObject.SetActive(true);
+                accuracyInfo.Play();
+            }
 
             musicalNoteUI.Blink();
             musicalNoteUI.Pulse();

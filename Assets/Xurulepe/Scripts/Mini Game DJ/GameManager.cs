@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private MusicalNoteDataSO coolMusicalNoteData;
     [SerializeField] private MusicalNoteDataSO missMusicalNoteData;
 
+    [Header("References")]
+    [SerializeField] private RectTransform noteContainer;
+
 
     private MusicalNoteDataSO currentMusicalNoteData;
     private int comboCount = 0;
@@ -33,6 +36,7 @@ public class GameManager : MonoBehaviour
     public int MaxNotesToSpawn => maxNotesToSpawn;
     public int DeactivatedNotesCount => deactivatedNotesCount;
     public bool IsGameRunning => isGameRunning;
+    public RectTransform NoteContainer => noteContainer;
 
 
     public event Action OnScoreChanged;
