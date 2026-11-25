@@ -78,18 +78,9 @@ public class MusicalNoteSlot : MonoBehaviour
 
             float distanceToNote = Mathf.Abs(containerPositionY - notePositionY);
 
-            // pegar info de precisão
             GameManager.Instance.CalculateScore(distanceToNote);
 
-            GameObject accuracyInfoObject = AccuracyInfoPool.Instance.GetPooledObject();
-            if (accuracyInfoObject != null )
-            {
-                AccuracyInfo accuracyInfo = accuracyInfoObject.GetComponent<AccuracyInfo>();
-                accuracyInfo.Setup(GameManager.Instance.CurrentMusicalNoteData.accuracyInfo, rectTransform.anchoredPosition.x);
-
-                accuracyInfoObject.SetActive(true);
-                accuracyInfo.Play();
-            }
+            SpawnNoteAccuracyInfo();
 
             musicalNoteUI.Blink();
             musicalNoteUI.Pulse();
@@ -99,6 +90,8 @@ public class MusicalNoteSlot : MonoBehaviour
         else
         {
             GameManager.Instance.ReduceScore();
+
+            SpawnNoteAccuracyInfo();
 
             musicalNoteUI.Blink();
             musicalNoteUI.Pulse();
@@ -119,6 +112,19 @@ public class MusicalNoteSlot : MonoBehaviour
         float height = corners[2].y - corners[0].y;
 
         return new Rect(x, y, width, height);
+    }
+
+    private void SpawnNoteAccuracyInfo()
+    {
+        GameObject accuracyInfoObject = AccuracyInfoPool.Instance.GetPooledObject();
+        if (accuracyInfoObject != null)
+        {
+            AccuracyInfo accuracyInfo = accuracyInfoObject.GetComponent<AccuracyInfo>();
+            accuracyInfo.Setup(GameManager.Instance.CurrentMusicalNoteData.accuracyInfo, rectTransform.anchoredPosition.x, GameManager.Instance.CurrentMusicalNoteData.noteSpriteColor);
+
+            accuracyInfoObject.SetActive(true);
+            accuracyInfo.Play();
+        }
     }
 
     private void OnDrawGizmosSelected()

@@ -37,11 +37,12 @@ public class AccuracyInfo : MonoBehaviour
         gameObject.SetActive(false);
     }   
     
-    public void Setup(string accuracyInfoText, float xPos)
+    public void Setup(string accuracyInfoText, float xPos, Color textColor)
     {
         noteContainer = GameManager.Instance.NoteContainer;
         accuracyText.text = accuracyInfoText;
         rectTransform.anchoredPosition = new Vector2(xPos, noteContainer.anchoredPosition.y);
         notePosX = xPos;
+        accuracyText.color = textColor;
     }
 }
