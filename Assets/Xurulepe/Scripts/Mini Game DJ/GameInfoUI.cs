@@ -12,6 +12,7 @@ public class GameInfoUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI comboCountInfoText;
     [SerializeField] private RectTransform comboInfoRectTransform;
 
+
     private void Start()
     {
         GameManager.Instance.OnScoreChanged += UpdateUI;

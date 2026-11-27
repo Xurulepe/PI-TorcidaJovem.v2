@@ -1080,8 +1080,6 @@ GameObject:
   - component: {fileID: 525643478}
   - component: {fileID: 525643479}
   - component: {fileID: 525643480}
-  - component: {fileID: 525643482}
-  - component: {fileID: 525643481}
   m_Layer: 5
   m_Name: Info UI
   m_TagString: Untagged
@@ -1153,44 +1151,7 @@ MonoBehaviour:
   scoreInfoRectTransform: {fileID: 1824222882}
   comboCountInfoText: {fileID: 1726628833}
   comboInfoRectTransform: {fileID: 1726628832}
---- !u!114 &525643481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 525643477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: -6553981221537692626, guid: 831d83a556c9b84448600c01600b1484, type: 3}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &525643482
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 525643477}
-  m_CullTransparentMesh: 1
+  infoBoxImage: {fileID: 0}
 --- !u!1 &551629388
 GameObject:
   m_ObjectHideFlags: 0
